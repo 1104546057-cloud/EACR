@@ -677,3 +677,36 @@ final eval 是否 4×80 cells
 - pilot 已证明机制和 checkpoint 加载链路可运行；
 - 最终论文优越性结论尚未成立；
 - 所有运行已停止，后续应从 `--resume` 继续。
+
+## 11. GitHub 备份状态
+
+本地工作区已经初始化为独立 Git 仓库，并配置：
+
+```text
+origin = https://github.com/1104546057-cloud/EACR.git
+```
+
+已经创建的本地提交：
+
+```text
+95e1b0d Link the reproducible handoff from README
+aadc9de Preserve EACR evolving evaluation and handoff state
+```
+
+`build/`、`install/`、`log/` 和 Python 缓存已由 `.gitignore` 排除；源码、脚本、协议、结果 JSON、日志型审计文件和本交接文档已纳入提交。训练目录中的原绝对路径符号链接已在提交前物化为普通 JSON，避免 clone 后断链。
+
+本环境没有 GitHub CLI 登录状态、HTTPS credential 或 SSH key，因此自动 `git push` 返回 `could not read Username for 'https://github.com'`，远端尚未收到提交。拥有仓库权限的用户或 Cursor 应先完成一次 GitHub 登录，然后在本目录执行：
+
+```bash
+cd /home/hu/文档/ChatGPT/论文/eacr_ws
+git push -u origin master
+```
+
+如果远端策略要求 `main`，可以在认证后执行：
+
+```bash
+git branch -M main
+git push -u origin main
+```
+
+不要把 token、密码或私钥写入仓库、脚本、remote URL 或交接文档。
