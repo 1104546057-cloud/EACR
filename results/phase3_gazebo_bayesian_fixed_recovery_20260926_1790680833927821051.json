@@ -1,0 +1,188 @@
+{
+  "protocol_id": "eacr_phase3_v1",
+  "gazebo_observation_adapter": true,
+  "synthetic_dry_run": false,
+  "baseline": "bayesian_fixed_recovery",
+  "seed": 20260926,
+  "goal": {
+    "x": 0.7508496046,
+    "y": 1.8354123831,
+    "yaw": 1.4751400097
+  },
+  "episodes": [
+    {
+      "episode_id": "phase3_gazebo_20260926_004",
+      "fault_family": "localization",
+      "fault_id": "localization_initial_pose_offset",
+      "reset_success": true,
+      "nominal_reset_success": true,
+      "nominal_navigation_status": 4,
+      "nominal_navigation_duration_sec": 13.44595368499995,
+      "nominal_navigation_reason": "completed",
+      "nominal_navigation_valid": true,
+      "inject_success": true,
+      "selected_action": "relocalize_amcl",
+      "online_evidence": {
+        "amcl_available": true,
+        "amcl_fresh_after_injection": true,
+        "amcl_distance_to_start_m": 0.7913582230463587,
+        "nav2_parameters": {
+          "footprint_padding": 0.009999999776482582,
+          "planner_plugins": [
+            "GridBased"
+          ],
+          "min_x_velocity_threshold": 0.001
+        }
+      },
+      "belief_before_action": {
+        "localization_drift": 0.7,
+        "costmap_blockage": 0.1,
+        "planner_failure": 0.1,
+        "controller_failure": 0.1
+      },
+      "decision": {
+        "selected_action": "relocalize_amcl",
+        "abstained": false,
+        "reason": "fixed_recovery_mapping",
+        "ranking": []
+      },
+      "recovery_success": true,
+      "fault_navigation_status": 6,
+      "fault_navigation_duration_sec": 22.53296204100002,
+      "fault_navigation_reason": "completed",
+      "fault_effect_observed": true,
+      "recovery_navigation_status": 4,
+      "recovery_navigation_duration_sec": 14.165534997999885,
+      "recovery_navigation_reason": "completed",
+      "episode_success": true,
+      "experience_after_episode": {
+        "controller_failure|tb3_sandbox|goal_nav|navigating|tb3_sandbox_gazebo|nav2_jazzy|relocalize_amcl": {
+          "recovery": {
+            "alpha": 1.1,
+            "beta": 1.0,
+            "mean": 0.5238095238095238,
+            "variance": 0.08046229244385926
+          },
+          "outcomes": {
+            "counts": {
+              "diagnostic_support": 1.0,
+              "diagnostic_conflict": 1.0,
+              "recovery_success": 1.1,
+              "recovery_failure": 1.0,
+              "unsafe_or_blocked": 1.0,
+              "inconclusive": 1.0
+            },
+            "probabilities": {
+              "diagnostic_support": 0.1639344262295082,
+              "diagnostic_conflict": 0.1639344262295082,
+              "recovery_success": 0.18032786885245905,
+              "recovery_failure": 0.1639344262295082,
+              "unsafe_or_blocked": 0.1639344262295082,
+              "inconclusive": 0.1639344262295082
+            },
+            "variance": 0.11733934918297749
+          }
+        },
+        "costmap_blockage|tb3_sandbox|goal_nav|navigating|tb3_sandbox_gazebo|nav2_jazzy|relocalize_amcl": {
+          "recovery": {
+            "alpha": 1.1,
+            "beta": 1.0,
+            "mean": 0.5238095238095238,
+            "variance": 0.08046229244385926
+          },
+          "outcomes": {
+            "counts": {
+              "diagnostic_support": 1.0,
+              "diagnostic_conflict": 1.0,
+              "recovery_success": 1.1,
+              "recovery_failure": 1.0,
+              "unsafe_or_blocked": 1.0,
+              "inconclusive": 1.0
+            },
+            "probabilities": {
+              "diagnostic_support": 0.1639344262295082,
+              "diagnostic_conflict": 0.1639344262295082,
+              "recovery_success": 0.18032786885245905,
+              "recovery_failure": 0.1639344262295082,
+              "unsafe_or_blocked": 0.1639344262295082,
+              "inconclusive": 0.1639344262295082
+            },
+            "variance": 0.11733934918297749
+          }
+        },
+        "localization_drift|tb3_sandbox|goal_nav|navigating|tb3_sandbox_gazebo|nav2_jazzy|relocalize_amcl": {
+          "recovery": {
+            "alpha": 1.7,
+            "beta": 1.0,
+            "mean": 0.6296296296296295,
+            "variance": 0.06302598895191486
+          },
+          "outcomes": {
+            "counts": {
+              "diagnostic_support": 1.0,
+              "diagnostic_conflict": 1.0,
+              "recovery_success": 1.7,
+              "recovery_failure": 1.0,
+              "unsafe_or_blocked": 1.0,
+              "inconclusive": 1.0
+            },
+            "probabilities": {
+              "diagnostic_support": 0.14925373134328357,
+              "diagnostic_conflict": 0.14925373134328357,
+              "recovery_success": 0.2537313432835821,
+              "recovery_failure": 0.14925373134328357,
+              "unsafe_or_blocked": 0.14925373134328357,
+              "inconclusive": 0.14925373134328357
+            },
+            "variance": 0.1070437693293563
+          }
+        },
+        "planner_failure|tb3_sandbox|goal_nav|navigating|tb3_sandbox_gazebo|nav2_jazzy|relocalize_amcl": {
+          "recovery": {
+            "alpha": 1.1,
+            "beta": 1.0,
+            "mean": 0.5238095238095238,
+            "variance": 0.08046229244385926
+          },
+          "outcomes": {
+            "counts": {
+              "diagnostic_support": 1.0,
+              "diagnostic_conflict": 1.0,
+              "recovery_success": 1.1,
+              "recovery_failure": 1.0,
+              "unsafe_or_blocked": 1.0,
+              "inconclusive": 1.0
+            },
+            "probabilities": {
+              "diagnostic_support": 0.1639344262295082,
+              "diagnostic_conflict": 0.1639344262295082,
+              "recovery_success": 0.18032786885245905,
+              "recovery_failure": 0.1639344262295082,
+              "unsafe_or_blocked": 0.1639344262295082,
+              "inconclusive": 0.1639344262295082
+            },
+            "variance": 0.11733934918297749
+          }
+        }
+      },
+      "details": {
+        "nominal_reset": "Episode reset to (-2.0, -0.5, 0.0).",
+        "reset": "Episode reset to (-2.0, -0.5, 0.0).",
+        "inject": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}",
+        "recovery": "initial pose restored",
+        "rollback": "already rolled back by recovery"
+      }
+    }
+  ],
+  "recovery_success_rate": 1.0,
+  "fault_effect_observed_rate": 1.0,
+  "nav2_ready_at_start": true,
+  "infrastructure_failure": false,
+  "protocol_compliant": false,
+  "protocol_gaps": [
+    "paired recovery trial and action execution remain incomplete",
+    "M_0/M_20/M_50 and ablation matrix remain incomplete",
+    "online diagnosis currently uses AMCL evidence only"
+  ],
+  "run_id": 1790680833927821051
+}

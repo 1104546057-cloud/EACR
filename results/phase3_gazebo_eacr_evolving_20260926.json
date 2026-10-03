@@ -1,0 +1,33 @@
+{
+  "protocol_id": "eacr_phase3_v1",
+  "gazebo_observation_adapter": true,
+  "synthetic_dry_run": false,
+  "baseline": "eacr_evolving",
+  "seed": 20260926,
+  "goal": {
+    "x": 0.7508496046,
+    "y": 1.8354123831,
+    "yaw": 1.4751400097
+  },
+  "episodes": [
+    {
+      "episode_id": "phase3_gazebo_20260926_001",
+      "fault_family": "costmap",
+      "fault_id": "costmap_static_obstacle",
+      "reset_success": true,
+      "inject_success": true,
+      "selected_action": "inspect_tf",
+      "recovery_success": true,
+      "navigation_status": 0,
+      "navigation_duration_sec": 20.062407415000052,
+      "episode_success": false,
+      "details": {
+        "reset": "Episode reset to (-2.0, -0.5, 0.0).",
+        "inject": "data: true",
+        "recovery": "no recovery action",
+        "rollback": "data: true"
+      }
+    }
+  ],
+  "recovery_success_rate": 0.0
+}

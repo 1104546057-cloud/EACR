@@ -1,0 +1,126 @@
+{
+  "protocol_id": "eacr_evolving_advantage_v1",
+  "parent_protocol": "eacr_phase3_v1",
+  "frozen_baseline_results": "results/phase3_stage_gate.json",
+  "methods": [
+    "eacr_static_m0",
+    "eacr_evolving_online_m0",
+    "eacr_evolving_m20",
+    "eacr_evolving_m50"
+  ],
+  "training_seeds": [
+    20310001,
+    20310002,
+    20310003,
+    20310004,
+    20310005,
+    20310006,
+    20310007,
+    20310008,
+    20310009,
+    20310010,
+    20310011,
+    20310012,
+    20310013
+  ],
+  "evaluation_seeds": [
+    1069364068,
+    683001511,
+    450637390,
+    1207356449,
+    1578549000,
+    252445555,
+    729528073,
+    1092085222,
+    200776800,
+    1464253601,
+    365260637,
+    225495283,
+    1725492561,
+    1054169594,
+    1613439514,
+    1691408245,
+    849115063,
+    1146002680,
+    1534671149,
+    1320660730
+  ],
+  "fault_families": [
+    "localization",
+    "costmap",
+    "planner",
+    "control"
+  ],
+  "repetitions_per_fault_family": 4,
+  "training_fault_scale": 1.0,
+  "evaluation_fault_scale": 1.5,
+  "episodes_per_seed": 16,
+  "prior_mode": "weak_shared_m0",
+  "use_belief_action_scope": true,
+  "checkpoint_training_feedback_minimum": 50,
+  "primary_metrics": [
+    "intervention_recovery_rate",
+    "sustained_recovery_rate",
+    "mttr_sec",
+    "intervention_cost"
+  ],
+  "strict_joint_metric": "episode_success",
+  "secondary_metrics": [
+    "action_ranking",
+    "policy_kl_divergence",
+    "outcome_prediction_nll",
+    "brier_score",
+    "ece",
+    "useless_probe_rate"
+  ],
+  "rules": {
+    "same_test_seed_across_methods": true,
+    "test_feedback_updates_frozen_checkpoints": false,
+    "ground_truth_in_online_decision": false,
+    "test_seeds_selected_after_results": false,
+    "report_per_fault_family": true,
+    "report_paired_confidence_interval": true
+  },
+  "pilot_seeds_used_before_final_freeze": [
+    20410001,
+    20410002,
+    20410003,
+    20410004,
+    20410005,
+    20410006,
+    20410007,
+    20410008,
+    20410009,
+    20410010,
+    20410011,
+    20410012,
+    20410013,
+    20410014,
+    20410015,
+    20410016,
+    20410017,
+    20410018,
+    20410019,
+    20410020
+  ],
+  "seed_generation": {
+    "method": "secrets.SystemRandom.sample",
+    "population": "integers [100000000, 2000000000)",
+    "generated_at_utc": "2026-10-03T09:51:11.107076+00:00",
+    "purpose": "held-out final evaluation; generated after pilot protocol corrections, before final evaluation",
+    "amendment": {
+      "timestamp_utc": "2026-10-03T11:59:44.350981+00:00",
+      "reason": "original final seed was used for one planner checkpoint-load pilot before final inference; exclude it from confirmatory set",
+      "exposed_seed": 544047076,
+      "replacement_seed": 1069364068,
+      "replacement_method": "secrets.SystemRandom.randrange(100000000, 2000000000); reject collisions",
+      "previous_protocol_sha256": "7837c65473b3a44bb400887ca12babf877c195e88a3a37449d8eaf2313cf400b",
+      "outcome_independent_rule": "replace any final seed with pilot results, regardless of observed direction or magnitude"
+    }
+  },
+  "protocol_revision": "v0.3_pilot_exposure_amendment",
+  "pilot_not_in_final_inference": true,
+  "post_freeze_exposed_seeds_excluded": [
+    544047076
+  ]
+}

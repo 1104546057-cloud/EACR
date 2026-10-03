@@ -1,0 +1,152 @@
+{
+  "protocol_id": "eacr_evolving_advantage_v1",
+  "source_baseline": "eacr_evolving",
+  "prior_mode": "weak_shared_m0",
+  "source_directories": [
+    "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner"
+  ],
+  "training_seeds": [
+    20310001,
+    20310002,
+    20310003,
+    20310004,
+    20310005,
+    20310006,
+    20310007,
+    20310008,
+    20310009,
+    20310010,
+    20310011,
+    20310012,
+    20310013
+  ],
+  "evaluation_seeds_excluded": [
+    544047076,
+    683001511,
+    450637390,
+    1207356449,
+    1578549000,
+    252445555,
+    729528073,
+    1092085222,
+    200776800,
+    1464253601,
+    365260637,
+    225495283,
+    1725492561,
+    1054169594,
+    1613439514,
+    1691408245,
+    849115063,
+    1146002680,
+    1534671149,
+    1320660730
+  ],
+  "source_files": [
+    {
+      "seed": 20310001,
+      "family": "planner",
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310001_1790950998626337146.json",
+      "sha256": "7135bf8ee05d7161b70b4f7f180b0f60cd0d34a029e8168ac851f192119d16d1"
+    },
+    {
+      "seed": 20310002,
+      "family": "planner",
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310002_1790951299234890723.json",
+      "sha256": "aaded3d1a833089cedd981281d180535ef6fbb21bf6df73cf0156c6d58cb73d6"
+    },
+    {
+      "seed": 20310003,
+      "family": "planner",
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310003_1790951507921620717.json",
+      "sha256": "13ea265b792d5318b6e6abe748a82a8871356cd92a27339041ee93a71fab773b"
+    },
+    {
+      "seed": 20310004,
+      "family": "planner",
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310004_1790951711766481656.json",
+      "sha256": "2eb0505a809b2799e8a7e4fc6cff40faec51ddb29a6fcd3ba932e89f4b80f0f8"
+    },
+    {
+      "seed": 20310005,
+      "family": "planner",
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310005_1790952016379456123.json",
+      "sha256": "fe450a656904d3f1b93297d21fd4bcd8df709870f842bbf8f21c019fe71f5362"
+    },
+    {
+      "seed": 20310006,
+      "family": "planner",
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310006_1790952248222650503.json",
+      "sha256": "7b08a8b0a591a6ce1f62a23437b4fbf40070a845b17087530013e5d2e531a50f"
+    },
+    {
+      "seed": 20310007,
+      "family": "planner",
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310007_1790952527479378631.json",
+      "sha256": "5cc01cbed506bd27cbb0eef596ba384a1497a793ad16d04ac414fb79ed8d111c"
+    },
+    {
+      "seed": 20310008,
+      "family": "planner",
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310008_1790952788807412462.json",
+      "sha256": "cf5d480802e0a15be121e5fb165585f80558ac1b6dc2a91949bbb2f57ac55d2c"
+    },
+    {
+      "seed": 20310009,
+      "family": "planner",
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310009_1790952968376482685.json",
+      "sha256": "9eca2f18f352ae52aff896ead2b81ecd12a06c1d03ca7b634283697f690a71bb"
+    },
+    {
+      "seed": 20310010,
+      "family": "planner",
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310010_1790953134319524586.json",
+      "sha256": "db3a90236793c44637bb8345fe8ae66117de74e334edbd6de64adc61849e6060"
+    },
+    {
+      "seed": 20310011,
+      "family": "planner",
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310011_1791023914165520334.json",
+      "sha256": "0d82c73aeac6d72019b8f021400e2d1ca4d2b006e0cbbc10b010e5278da7f5e9"
+    },
+    {
+      "seed": 20310012,
+      "family": "planner",
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310012_1790953747733158050.json",
+      "sha256": "efffdc4a713360fb8cb0a794ecfe0b226da9a2d1cf1f0659dcc4ca1b4549cc72"
+    },
+    {
+      "seed": 20310013,
+      "family": "planner",
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310013_1790953950982433632.json",
+      "sha256": "4f4b49961844755ede7eb88e9b20660626fbdb8f84f22f2f9a717ab4086e23b6"
+    }
+  ],
+  "feedback_episodes_applied": 52,
+  "unique_training_cells": 13,
+  "retained_training_episodes": 52,
+  "coverage_by_family": {
+    "localization": 0,
+    "costmap": 0,
+    "planner": 13,
+    "control": 0
+  },
+  "excluded_runs": {
+    "invalid_or_mismatched_run": 2
+  },
+  "checkpoints": [
+    "M_0",
+    "M_20",
+    "M_50"
+  ],
+  "minimum_required": {
+    "M_20": 20,
+    "M_50": 50
+  },
+  "ready": false,
+  "paths": {
+    "M_0": "results/phase4_experience_evolving_M_0.json",
+    "M_20": "results/phase4_experience_evolving_M_20.json",
+    "M_50": "results/phase4_experience_evolving_M_50.json"
+  }
+}

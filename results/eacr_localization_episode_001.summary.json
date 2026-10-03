@@ -1,0 +1,14 @@
+{
+  "episode_id": "eacr_localization_episode_001",
+  "seed": 20260926,
+  "event_count": 16,
+  "summary": {
+    "final_outcome": "recovery_success",
+    "verified_recovery": true,
+    "selected_actions": [
+      "inspect_tf",
+      "slow_observe",
+      "relocalize_amcl"
+    ]
+  }
+}

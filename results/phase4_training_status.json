@@ -1,0 +1,67 @@
+{
+  "protocol_id": "eacr_evolving_advantage_v1",
+  "generated_at_utc": "2026-10-03T10:44:18.400770+00:00",
+  "training_result_dir": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner",
+  "expected_training_seeds": [
+    20310001,
+    20310002,
+    20310003,
+    20310004,
+    20310005,
+    20310006,
+    20310007,
+    20310008,
+    20310009,
+    20310010,
+    20310011,
+    20310012,
+    20310013
+  ],
+  "valid_seeds": [
+    20310001,
+    20310002,
+    20310003,
+    20310004,
+    20310005,
+    20310006,
+    20310007,
+    20310008,
+    20310009,
+    20310010,
+    20310011,
+    20310012,
+    20310013
+  ],
+  "missing_seeds": [],
+  "valid_cell_count": 13,
+  "invalid_attempts": [
+    {
+      "seed": 20310011,
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310011_1790953287014338960.json",
+      "run_id": 1790953287014338960,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ]
+    },
+    {
+      "seed": 20310011,
+      "path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310011_1790953554411758285.json",
+      "run_id": 1790953554411758285,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ]
+    }
+  ],
+  "feedback_episodes_available": 52,
+  "checkpoint_ready": false,
+  "checkpoint_pilot_ready": true,
+  "checkpoint_pilot_scope": "planner_only",
+  "blocking_reason": "training coverage currently includes planner family only; full protocol requires localization, costmap, planner, and control coverage for every training seed",
+  "checkpoint_manifest": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_experience_evolving_manifest.json",
+  "checkpoint_paths": {
+    "M_0": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_experience_evolving_M_0.json",
+    "M_20": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_experience_evolving_M_20.json",
+    "M_50": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_experience_evolving_M_50.json"
+  },
+  "next_action": "run paired held-out planner-only checkpoint-load validation; do not use as final four-family claim"
+}

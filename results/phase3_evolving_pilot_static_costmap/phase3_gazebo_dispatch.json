@@ -1,0 +1,33 @@
+{
+  "protocol_id": "eacr_phase3_v1",
+  "baselines": [
+    "eacr_static"
+  ],
+  "seeds": [
+    20410003
+  ],
+  "fault_families": [
+    "costmap"
+  ],
+  "experience_checkpoint": "M_0",
+  "experience_prior_mode": "weak_shared_m0",
+  "fault_repetitions": 4,
+  "experience_environment_bin": "tb3_sandbox_gazebo",
+  "use_belief_action_scope": true,
+  "fault_scale": 1.0,
+  "online_experience_update": true,
+  "runs": [
+    {
+      "baseline": "eacr_static",
+      "seed": 20410003,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1790949448.473216575] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase3_evolving_pilot_static_costmap/phase3_gazebo_eacr_static_20410003_1790949448454753932.json\n",
+      "attempts": 2,
+      "protocol_ok": true
+    }
+  ],
+  "completed_runs": 1,
+  "total_runs": 1
+}

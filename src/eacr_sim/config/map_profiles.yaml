@@ -1,0 +1,27 @@
+maps:
+  primary:
+    id: tb3_sandbox
+    map: /opt/ros/jazzy/share/nav2_bringup/maps/tb3_sandbox.yaml
+    world: /opt/ros/jazzy/share/nav2_minimal_tb3_sim/worlds/tb3_sandbox.sdf.xacro
+    resolution_m: 0.05
+    origin_x: -10.0
+    origin_y: -10.0
+    use_for: platform_smoke_and_localization
+
+  future_open:
+    id: eacr_open
+    map: pending
+    world: pending
+    use_for: generalization
+
+  future_corridor:
+    id: eacr_corridor
+    map: pending
+    world: pending
+    use_for: planner_and_localization_stress
+
+  future_cluttered:
+    id: eacr_cluttered
+    map: pending
+    world: pending
+    use_for: local_costmap_and_recovery_stress

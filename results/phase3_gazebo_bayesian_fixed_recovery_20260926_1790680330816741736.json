@@ -1,0 +1,178 @@
+{
+  "protocol_id": "eacr_phase3_v1",
+  "gazebo_observation_adapter": true,
+  "synthetic_dry_run": false,
+  "baseline": "bayesian_fixed_recovery",
+  "seed": 20260926,
+  "goal": {
+    "x": 0.7508496046,
+    "y": 1.8354123831,
+    "yaw": 1.4751400097
+  },
+  "episodes": [
+    {
+      "episode_id": "phase3_gazebo_20260926_001",
+      "fault_family": "costmap",
+      "fault_id": "costmap_static_obstacle",
+      "reset_success": true,
+      "nominal_reset_success": true,
+      "nominal_navigation_status": 4,
+      "nominal_navigation_duration_sec": 15.305367358000012,
+      "nominal_navigation_valid": true,
+      "inject_success": true,
+      "selected_action": "relocalize_amcl",
+      "online_evidence": {
+        "amcl_available": true,
+        "amcl_fresh_after_injection": false,
+        "amcl_distance_to_start_m": null
+      },
+      "belief_before_action": {
+        "localization_drift": 0.25,
+        "costmap_blockage": 0.25,
+        "planner_failure": 0.25,
+        "controller_failure": 0.25
+      },
+      "decision": {
+        "selected_action": "relocalize_amcl",
+        "abstained": false,
+        "reason": "fixed_recovery_mapping",
+        "ranking": []
+      },
+      "recovery_success": false,
+      "fault_navigation_status": 0,
+      "fault_navigation_duration_sec": 35.070086328,
+      "fault_effect_observed": false,
+      "recovery_navigation_status": null,
+      "recovery_navigation_duration_sec": 0.0,
+      "episode_success": false,
+      "experience_after_episode": {
+        "controller_failure|tb3_sandbox|goal_nav|navigating|tb3_sandbox_gazebo|nav2_jazzy|relocalize_amcl": {
+          "recovery": {
+            "alpha": 1.0,
+            "beta": 1.25,
+            "mean": 0.4444444444444444,
+            "variance": 0.07597340930674264
+          },
+          "outcomes": {
+            "counts": {
+              "diagnostic_support": 1.0,
+              "diagnostic_conflict": 1.0,
+              "recovery_success": 1.0,
+              "recovery_failure": 1.25,
+              "unsafe_or_blocked": 1.0,
+              "inconclusive": 1.0
+            },
+            "probabilities": {
+              "diagnostic_support": 0.16,
+              "diagnostic_conflict": 0.16,
+              "recovery_success": 0.16,
+              "recovery_failure": 0.2,
+              "unsafe_or_blocked": 0.16,
+              "inconclusive": 0.16
+            },
+            "variance": 0.11475862068965517
+          }
+        },
+        "costmap_blockage|tb3_sandbox|goal_nav|navigating|tb3_sandbox_gazebo|nav2_jazzy|relocalize_amcl": {
+          "recovery": {
+            "alpha": 1.0,
+            "beta": 1.25,
+            "mean": 0.4444444444444444,
+            "variance": 0.07597340930674264
+          },
+          "outcomes": {
+            "counts": {
+              "diagnostic_support": 1.0,
+              "diagnostic_conflict": 1.0,
+              "recovery_success": 1.0,
+              "recovery_failure": 1.25,
+              "unsafe_or_blocked": 1.0,
+              "inconclusive": 1.0
+            },
+            "probabilities": {
+              "diagnostic_support": 0.16,
+              "diagnostic_conflict": 0.16,
+              "recovery_success": 0.16,
+              "recovery_failure": 0.2,
+              "unsafe_or_blocked": 0.16,
+              "inconclusive": 0.16
+            },
+            "variance": 0.11475862068965517
+          }
+        },
+        "localization_drift|tb3_sandbox|goal_nav|navigating|tb3_sandbox_gazebo|nav2_jazzy|relocalize_amcl": {
+          "recovery": {
+            "alpha": 1.0,
+            "beta": 1.25,
+            "mean": 0.4444444444444444,
+            "variance": 0.07597340930674264
+          },
+          "outcomes": {
+            "counts": {
+              "diagnostic_support": 1.0,
+              "diagnostic_conflict": 1.0,
+              "recovery_success": 1.0,
+              "recovery_failure": 1.25,
+              "unsafe_or_blocked": 1.0,
+              "inconclusive": 1.0
+            },
+            "probabilities": {
+              "diagnostic_support": 0.16,
+              "diagnostic_conflict": 0.16,
+              "recovery_success": 0.16,
+              "recovery_failure": 0.2,
+              "unsafe_or_blocked": 0.16,
+              "inconclusive": 0.16
+            },
+            "variance": 0.11475862068965517
+          }
+        },
+        "planner_failure|tb3_sandbox|goal_nav|navigating|tb3_sandbox_gazebo|nav2_jazzy|relocalize_amcl": {
+          "recovery": {
+            "alpha": 1.0,
+            "beta": 1.25,
+            "mean": 0.4444444444444444,
+            "variance": 0.07597340930674264
+          },
+          "outcomes": {
+            "counts": {
+              "diagnostic_support": 1.0,
+              "diagnostic_conflict": 1.0,
+              "recovery_success": 1.0,
+              "recovery_failure": 1.25,
+              "unsafe_or_blocked": 1.0,
+              "inconclusive": 1.0
+            },
+            "probabilities": {
+              "diagnostic_support": 0.16,
+              "diagnostic_conflict": 0.16,
+              "recovery_success": 0.16,
+              "recovery_failure": 0.2,
+              "unsafe_or_blocked": 0.16,
+              "inconclusive": 0.16
+            },
+            "variance": 0.11475862068965517
+          }
+        }
+      },
+      "details": {
+        "nominal_reset": "Episode reset to (-2.0, -0.5, 0.0).",
+        "reset": "Episode reset to (-2.0, -0.5, 0.0).",
+        "inject": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()",
+        "recovery": "relocalize_amcl does not target the active fault; no recovery was applied",
+        "rollback": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"
+      }
+    }
+  ],
+  "recovery_success_rate": 0.0,
+  "fault_effect_observed_rate": 0.0,
+  "nav2_ready_at_start": true,
+  "infrastructure_failure": false,
+  "protocol_compliant": false,
+  "protocol_gaps": [
+    "paired recovery trial and action execution remain incomplete",
+    "M_0/M_20/M_50 and ablation matrix remain incomplete",
+    "online diagnosis currently uses AMCL evidence only"
+  ],
+  "run_id": 1790680330816741736
+}

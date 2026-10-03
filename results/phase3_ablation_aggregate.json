@@ -1,0 +1,93 @@
+{
+  "protocol_id": "eacr_phase3_v1",
+  "source": "real Gazebo paired episodes only",
+  "conditions": [
+    "full_eacr",
+    "without_belief_update",
+    "without_information_gain",
+    "without_memory_update",
+    "without_model_uncertainty",
+    "without_recovery_utility",
+    "without_risk_constraint"
+  ],
+  "by_condition": {
+    "full_eacr": {
+      "valid_cells": 20,
+      "expected_cells": 20,
+      "coverage_complete": true,
+      "fault_effect_observed_rate": 1.0,
+      "recovery_success_rate": 0.95,
+      "mean_intervention_cost": 0.55,
+      "mean_mttr_sec": 14.599200037449965,
+      "outcome_prediction_nll": 0.6332703983322037,
+      "updated_online_count": 20
+    },
+    "without_belief_update": {
+      "valid_cells": 20,
+      "expected_cells": 20,
+      "coverage_complete": true,
+      "fault_effect_observed_rate": 1.0,
+      "recovery_success_rate": 0.0,
+      "mean_intervention_cost": 0.15,
+      "mean_mttr_sec": 14.23686947240003,
+      "outcome_prediction_nll": 0.1823215567939546,
+      "updated_online_count": 0
+    },
+    "without_information_gain": {
+      "valid_cells": 20,
+      "expected_cells": 20,
+      "coverage_complete": true,
+      "fault_effect_observed_rate": 1.0,
+      "recovery_success_rate": 0.9,
+      "mean_intervention_cost": 0.55,
+      "mean_mttr_sec": 14.052113034550075,
+      "outcome_prediction_nll": 0.6416231025653619,
+      "updated_online_count": 0
+    },
+    "without_memory_update": {
+      "valid_cells": 20,
+      "expected_cells": 20,
+      "coverage_complete": true,
+      "fault_effect_observed_rate": 1.0,
+      "recovery_success_rate": 0.95,
+      "mean_intervention_cost": 0.55,
+      "mean_mttr_sec": 14.198646074599946,
+      "outcome_prediction_nll": 0.6332703983322037,
+      "updated_online_count": 0
+    },
+    "without_model_uncertainty": {
+      "valid_cells": 20,
+      "expected_cells": 20,
+      "coverage_complete": true,
+      "fault_effect_observed_rate": 1.0,
+      "recovery_success_rate": 1.0,
+      "mean_intervention_cost": 0.55,
+      "mean_mttr_sec": 13.475752945449859,
+      "outcome_prediction_nll": 0.6249176940990453,
+      "updated_online_count": 0
+    },
+    "without_recovery_utility": {
+      "valid_cells": 20,
+      "expected_cells": 20,
+      "coverage_complete": true,
+      "fault_effect_observed_rate": 1.0,
+      "recovery_success_rate": 0.0,
+      "mean_intervention_cost": 0.0,
+      "mean_mttr_sec": 9.451863632950062,
+      "outcome_prediction_nll": 0.6931471805599453,
+      "updated_online_count": 0
+    },
+    "without_risk_constraint": {
+      "valid_cells": 20,
+      "expected_cells": 20,
+      "coverage_complete": true,
+      "fault_effect_observed_rate": 1.0,
+      "recovery_success_rate": 0.9,
+      "mean_intervention_cost": 0.55,
+      "mean_mttr_sec": 14.412809781700071,
+      "outcome_prediction_nll": 0.6416231025653619,
+      "updated_online_count": 0
+    }
+  },
+  "all_conditions_complete": true
+}

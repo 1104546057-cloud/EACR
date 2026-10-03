@@ -1,0 +1,103 @@
+{
+  "protocol_id": "eacr_phase3_v1",
+  "sources": {
+    "main": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase3_gazebo_aggregate.json",
+    "experience": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase3_experience_eacr_evolving_manifest.json",
+    "ablation": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase3_ablation_aggregate.json"
+  },
+  "main_experiment_ready": true,
+  "main_acceptance": {
+    "has_lifecycle_ready_runs": true,
+    "has_all_four_fault_families": true,
+    "has_all_five_baselines": true,
+    "has_all_five_seeds": true,
+    "all_nominal_trials_valid": true,
+    "all_fault_effects_observed": true,
+    "all_recovery_trials_recorded": true,
+    "statistics_ready": true
+  },
+  "experience_checkpoint_ready": true,
+  "experience_feedback_episodes_applied": 51,
+  "ablation_ready": true,
+  "ablation_conditions": {
+    "full_eacr": {
+      "valid_cells": 20,
+      "expected_cells": 20,
+      "coverage_complete": true,
+      "fault_effect_observed_rate": 1.0,
+      "recovery_success_rate": 0.95,
+      "mean_intervention_cost": 0.55,
+      "mean_mttr_sec": 14.599200037449965,
+      "outcome_prediction_nll": 0.6332703983322037,
+      "updated_online_count": 20
+    },
+    "without_belief_update": {
+      "valid_cells": 20,
+      "expected_cells": 20,
+      "coverage_complete": true,
+      "fault_effect_observed_rate": 1.0,
+      "recovery_success_rate": 0.0,
+      "mean_intervention_cost": 0.15,
+      "mean_mttr_sec": 14.23686947240003,
+      "outcome_prediction_nll": 0.1823215567939546,
+      "updated_online_count": 0
+    },
+    "without_information_gain": {
+      "valid_cells": 20,
+      "expected_cells": 20,
+      "coverage_complete": true,
+      "fault_effect_observed_rate": 1.0,
+      "recovery_success_rate": 0.9,
+      "mean_intervention_cost": 0.55,
+      "mean_mttr_sec": 14.052113034550075,
+      "outcome_prediction_nll": 0.6416231025653619,
+      "updated_online_count": 0
+    },
+    "without_memory_update": {
+      "valid_cells": 20,
+      "expected_cells": 20,
+      "coverage_complete": true,
+      "fault_effect_observed_rate": 1.0,
+      "recovery_success_rate": 0.95,
+      "mean_intervention_cost": 0.55,
+      "mean_mttr_sec": 14.198646074599946,
+      "outcome_prediction_nll": 0.6332703983322037,
+      "updated_online_count": 0
+    },
+    "without_model_uncertainty": {
+      "valid_cells": 20,
+      "expected_cells": 20,
+      "coverage_complete": true,
+      "fault_effect_observed_rate": 1.0,
+      "recovery_success_rate": 1.0,
+      "mean_intervention_cost": 0.55,
+      "mean_mttr_sec": 13.475752945449859,
+      "outcome_prediction_nll": 0.6249176940990453,
+      "updated_online_count": 0
+    },
+    "without_recovery_utility": {
+      "valid_cells": 20,
+      "expected_cells": 20,
+      "coverage_complete": true,
+      "fault_effect_observed_rate": 1.0,
+      "recovery_success_rate": 0.0,
+      "mean_intervention_cost": 0.0,
+      "mean_mttr_sec": 9.451863632950062,
+      "outcome_prediction_nll": 0.6931471805599453,
+      "updated_online_count": 0
+    },
+    "without_risk_constraint": {
+      "valid_cells": 20,
+      "expected_cells": 20,
+      "coverage_complete": true,
+      "fault_effect_observed_rate": 1.0,
+      "recovery_success_rate": 0.9,
+      "mean_intervention_cost": 0.55,
+      "mean_mttr_sec": 14.412809781700071,
+      "outcome_prediction_nll": 0.6416231025653619,
+      "updated_online_count": 0
+    }
+  },
+  "planner_effect_definition": "configuration readback is reported separately from navigation behavior",
+  "ready": true
+}

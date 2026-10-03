@@ -1,0 +1,77 @@
+{
+  "protocol_id": "eacr_phase3_v1",
+  "gazebo_observation_adapter": true,
+  "synthetic_dry_run": false,
+  "baseline": "bayesian_fixed_recovery",
+  "seed": 20260926,
+  "goal": {
+    "x": 0.7508496046,
+    "y": 1.8354123831,
+    "yaw": 1.4751400097
+  },
+  "episodes": [
+    {
+      "episode_id": "phase3_gazebo_20260926_002",
+      "fault_family": "planner",
+      "fault_id": "planner_server_deactivated",
+      "reset_success": true,
+      "nominal_reset_success": true,
+      "nominal_navigation_status": 5,
+      "nominal_navigation_duration_sec": 25.114797529000043,
+      "nominal_navigation_reason": "navigation_timeout",
+      "nominal_navigation_valid": false,
+      "inject_success": false,
+      "selected_action": null,
+      "online_evidence": {
+        "amcl_available": true,
+        "amcl_fresh_after_injection": false,
+        "amcl_distance_to_start_m": null,
+        "nav2_parameters": {
+          "footprint_padding": 0.009999999776482582,
+          "planner_plugins": [
+            "GridBased"
+          ],
+          "min_x_velocity_threshold": 0.001
+        }
+      },
+      "belief_before_action": {
+        "localization_drift": 0.25,
+        "costmap_blockage": 0.25,
+        "planner_failure": 0.25,
+        "controller_failure": 0.25
+      },
+      "decision": null,
+      "recovery_success": false,
+      "fault_navigation_status": null,
+      "fault_navigation_duration_sec": 0.0,
+      "fault_navigation_reason": "inject_failed",
+      "fault_effect_observed": false,
+      "planner_probe_observed": null,
+      "planner_probe_error_code": null,
+      "planner_probe_detail": "not_applicable",
+      "recovery_navigation_status": null,
+      "recovery_navigation_duration_sec": 0.0,
+      "recovery_navigation_reason": "recovery_not_executed",
+      "episode_success": false,
+      "experience_after_episode": {},
+      "details": {
+        "nominal_reset": "Episode reset to (-2.0, -0.5, 0.0).",
+        "reset": "Episode reset to (-2.0, -0.5, 0.0).",
+        "inject": "nominal navigation or reset failed",
+        "recovery": "no recovery action",
+        "rollback": "already rolled back by recovery"
+      }
+    }
+  ],
+  "recovery_success_rate": 0.0,
+  "fault_effect_observed_rate": 0.0,
+  "nav2_ready_at_start": true,
+  "infrastructure_failure": false,
+  "protocol_compliant": false,
+  "protocol_gaps": [
+    "paired recovery trial and action execution remain incomplete",
+    "M_0/M_20/M_50 and ablation matrix remain incomplete",
+    "online diagnosis currently uses AMCL evidence only"
+  ],
+  "run_id": 1790681007268153896
+}

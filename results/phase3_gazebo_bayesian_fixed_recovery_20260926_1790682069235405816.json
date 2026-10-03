@@ -1,0 +1,83 @@
+{
+  "protocol_id": "eacr_phase3_v1",
+  "gazebo_observation_adapter": true,
+  "synthetic_dry_run": false,
+  "baseline": "bayesian_fixed_recovery",
+  "seed": 20260926,
+  "goal": {
+    "x": 0.7508496046,
+    "y": 1.8354123831,
+    "yaw": 1.4751400097
+  },
+  "episodes": [
+    {
+      "episode_id": "phase3_gazebo_20260926_002",
+      "fault_family": "planner",
+      "fault_id": "planner_server_deactivated",
+      "reset_success": true,
+      "nominal_reset_success": true,
+      "nominal_navigation_status": 4,
+      "nominal_navigation_duration_sec": 11.456687338999927,
+      "nominal_navigation_reason": "completed",
+      "nominal_navigation_valid": true,
+      "inject_success": true,
+      "selected_action": "reconfigure_planner",
+      "online_evidence": {
+        "amcl_available": true,
+        "amcl_fresh_after_injection": false,
+        "amcl_distance_to_start_m": null,
+        "nav2_parameters": {
+          "footprint_padding": 0.009999999776482582,
+          "planner_plugins": [
+            "EacrInvalidPlanner"
+          ],
+          "min_x_velocity_threshold": 0.001
+        }
+      },
+      "belief_before_action": {
+        "localization_drift": 0.08333333333333333,
+        "costmap_blockage": 0.08333333333333333,
+        "planner_failure": 0.75,
+        "controller_failure": 0.08333333333333333
+      },
+      "decision": {
+        "selected_action": "reconfigure_planner",
+        "abstained": false,
+        "reason": "fixed_recovery_mapping",
+        "ranking": []
+      },
+      "recovery_success": true,
+      "fault_navigation_status": 4,
+      "fault_navigation_duration_sec": 28.935032022000087,
+      "fault_navigation_reason": "completed",
+      "fault_effect_observed": true,
+      "planner_probe_observed": true,
+      "planner_probe_error_code": 201,
+      "planner_probe_detail": "",
+      "recovery_navigation_status": 4,
+      "recovery_navigation_duration_sec": 24.48596649000001,
+      "recovery_navigation_reason": "completed",
+      "episode_success": true,
+      "experience_after_episode": {},
+      "experience_updated_online": false,
+      "details": {
+        "nominal_reset": "Episode reset to (-2.0, -0.5, 0.0).",
+        "reset": "Episode reset to (-2.0, -0.5, 0.0).",
+        "inject": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]",
+        "recovery": "planner_plugins restored ['GridBased']; ",
+        "rollback": "already rolled back by recovery"
+      }
+    }
+  ],
+  "recovery_success_rate": 1.0,
+  "fault_effect_observed_rate": 1.0,
+  "nav2_ready_at_start": true,
+  "infrastructure_failure": false,
+  "protocol_compliant": false,
+  "protocol_gaps": [
+    "paired recovery trial and action execution remain incomplete",
+    "M_0/M_20/M_50 and ablation matrix remain incomplete",
+    "online diagnosis currently uses AMCL evidence only"
+  ],
+  "run_id": 1790682069235405816
+}

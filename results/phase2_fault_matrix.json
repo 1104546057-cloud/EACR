@@ -1,0 +1,122 @@
+{
+  "seed": 20260926,
+  "sequence": {
+    "seed": 20260926,
+    "events": [
+      {
+        "episode_id": "phase2_001",
+        "sequence_index": 1,
+        "fault": {
+          "fault_id": "costmap_static_obstacle",
+          "family": "costmap",
+          "description": "A temporary obstacle is inserted into the Gazebo world and removed after the episode.",
+          "parameters": {
+            "x": 0.0,
+            "y": 0.0,
+            "size_m": 0.45
+          },
+          "rollback_required": true
+        },
+        "seed": 20260926
+      },
+      {
+        "episode_id": "phase2_002",
+        "sequence_index": 2,
+        "fault": {
+          "fault_id": "planner_server_deactivated",
+          "family": "planner",
+          "description": "The Nav2 planner tolerance is changed to an invalid value and later restored.",
+          "parameters": {},
+          "rollback_required": true
+        },
+        "seed": 20260926
+      },
+      {
+        "episode_id": "phase2_003",
+        "sequence_index": 3,
+        "fault": {
+          "fault_id": "controller_server_deactivated",
+          "family": "control",
+          "description": "The Nav2 controller minimum x-velocity threshold is raised and later restored.",
+          "parameters": {},
+          "rollback_required": true
+        },
+        "seed": 20260926
+      },
+      {
+        "episode_id": "phase2_004",
+        "sequence_index": 4,
+        "fault": {
+          "fault_id": "localization_initial_pose_offset",
+          "family": "localization",
+          "description": "AMCL initial pose is offset from the deterministic episode start.",
+          "parameters": {
+            "offset_x": 0.65,
+            "offset_y": -0.45,
+            "offset_yaw": 0.35
+          },
+          "rollback_required": true
+        },
+        "seed": 20260926
+      }
+    ]
+  },
+  "episodes": [
+    {
+      "episode_id": "phase2_001",
+      "fault_family": "costmap",
+      "fault_id": "costmap_static_obstacle",
+      "reset_success": true,
+      "inject_success": true,
+      "rollback_success": true,
+      "effect_observed": false,
+      "effect_reason": "target_cell_transition_free_to_occupied",
+      "events": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase2_001.events.jsonl",
+      "summary": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase2_001.summary.json"
+    },
+    {
+      "episode_id": "phase2_002",
+      "fault_family": "planner",
+      "fault_id": "planner_server_deactivated",
+      "reset_success": true,
+      "inject_success": true,
+      "rollback_success": true,
+      "effect_observed": false,
+      "effect_reason": "requires_navigation_action_outcome",
+      "events": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase2_002.events.jsonl",
+      "summary": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase2_002.summary.json"
+    },
+    {
+      "episode_id": "phase2_003",
+      "fault_family": "control",
+      "fault_id": "controller_server_deactivated",
+      "reset_success": true,
+      "inject_success": true,
+      "rollback_success": true,
+      "effect_observed": false,
+      "effect_reason": "requires_navigation_action_outcome",
+      "events": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase2_003.events.jsonl",
+      "summary": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase2_003.summary.json"
+    },
+    {
+      "episode_id": "phase2_004",
+      "fault_family": "localization",
+      "fault_id": "localization_initial_pose_offset",
+      "reset_success": true,
+      "inject_success": true,
+      "rollback_success": true,
+      "effect_observed": true,
+      "effect_reason": "amcl_displacement_over_threshold",
+      "events": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase2_004.events.jsonl",
+      "summary": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase2_004.summary.json"
+    }
+  ],
+  "acceptance": {
+    "all_resets_succeeded": true,
+    "all_injections_succeeded": true,
+    "all_rollbacks_succeeded": true,
+    "all_effect_checks_completed": true,
+    "all_effect_checks_passed": false,
+    "decision_traces_reconstructable": false
+  }
+}

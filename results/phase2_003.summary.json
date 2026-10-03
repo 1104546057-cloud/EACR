@@ -1,0 +1,12 @@
+{
+  "episode_id": "phase2_003",
+  "seed": 20260926,
+  "event_count": 7,
+  "summary": {
+    "fault_family": "control",
+    "inject_success": true,
+    "rollback_success": true,
+    "effect_observed": false,
+    "effect_reason": "requires_navigation_action_outcome"
+  }
+}

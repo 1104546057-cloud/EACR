@@ -1,0 +1,448 @@
+{
+  "protocol_id": "eacr_evolving_advantage_v1",
+  "synthetic_dry_run": true,
+  "training_feedback_applied": 208,
+  "checkpoints": [
+    "M_0",
+    "M_20",
+    "M_50"
+  ],
+  "results": [
+    {
+      "method": "eacr_static_m0",
+      "episodes": 320,
+      "successes": 80,
+      "recovery_success_rate": 0.25,
+      "ranking_changes": 0,
+      "rows": [
+        {
+          "seed": 20410001,
+          "success": 4,
+          "episodes": 16
+        },
+        {
+          "seed": 20410002,
+          "success": 8,
+          "episodes": 32
+        },
+        {
+          "seed": 20410003,
+          "success": 12,
+          "episodes": 48
+        },
+        {
+          "seed": 20410004,
+          "success": 16,
+          "episodes": 64
+        },
+        {
+          "seed": 20410005,
+          "success": 20,
+          "episodes": 80
+        },
+        {
+          "seed": 20410006,
+          "success": 24,
+          "episodes": 96
+        },
+        {
+          "seed": 20410007,
+          "success": 28,
+          "episodes": 112
+        },
+        {
+          "seed": 20410008,
+          "success": 32,
+          "episodes": 128
+        },
+        {
+          "seed": 20410009,
+          "success": 36,
+          "episodes": 144
+        },
+        {
+          "seed": 20410010,
+          "success": 40,
+          "episodes": 160
+        },
+        {
+          "seed": 20410011,
+          "success": 44,
+          "episodes": 176
+        },
+        {
+          "seed": 20410012,
+          "success": 48,
+          "episodes": 192
+        },
+        {
+          "seed": 20410013,
+          "success": 52,
+          "episodes": 208
+        },
+        {
+          "seed": 20410014,
+          "success": 56,
+          "episodes": 224
+        },
+        {
+          "seed": 20410015,
+          "success": 60,
+          "episodes": 240
+        },
+        {
+          "seed": 20410016,
+          "success": 64,
+          "episodes": 256
+        },
+        {
+          "seed": 20410017,
+          "success": 68,
+          "episodes": 272
+        },
+        {
+          "seed": 20410018,
+          "success": 72,
+          "episodes": 288
+        },
+        {
+          "seed": 20410019,
+          "success": 76,
+          "episodes": 304
+        },
+        {
+          "seed": 20410020,
+          "success": 80,
+          "episodes": 320
+        }
+      ]
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "episodes": 320,
+      "successes": 150,
+      "recovery_success_rate": 0.46875,
+      "ranking_changes": 110,
+      "rows": [
+        {
+          "seed": 20410001,
+          "success": 7,
+          "episodes": 16
+        },
+        {
+          "seed": 20410002,
+          "success": 15,
+          "episodes": 32
+        },
+        {
+          "seed": 20410003,
+          "success": 22,
+          "episodes": 48
+        },
+        {
+          "seed": 20410004,
+          "success": 30,
+          "episodes": 64
+        },
+        {
+          "seed": 20410005,
+          "success": 37,
+          "episodes": 80
+        },
+        {
+          "seed": 20410006,
+          "success": 45,
+          "episodes": 96
+        },
+        {
+          "seed": 20410007,
+          "success": 53,
+          "episodes": 112
+        },
+        {
+          "seed": 20410008,
+          "success": 60,
+          "episodes": 128
+        },
+        {
+          "seed": 20410009,
+          "success": 67,
+          "episodes": 144
+        },
+        {
+          "seed": 20410010,
+          "success": 74,
+          "episodes": 160
+        },
+        {
+          "seed": 20410011,
+          "success": 82,
+          "episodes": 176
+        },
+        {
+          "seed": 20410012,
+          "success": 89,
+          "episodes": 192
+        },
+        {
+          "seed": 20410013,
+          "success": 97,
+          "episodes": 208
+        },
+        {
+          "seed": 20410014,
+          "success": 105,
+          "episodes": 224
+        },
+        {
+          "seed": 20410015,
+          "success": 112,
+          "episodes": 240
+        },
+        {
+          "seed": 20410016,
+          "success": 119,
+          "episodes": 256
+        },
+        {
+          "seed": 20410017,
+          "success": 127,
+          "episodes": 272
+        },
+        {
+          "seed": 20410018,
+          "success": 135,
+          "episodes": 288
+        },
+        {
+          "seed": 20410019,
+          "success": 143,
+          "episodes": 304
+        },
+        {
+          "seed": 20410020,
+          "success": 150,
+          "episodes": 320
+        }
+      ]
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "episodes": 320,
+      "successes": 240,
+      "recovery_success_rate": 0.75,
+      "ranking_changes": 0,
+      "rows": [
+        {
+          "seed": 20410001,
+          "success": 12,
+          "episodes": 16
+        },
+        {
+          "seed": 20410002,
+          "success": 24,
+          "episodes": 32
+        },
+        {
+          "seed": 20410003,
+          "success": 36,
+          "episodes": 48
+        },
+        {
+          "seed": 20410004,
+          "success": 48,
+          "episodes": 64
+        },
+        {
+          "seed": 20410005,
+          "success": 60,
+          "episodes": 80
+        },
+        {
+          "seed": 20410006,
+          "success": 72,
+          "episodes": 96
+        },
+        {
+          "seed": 20410007,
+          "success": 84,
+          "episodes": 112
+        },
+        {
+          "seed": 20410008,
+          "success": 96,
+          "episodes": 128
+        },
+        {
+          "seed": 20410009,
+          "success": 108,
+          "episodes": 144
+        },
+        {
+          "seed": 20410010,
+          "success": 120,
+          "episodes": 160
+        },
+        {
+          "seed": 20410011,
+          "success": 132,
+          "episodes": 176
+        },
+        {
+          "seed": 20410012,
+          "success": 144,
+          "episodes": 192
+        },
+        {
+          "seed": 20410013,
+          "success": 156,
+          "episodes": 208
+        },
+        {
+          "seed": 20410014,
+          "success": 168,
+          "episodes": 224
+        },
+        {
+          "seed": 20410015,
+          "success": 180,
+          "episodes": 240
+        },
+        {
+          "seed": 20410016,
+          "success": 192,
+          "episodes": 256
+        },
+        {
+          "seed": 20410017,
+          "success": 204,
+          "episodes": 272
+        },
+        {
+          "seed": 20410018,
+          "success": 216,
+          "episodes": 288
+        },
+        {
+          "seed": 20410019,
+          "success": 228,
+          "episodes": 304
+        },
+        {
+          "seed": 20410020,
+          "success": 240,
+          "episodes": 320
+        }
+      ]
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "episodes": 320,
+      "successes": 240,
+      "recovery_success_rate": 0.75,
+      "ranking_changes": 0,
+      "rows": [
+        {
+          "seed": 20410001,
+          "success": 12,
+          "episodes": 16
+        },
+        {
+          "seed": 20410002,
+          "success": 24,
+          "episodes": 32
+        },
+        {
+          "seed": 20410003,
+          "success": 36,
+          "episodes": 48
+        },
+        {
+          "seed": 20410004,
+          "success": 48,
+          "episodes": 64
+        },
+        {
+          "seed": 20410005,
+          "success": 60,
+          "episodes": 80
+        },
+        {
+          "seed": 20410006,
+          "success": 72,
+          "episodes": 96
+        },
+        {
+          "seed": 20410007,
+          "success": 84,
+          "episodes": 112
+        },
+        {
+          "seed": 20410008,
+          "success": 96,
+          "episodes": 128
+        },
+        {
+          "seed": 20410009,
+          "success": 108,
+          "episodes": 144
+        },
+        {
+          "seed": 20410010,
+          "success": 120,
+          "episodes": 160
+        },
+        {
+          "seed": 20410011,
+          "success": 132,
+          "episodes": 176
+        },
+        {
+          "seed": 20410012,
+          "success": 144,
+          "episodes": 192
+        },
+        {
+          "seed": 20410013,
+          "success": 156,
+          "episodes": 208
+        },
+        {
+          "seed": 20410014,
+          "success": 168,
+          "episodes": 224
+        },
+        {
+          "seed": 20410015,
+          "success": 180,
+          "episodes": 240
+        },
+        {
+          "seed": 20410016,
+          "success": 192,
+          "episodes": 256
+        },
+        {
+          "seed": 20410017,
+          "success": 204,
+          "episodes": 272
+        },
+        {
+          "seed": 20410018,
+          "success": 216,
+          "episodes": 288
+        },
+        {
+          "seed": 20410019,
+          "success": 228,
+          "episodes": 304
+        },
+        {
+          "seed": 20410020,
+          "success": 240,
+          "episodes": 320
+        }
+      ]
+    }
+  ]
+}

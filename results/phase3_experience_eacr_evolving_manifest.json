@@ -1,0 +1,23 @@
+{
+  "protocol_id": "eacr_phase3_v1",
+  "source_baseline": "eacr_evolving",
+  "source_directory": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase3_checkpoint_training",
+  "data_split": "independent checkpoint training seeds 20300001..20300013; main evaluation seeds excluded",
+  "feedback_episodes_applied": 51,
+  "unique_training_cells": 51,
+  "checkpoints": [
+    "M_0",
+    "M_20",
+    "M_50"
+  ],
+  "minimum_required": {
+    "M_20": 20,
+    "M_50": 50
+  },
+  "ready": true,
+  "paths": {
+    "M_0": "results/phase3_experience_eacr_evolving_M_0.json",
+    "M_20": "results/phase3_experience_eacr_evolving_M_20.json",
+    "M_50": "results/phase3_experience_eacr_evolving_M_50.json"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "checks": [
+    {
+      "family": "localization",
+      "reset_success": true,
+      "reset_output": "\u001b[37;1m2026-09-26 22:34:39.261 \u001b[31;1m[\u001b[37;1mRTPS_TRANSPORT_SHM\u001b[31;1m Error] \u001b[37mFailed init_port fastrtps_port7000: open_and_lock_file failed\u001b[34;1m -> Function \u001b[36mopen_port_internal\u001b[m\nwaiting for service to become available...\nrequester: making request: std_srvs.srv.Trigger_Request()\n\nresponse:\nstd_srvs.srv.Trigger_Response(success=True, message='Episode reset to (-2.0, -0.5, 0.0).')",
+      "inject_service": "/inject_localization_fault",
+      "inject_success": true,
+      "inject_output": "\u001b[37;1m2026-09-26 22:34:44.090 \u001b[31;1m[\u001b[37;1mRTPS_TRANSPORT_SHM\u001b[31;1m Error] \u001b[37mFailed init_port fastrtps_port7000: open_and_lock_file failed\u001b[34;1m -> Function \u001b[36mopen_port_internal\u001b[m\nwaiting for service to become available...\nrequester: making request: std_srvs.srv.Trigger_Request()\n\nresponse:\nstd_srvs.srv.Trigger_Response(success=True, message='{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}')",
+      "rollback_service": "/rollback_localization_fault",
+      "rollback_success": true,
+      "rollback_output": "\u001b[37;1m2026-09-26 22:34:45.141 \u001b[31;1m[\u001b[37;1mRTPS_TRANSPORT_SHM\u001b[31;1m Error] \u001b[37mFailed init_port fastrtps_port7000: open_and_lock_file failed\u001b[34;1m -> Function \u001b[36mopen_port_internal\u001b[m\nwaiting for service to become available...\nrequester: making request: std_srvs.srv.Trigger_Request()\n\nresponse:\nstd_srvs.srv.Trigger_Response(success=True, message='initial pose restored')"
+    },
+    {
+      "family": "costmap",
+      "reset_success": true,
+      "reset_output": "\u001b[37;1m2026-09-26 22:34:46.200 \u001b[31;1m[\u001b[37;1mRTPS_TRANSPORT_SHM\u001b[31;1m Error] \u001b[37mFailed init_port fastrtps_port7000: open_and_lock_file failed\u001b[34;1m -> Function \u001b[36mopen_port_internal\u001b[m\nwaiting for service to become available...\nrequester: making request: std_srvs.srv.Trigger_Request()\n\nresponse:\nstd_srvs.srv.Trigger_Response(success=True, message='Episode reset to (-2.0, -0.5, 0.0).')",
+      "inject_service": "/inject_costmap_fault",
+      "inject_success": true,
+      "inject_output": "\u001b[37;1m2026-09-26 22:34:49.273 \u001b[31;1m[\u001b[37;1mRTPS_TRANSPORT_SHM\u001b[31;1m Error] \u001b[37mFailed init_port fastrtps_port7000: open_and_lock_file failed\u001b[34;1m -> Function \u001b[36mopen_port_internal\u001b[m\nwaiting for service to become available...\nrequester: making request: std_srvs.srv.Trigger_Request()\n\nresponse:\nstd_srvs.srv.Trigger_Response(success=True, message='data: true')",
+      "rollback_service": "/rollback_costmap_fault",
+      "rollback_success": true,
+      "rollback_output": "\u001b[37;1m2026-09-26 22:34:50.200 \u001b[31;1m[\u001b[37;1mRTPS_TRANSPORT_SHM\u001b[31;1m Error] \u001b[37mFailed init_port fastrtps_port7000: open_and_lock_file failed\u001b[34;1m -> Function \u001b[36mopen_port_internal\u001b[m\nwaiting for service to become available...\nrequester: making request: std_srvs.srv.Trigger_Request()\n\nresponse:\nstd_srvs.srv.Trigger_Response(success=True, message='data: true')"
+    },
+    {
+      "family": "planner",
+      "reset_success": true,
+      "reset_output": "\u001b[37;1m2026-09-26 22:34:52.437 \u001b[31;1m[\u001b[37;1mRTPS_TRANSPORT_SHM\u001b[31;1m Error] \u001b[37mFailed init_port fastrtps_port7000: open_and_lock_file failed\u001b[34;1m -> Function \u001b[36mopen_port_internal\u001b[m\nwaiting for service to become available...\nrequester: making request: std_srvs.srv.Trigger_Request()\n\nresponse:\nstd_srvs.srv.Trigger_Response(success=True, message='Episode reset to (-2.0, -0.5, 0.0).')",
+      "inject_service": "/inject_planner_fault",
+      "inject_success": true,
+      "inject_output": "\u001b[37;1m2026-09-26 22:34:56.017 \u001b[31;1m[\u001b[37;1mRTPS_TRANSPORT_SHM\u001b[31;1m Error] \u001b[37mFailed init_port fastrtps_port7000: open_and_lock_file failed\u001b[34;1m -> Function \u001b[36mopen_port_internal\u001b[m\nwaiting for service to become available...\nrequester: making request: std_srvs.srv.Trigger_Request()\n\nresponse:\nstd_srvs.srv.Trigger_Response(success=True, message='GridBased.tolerance: GridBased.tolerance=0.5 -> -1.0; ')",
+      "rollback_service": "/rollback_planner_fault",
+      "rollback_success": true,
+      "rollback_output": "\u001b[37;1m2026-09-26 22:34:56.778 \u001b[31;1m[\u001b[37;1mRTPS_TRANSPORT_SHM\u001b[31;1m Error] \u001b[37mFailed init_port fastrtps_port7000: open_and_lock_file failed\u001b[34;1m -> Function \u001b[36mopen_port_internal\u001b[m\nwaiting for service to become available...\nrequester: making request: std_srvs.srv.Trigger_Request()\n\nresponse:\nstd_srvs.srv.Trigger_Response(success=True, message='GridBased.tolerance: restored 0.5; ')"
+    },
+    {
+      "family": "control",
+      "reset_success": true,
+      "reset_output": "\u001b[37;1m2026-09-26 22:34:57.496 \u001b[31;1m[\u001b[37;1mRTPS_TRANSPORT_SHM\u001b[31;1m Error] \u001b[37mFailed init_port fastrtps_port7000: open_and_lock_file failed\u001b[34;1m -> Function \u001b[36mopen_port_internal\u001b[m\nwaiting for service to become available...\nrequester: making request: std_srvs.srv.Trigger_Request()\n\nresponse:\nstd_srvs.srv.Trigger_Response(success=True, message='Episode reset to (-2.0, -0.5, 0.0).')",
+      "inject_service": "/inject_control_fault",
+      "inject_success": true,
+      "inject_output": "\u001b[37;1m2026-09-26 22:35:01.068 \u001b[31;1m[\u001b[37;1mRTPS_TRANSPORT_SHM\u001b[31;1m Error] \u001b[37mFailed init_port fastrtps_port7000: open_and_lock_file failed\u001b[34;1m -> Function \u001b[36mopen_port_internal\u001b[m\nwaiting for service to become available...\nrequester: making request: std_srvs.srv.Trigger_Request()\n\nresponse:\nstd_srvs.srv.Trigger_Response(success=True, message='min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> 10.0; ')",
+      "rollback_service": "/rollback_control_fault",
+      "rollback_success": true,
+      "rollback_output": "\u001b[37;1m2026-09-26 22:35:02.314 \u001b[31;1m[\u001b[37;1mRTPS_TRANSPORT_SHM\u001b[31;1m Error] \u001b[37mFailed init_port fastrtps_port7000: open_and_lock_file failed\u001b[34;1m -> Function \u001b[36mopen_port_internal\u001b[m\nwaiting for service to become available...\nrequester: making request: std_srvs.srv.Trigger_Request()\n\nresponse:\nstd_srvs.srv.Trigger_Response(success=True, message='min_x_velocity_threshold: restored 0.001; ')"
+    }
+  ],
+  "acceptance": {
+    "all_resets_succeeded": true,
+    "all_injections_succeeded": true,
+    "all_rollbacks_succeeded": true
+  }
+}

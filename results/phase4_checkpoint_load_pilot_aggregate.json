@@ -1,0 +1,246 @@
+{
+  "protocol_id": "eacr_evolving_advantage_v1",
+  "source_files": [
+    "results/phase4_checkpoint_load_pilot/phase3_gazebo_eacr_evolving_544047076_1791024824629644878.json",
+    "results/phase4_checkpoint_load_pilot/phase3_gazebo_eacr_static_544047076_1791024539778681596.json"
+  ],
+  "valid_cell_count": 2,
+  "excluded_counts": {
+    "unrecognised_baseline": 1
+  },
+  "methods": {
+    "eacr_evolving_m50": {
+      "cell_count": 1,
+      "episode_count": 4,
+      "metrics": {
+        "intervention_recovery_rate": 1.0,
+        "sustained_recovery_rate": 0.75,
+        "mttr_sec": 0.15031316400002956,
+        "intervention_cost_mean": 0.55,
+        "useless_probe_rate": 0.0
+      },
+      "cells": [
+        {
+          "path": "results/phase4_checkpoint_load_pilot/phase3_gazebo_eacr_evolving_544047076_1791024824629644878.json",
+          "method": "eacr_evolving_m50",
+          "seed": 544047076,
+          "fault_family": "planner",
+          "metrics": {
+            "intervention_recovery_rate": 1.0,
+            "sustained_recovery_rate": 0.75,
+            "mttr_sec": 0.15031316400002956,
+            "intervention_cost_mean": 0.55,
+            "useless_probe_rate": 0.0,
+            "episode_count": 4.0
+          },
+          "fault_scale": 1.5,
+          "prior_mode": "weak_shared_m0",
+          "action_scope": true
+        }
+      ]
+    },
+    "eacr_static_m0": {
+      "cell_count": 1,
+      "episode_count": 4,
+      "metrics": {
+        "intervention_recovery_rate": 0.0,
+        "sustained_recovery_rate": 0.0,
+        "mttr_sec": null,
+        "intervention_cost_mean": 0.18,
+        "useless_probe_rate": 1.0
+      },
+      "cells": [
+        {
+          "path": "results/phase4_checkpoint_load_pilot/phase3_gazebo_eacr_static_544047076_1791024539778681596.json",
+          "method": "eacr_static_m0",
+          "seed": 544047076,
+          "fault_family": "planner",
+          "metrics": {
+            "intervention_recovery_rate": 0.0,
+            "sustained_recovery_rate": 0.0,
+            "mttr_sec": null,
+            "intervention_cost_mean": 0.18,
+            "useless_probe_rate": 1.0,
+            "episode_count": 4.0
+          },
+          "fault_scale": 1.5,
+          "prior_mode": "weak_shared_m0",
+          "action_scope": true
+        }
+      ]
+    }
+  },
+  "paired_comparisons": [
+    {
+      "comparison": "eacr_evolving_online_m0 minus eacr_static_m0",
+      "metric": "intervention_recovery_rate",
+      "paired_cell_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "direction_better_for_evolving": false
+    },
+    {
+      "comparison": "eacr_evolving_online_m0 minus eacr_static_m0",
+      "metric": "sustained_recovery_rate",
+      "paired_cell_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "direction_better_for_evolving": false
+    },
+    {
+      "comparison": "eacr_evolving_online_m0 minus eacr_static_m0",
+      "metric": "mttr_sec",
+      "paired_cell_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "direction_better_for_evolving": false
+    },
+    {
+      "comparison": "eacr_evolving_online_m0 minus eacr_static_m0",
+      "metric": "intervention_cost_mean",
+      "paired_cell_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "direction_better_for_evolving": false
+    },
+    {
+      "comparison": "eacr_evolving_online_m0 minus eacr_static_m0",
+      "metric": "useless_probe_rate",
+      "paired_cell_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "direction_better_for_evolving": false
+    },
+    {
+      "comparison": "eacr_evolving_m20 minus eacr_static_m0",
+      "metric": "intervention_recovery_rate",
+      "paired_cell_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "direction_better_for_evolving": false
+    },
+    {
+      "comparison": "eacr_evolving_m20 minus eacr_static_m0",
+      "metric": "sustained_recovery_rate",
+      "paired_cell_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "direction_better_for_evolving": false
+    },
+    {
+      "comparison": "eacr_evolving_m20 minus eacr_static_m0",
+      "metric": "mttr_sec",
+      "paired_cell_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "direction_better_for_evolving": false
+    },
+    {
+      "comparison": "eacr_evolving_m20 minus eacr_static_m0",
+      "metric": "intervention_cost_mean",
+      "paired_cell_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "direction_better_for_evolving": false
+    },
+    {
+      "comparison": "eacr_evolving_m20 minus eacr_static_m0",
+      "metric": "useless_probe_rate",
+      "paired_cell_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "direction_better_for_evolving": false
+    },
+    {
+      "comparison": "eacr_evolving_m50 minus eacr_static_m0",
+      "metric": "intervention_recovery_rate",
+      "paired_cell_count": 1,
+      "mean_delta": 1.0,
+      "bootstrap_95ci": [
+        1.0,
+        1.0
+      ],
+      "direction_better_for_evolving": true
+    },
+    {
+      "comparison": "eacr_evolving_m50 minus eacr_static_m0",
+      "metric": "sustained_recovery_rate",
+      "paired_cell_count": 1,
+      "mean_delta": 0.75,
+      "bootstrap_95ci": [
+        0.75,
+        0.75
+      ],
+      "direction_better_for_evolving": true
+    },
+    {
+      "comparison": "eacr_evolving_m50 minus eacr_static_m0",
+      "metric": "mttr_sec",
+      "paired_cell_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "direction_better_for_evolving": false
+    },
+    {
+      "comparison": "eacr_evolving_m50 minus eacr_static_m0",
+      "metric": "intervention_cost_mean",
+      "paired_cell_count": 1,
+      "mean_delta": 0.37000000000000005,
+      "bootstrap_95ci": [
+        0.37000000000000005,
+        0.37000000000000005
+      ],
+      "direction_better_for_evolving": false
+    },
+    {
+      "comparison": "eacr_evolving_m50 minus eacr_static_m0",
+      "metric": "useless_probe_rate",
+      "paired_cell_count": 1,
+      "mean_delta": -1.0,
+      "bootstrap_95ci": [
+        -1.0,
+        -1.0
+      ],
+      "direction_better_for_evolving": true
+    }
+  ],
+  "acceptance": {
+    "paired_static_cells_available": true,
+    "has_repeated_episodes": true,
+    "all_records_scope_consistent": true,
+    "all_records_prior_consistent": true
+  }
+}

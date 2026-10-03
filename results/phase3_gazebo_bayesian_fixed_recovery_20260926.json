@@ -1,0 +1,39 @@
+{
+  "protocol_id": "eacr_phase3_v1",
+  "gazebo_observation_adapter": true,
+  "synthetic_dry_run": false,
+  "baseline": "bayesian_fixed_recovery",
+  "seed": 20260926,
+  "goal": {
+    "x": 0.7508496046,
+    "y": 1.8354123831,
+    "yaw": 1.4751400097
+  },
+  "episodes": [
+    {
+      "episode_id": "phase3_gazebo_20260926_002",
+      "fault_family": "planner",
+      "fault_id": "planner_server_deactivated",
+      "reset_success": true,
+      "inject_success": true,
+      "selected_action": "reconfigure_planner",
+      "recovery_success": true,
+      "fault_navigation_status": 4,
+      "fault_navigation_duration_sec": 14.158848455000225,
+      "fault_effect_observed": false,
+      "recovery_navigation_status": 4,
+      "recovery_navigation_duration_sec": 0.350465634000102,
+      "episode_success": true,
+      "details": {
+        "reset": "Episode reset to (-2.0, -0.5, 0.0).",
+        "inject": "GridBased.tolerance: GridBased.tolerance=0.5 -> GridBased.tolerance=-1.0",
+        "recovery": "GridBased.tolerance: restored GridBased.tolerance=0.5",
+        "rollback": "already rolled back by recovery"
+      }
+    }
+  ],
+  "recovery_success_rate": 1.0,
+  "fault_effect_observed_rate": 0.0,
+  "nav2_ready_at_start": true,
+  "infrastructure_failure": false
+}

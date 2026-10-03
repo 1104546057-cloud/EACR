@@ -1,0 +1,919 @@
+{
+  "seed": 20260926,
+  "context": "tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy",
+  "faults": [
+    "localization_drift",
+    "odom_tf_inconsistency",
+    "amcl_degeneracy"
+  ],
+  "prior_belief": {
+    "localization_drift": 0.3333333333333333,
+    "odom_tf_inconsistency": 0.3333333333333333,
+    "amcl_degeneracy": 0.3333333333333333
+  },
+  "evidence_likelihood": {
+    "localization_drift": 0.88,
+    "odom_tf_inconsistency": 0.42,
+    "amcl_degeneracy": 0.67
+  },
+  "posterior_belief": {
+    "localization_drift": 0.4467005076142132,
+    "odom_tf_inconsistency": 0.2131979695431472,
+    "amcl_degeneracy": 0.3401015228426396
+  },
+  "snapshots": {
+    "M0": {
+      "selected_action": "inspect_tf",
+      "abstained": false,
+      "reason": "selected_highest_expected_utility",
+      "ranking": [
+        {
+          "action_id": "inspect_tf",
+          "information_gain": 2.220446049250313e-16,
+          "recovery_gain": 0.5,
+          "cost": 0.15,
+          "uncertainty": 0.20238095238095238,
+          "utility": 0.3290476190476193,
+          "safe": true,
+          "rejection_reason": null
+        },
+        {
+          "action_id": "slow_observe",
+          "information_gain": 2.220446049250313e-16,
+          "recovery_gain": 0.5,
+          "cost": 0.35,
+          "uncertainty": 0.20238095238095238,
+          "utility": 0.20904761904761932,
+          "safe": true,
+          "rejection_reason": null
+        },
+        {
+          "action_id": "relocalize_amcl",
+          "information_gain": 2.220446049250313e-16,
+          "recovery_gain": 0.5,
+          "cost": 0.65,
+          "uncertainty": 0.20238095238095238,
+          "utility": 0.029047619047619253,
+          "safe": true,
+          "rejection_reason": null
+        },
+        {
+          "action_id": "unsafe_debug_motion",
+          "information_gain": 0.0,
+          "recovery_gain": 0.0,
+          "cost": 0.2,
+          "uncertainty": 0.0,
+          "utility": null,
+          "safe": false,
+          "rejection_reason": "hard_safety_block"
+        }
+      ]
+    },
+    "M20": {
+      "selected_action": "relocalize_amcl",
+      "abstained": false,
+      "reason": "selected_highest_expected_utility",
+      "ranking": [
+        {
+          "action_id": "relocalize_amcl",
+          "information_gain": 0.0,
+          "recovery_gain": 0.8636363636363636,
+          "cost": 0.65,
+          "uncertainty": 0.021666505628196116,
+          "utility": 0.46496976138508517,
+          "safe": true,
+          "rejection_reason": null
+        },
+        {
+          "action_id": "inspect_tf",
+          "information_gain": 2.220446049250313e-16,
+          "recovery_gain": 0.5,
+          "cost": 0.15,
+          "uncertainty": 0.20238095238095238,
+          "utility": 0.3290476190476193,
+          "safe": true,
+          "rejection_reason": null
+        },
+        {
+          "action_id": "slow_observe",
+          "information_gain": 2.220446049250313e-16,
+          "recovery_gain": 0.5,
+          "cost": 0.35,
+          "uncertainty": 0.20238095238095238,
+          "utility": 0.20904761904761932,
+          "safe": true,
+          "rejection_reason": null
+        },
+        {
+          "action_id": "unsafe_debug_motion",
+          "information_gain": 0.0,
+          "recovery_gain": 0.0,
+          "cost": 0.2,
+          "uncertainty": 0.0,
+          "utility": null,
+          "safe": false,
+          "rejection_reason": "hard_safety_block"
+        }
+      ]
+    },
+    "M50": {
+      "selected_action": "relocalize_amcl",
+      "abstained": false,
+      "reason": "selected_highest_expected_utility",
+      "ranking": [
+        {
+          "action_id": "relocalize_amcl",
+          "information_gain": 0.0,
+          "recovery_gain": 0.9038461538461539,
+          "cost": 0.65,
+          "uncertainty": 0.0066634989581643225,
+          "utility": 0.5111807542628881,
+          "safe": true,
+          "rejection_reason": null
+        },
+        {
+          "action_id": "inspect_tf",
+          "information_gain": 2.220446049250313e-16,
+          "recovery_gain": 0.5,
+          "cost": 0.15,
+          "uncertainty": 0.20238095238095238,
+          "utility": 0.3290476190476193,
+          "safe": true,
+          "rejection_reason": null
+        },
+        {
+          "action_id": "slow_observe",
+          "information_gain": 2.220446049250313e-16,
+          "recovery_gain": 0.5,
+          "cost": 0.35,
+          "uncertainty": 0.20238095238095238,
+          "utility": 0.20904761904761932,
+          "safe": true,
+          "rejection_reason": null
+        },
+        {
+          "action_id": "unsafe_debug_motion",
+          "information_gain": 0.0,
+          "recovery_gain": 0.0,
+          "cost": 0.2,
+          "uncertainty": 0.0,
+          "utility": null,
+          "safe": false,
+          "rejection_reason": "hard_safety_block"
+        }
+      ]
+    }
+  },
+  "selected_actions": {
+    "M0": "inspect_tf",
+    "M20": "relocalize_amcl",
+    "M50": "relocalize_amcl"
+  },
+  "experience_changes_ranking": true,
+  "unsafe_action_filtered": true,
+  "no_safe_action_abstained": true,
+  "acceptance": {
+    "fixed_seed_reproducible": true,
+    "bayesian_belief_updated": true,
+    "experience_changes_ranking": true,
+    "hard_safety_filter_active": true,
+    "abstain_when_no_safe_action": true
+  },
+  "experience_snapshots": {
+    "M0": {
+      "amcl_degeneracy|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|inspect_tf": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "amcl_degeneracy|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|relocalize_amcl": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "amcl_degeneracy|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|slow_observe": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "localization_drift|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|inspect_tf": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "localization_drift|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|relocalize_amcl": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "localization_drift|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|slow_observe": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "odom_tf_inconsistency|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|inspect_tf": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "odom_tf_inconsistency|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|relocalize_amcl": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "odom_tf_inconsistency|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|slow_observe": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      }
+    },
+    "M20": {
+      "amcl_degeneracy|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|inspect_tf": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "amcl_degeneracy|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|relocalize_amcl": {
+        "recovery": {
+          "alpha": 19.0,
+          "beta": 3.0,
+          "mean": 0.8636363636363636,
+          "variance": 0.005120373697448796
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 19.0,
+            "recovery_failure": 3.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.038461538461538464,
+            "diagnostic_conflict": 0.038461538461538464,
+            "recovery_success": 0.7307692307692307,
+            "recovery_failure": 0.11538461538461539,
+            "unsafe_or_blocked": 0.038461538461538464,
+            "inconclusive": 0.038461538461538464
+          },
+          "variance": 0.016546131930747318
+        }
+      },
+      "amcl_degeneracy|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|slow_observe": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "localization_drift|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|inspect_tf": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "localization_drift|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|relocalize_amcl": {
+        "recovery": {
+          "alpha": 19.0,
+          "beta": 3.0,
+          "mean": 0.8636363636363636,
+          "variance": 0.005120373697448796
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 19.0,
+            "recovery_failure": 3.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.038461538461538464,
+            "diagnostic_conflict": 0.038461538461538464,
+            "recovery_success": 0.7307692307692307,
+            "recovery_failure": 0.11538461538461539,
+            "unsafe_or_blocked": 0.038461538461538464,
+            "inconclusive": 0.038461538461538464
+          },
+          "variance": 0.016546131930747318
+        }
+      },
+      "localization_drift|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|slow_observe": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "odom_tf_inconsistency|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|inspect_tf": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "odom_tf_inconsistency|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|relocalize_amcl": {
+        "recovery": {
+          "alpha": 19.0,
+          "beta": 3.0,
+          "mean": 0.8636363636363636,
+          "variance": 0.005120373697448796
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 19.0,
+            "recovery_failure": 3.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.038461538461538464,
+            "diagnostic_conflict": 0.038461538461538464,
+            "recovery_success": 0.7307692307692307,
+            "recovery_failure": 0.11538461538461539,
+            "unsafe_or_blocked": 0.038461538461538464,
+            "inconclusive": 0.038461538461538464
+          },
+          "variance": 0.016546131930747318
+        }
+      },
+      "odom_tf_inconsistency|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|slow_observe": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      }
+    },
+    "M50": {
+      "amcl_degeneracy|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|inspect_tf": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "amcl_degeneracy|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|relocalize_amcl": {
+        "recovery": {
+          "alpha": 47.0,
+          "beta": 5.0,
+          "mean": 0.9038461538461539,
+          "variance": 0.0016397789438428044
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 47.0,
+            "recovery_failure": 5.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.017857142857142856,
+            "diagnostic_conflict": 0.017857142857142856,
+            "recovery_success": 0.8392857142857143,
+            "recovery_failure": 0.08928571428571429,
+            "unsafe_or_blocked": 0.017857142857142856,
+            "inconclusive": 0.017857142857142856
+          },
+          "variance": 0.0050237200143215185
+        }
+      },
+      "amcl_degeneracy|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|slow_observe": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "localization_drift|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|inspect_tf": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "localization_drift|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|relocalize_amcl": {
+        "recovery": {
+          "alpha": 47.0,
+          "beta": 5.0,
+          "mean": 0.9038461538461539,
+          "variance": 0.0016397789438428044
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 47.0,
+            "recovery_failure": 5.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.017857142857142856,
+            "diagnostic_conflict": 0.017857142857142856,
+            "recovery_success": 0.8392857142857143,
+            "recovery_failure": 0.08928571428571429,
+            "unsafe_or_blocked": 0.017857142857142856,
+            "inconclusive": 0.017857142857142856
+          },
+          "variance": 0.0050237200143215185
+        }
+      },
+      "localization_drift|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|slow_observe": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "odom_tf_inconsistency|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|inspect_tf": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      },
+      "odom_tf_inconsistency|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|relocalize_amcl": {
+        "recovery": {
+          "alpha": 47.0,
+          "beta": 5.0,
+          "mean": 0.9038461538461539,
+          "variance": 0.0016397789438428044
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 47.0,
+            "recovery_failure": 5.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.017857142857142856,
+            "diagnostic_conflict": 0.017857142857142856,
+            "recovery_success": 0.8392857142857143,
+            "recovery_failure": 0.08928571428571429,
+            "unsafe_or_blocked": 0.017857142857142856,
+            "inconclusive": 0.017857142857142856
+          },
+          "variance": 0.0050237200143215185
+        }
+      },
+      "odom_tf_inconsistency|tb3_sandbox|goal_nav|navigating|nominal|nav2_jazzy|slow_observe": {
+        "recovery": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "mean": 0.5,
+          "variance": 0.08333333333333333
+        },
+        "outcomes": {
+          "counts": {
+            "diagnostic_support": 1.0,
+            "diagnostic_conflict": 1.0,
+            "recovery_success": 1.0,
+            "recovery_failure": 1.0,
+            "unsafe_or_blocked": 1.0,
+            "inconclusive": 1.0
+          },
+          "probabilities": {
+            "diagnostic_support": 0.16666666666666666,
+            "diagnostic_conflict": 0.16666666666666666,
+            "recovery_success": 0.16666666666666666,
+            "recovery_failure": 0.16666666666666666,
+            "unsafe_or_blocked": 0.16666666666666666,
+            "inconclusive": 0.16666666666666666
+          },
+          "variance": 0.11904761904761907
+        }
+      }
+    }
+  }
+}

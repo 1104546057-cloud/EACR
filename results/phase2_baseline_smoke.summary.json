@@ -1,0 +1,13 @@
+{
+  "episode_id": "phase2_baseline_smoke",
+  "seed": 20260926,
+  "event_count": 2,
+  "summary": {
+    "baseline_names": [
+      "rule_based",
+      "bayesian_fixed_recovery",
+      "eacr_static",
+      "eacr_evolving"
+    ]
+  }
+}

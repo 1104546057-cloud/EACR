@@ -1,0 +1,12 @@
+{
+  "episode_id": "phase2_001",
+  "seed": 20260926,
+  "event_count": 7,
+  "summary": {
+    "fault_family": "costmap",
+    "inject_success": true,
+    "rollback_success": true,
+    "effect_observed": false,
+    "effect_reason": "target_cell_transition_free_to_occupied"
+  }
+}

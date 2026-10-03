@@ -1,0 +1,165 @@
+{
+  "protocol_id": "eacr_phase3_v1",
+  "baselines": [
+    "eacr_evolving"
+  ],
+  "seeds": [
+    20310001,
+    20310002,
+    20310003,
+    20310004,
+    20310005,
+    20310006,
+    20310007,
+    20310008,
+    20310009,
+    20310010,
+    20310011,
+    20310012,
+    20310013
+  ],
+  "fault_families": [
+    "planner"
+  ],
+  "experience_checkpoint": "M_0",
+  "experience_prior_mode": "weak_shared_m0",
+  "fault_repetitions": 4,
+  "experience_environment_bin": "tb3_sandbox_gazebo",
+  "use_belief_action_scope": true,
+  "fault_scale": 1.0,
+  "online_experience_update": true,
+  "runs": [
+    {
+      "baseline": "eacr_evolving",
+      "seed": 20310001,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1790950998.643970301] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310001_1790950998626337146.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 20310002,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1790951299.253351942] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310002_1790951299234890723.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 20310003,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1790951507.939656936] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310003_1790951507921620717.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 20310004,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1790951711.784234168] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310004_1790951711766481656.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 20310005,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1790952016.397459437] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310005_1790952016379456123.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 20310006,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1790952248.240755442] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310006_1790952248222650503.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 20310007,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1790952527.496970364] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310007_1790952527479378631.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 20310008,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1790952788.825509852] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310008_1790952788807412462.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 20310009,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1790952968.394806826] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310009_1790952968376482685.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 20310010,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1790953134.337424105] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310010_1790953134319524586.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 20310011,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1790953554.430288460] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310011_1790953554411758285.json\n",
+      "attempts": 2,
+      "protocol_ok": false
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 20310012,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1790953747.750778912] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310012_1790953747733158050.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 20310013,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1790953951.000072258] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_evolving_training_planner/phase3_gazebo_eacr_evolving_20310013_1790953950982433632.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    }
+  ],
+  "completed_runs": 13,
+  "total_runs": 13
+}

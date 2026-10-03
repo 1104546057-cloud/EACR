@@ -1,0 +1,120 @@
+{
+  "episode_id": "phase2_manifest",
+  "seed": 20260926,
+  "event_count": 3,
+  "summary": {
+    "fault_family_count": 4,
+    "action_count": 9,
+    "baseline_decisions": {
+      "rule_based": {
+        "selected_action": "inspect_tf",
+        "abstained": false,
+        "reason": "fixed_rule_priority",
+        "ranking": []
+      },
+      "bayesian_fixed_recovery": {
+        "selected_action": "relocalize_amcl",
+        "abstained": false,
+        "reason": "fixed_recovery_mapping",
+        "ranking": []
+      },
+      "eacr_static": {
+        "selected_action": "inspect_tf",
+        "abstained": false,
+        "reason": "selected_highest_expected_utility",
+        "ranking": [
+          {
+            "action_id": "inspect_tf",
+            "information_gain": 0.0,
+            "recovery_gain": 0.5,
+            "cost": 0.15,
+            "uncertainty": 0.20238095238095238,
+            "utility": 0.3290476190476191,
+            "safe": true,
+            "rejection_reason": null
+          },
+          {
+            "action_id": "inspect_costmap",
+            "information_gain": 0.0,
+            "recovery_gain": 0.5,
+            "cost": 0.18,
+            "uncertainty": 0.20238095238095238,
+            "utility": 0.3110476190476191,
+            "safe": true,
+            "rejection_reason": null
+          },
+          {
+            "action_id": "inspect_controller",
+            "information_gain": 0.0,
+            "recovery_gain": 0.5,
+            "cost": 0.2,
+            "uncertainty": 0.20238095238095238,
+            "utility": 0.29904761904761906,
+            "safe": true,
+            "rejection_reason": null
+          },
+          {
+            "action_id": "inspect_planner",
+            "information_gain": 0.0,
+            "recovery_gain": 0.5,
+            "cost": 0.2,
+            "uncertainty": 0.20238095238095238,
+            "utility": 0.29904761904761906,
+            "safe": true,
+            "rejection_reason": null
+          },
+          {
+            "action_id": "slow_observe",
+            "information_gain": 0.0,
+            "recovery_gain": 0.5,
+            "cost": 0.35,
+            "uncertainty": 0.20238095238095238,
+            "utility": 0.2090476190476191,
+            "safe": true,
+            "rejection_reason": null
+          },
+          {
+            "action_id": "clear_costmaps",
+            "information_gain": 0.0,
+            "recovery_gain": 0.5,
+            "cost": 0.45,
+            "uncertainty": 0.20238095238095238,
+            "utility": 0.14904761904761904,
+            "safe": true,
+            "rejection_reason": null
+          },
+          {
+            "action_id": "reconfigure_controller",
+            "information_gain": 0.0,
+            "recovery_gain": 0.5,
+            "cost": 0.55,
+            "uncertainty": 0.20238095238095238,
+            "utility": 0.08904761904761903,
+            "safe": true,
+            "rejection_reason": null
+          },
+          {
+            "action_id": "reconfigure_planner",
+            "information_gain": 0.0,
+            "recovery_gain": 0.5,
+            "cost": 0.55,
+            "uncertainty": 0.20238095238095238,
+            "utility": 0.08904761904761903,
+            "safe": true,
+            "rejection_reason": null
+          },
+          {
+            "action_id": "relocalize_amcl",
+            "information_gain": 0.0,
+            "recovery_gain": 0.5,
+            "cost": 0.65,
+            "uncertainty": 0.20238095238095238,
+            "utility": 0.02904761904761903,
+            "safe": true,
+            "rejection_reason": null
+          }
+        ]
+      }
+    }
+  }
+}
