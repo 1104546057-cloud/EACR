@@ -131,3 +131,7 @@ RViz is launched with the EACR configuration at
 `src/eacr_sim/rviz/eacr_minimal.rviz`. On the current dual-GPU host,
 `rviz_gpu:=1` selects the AMD renderer and avoids the previous RViz crash
 path. Set `use_rviz:=False` when only the Gazebo/Nav2 simulation is needed.
+
+## 当前工作交接
+
+经验演化评估的完整状态、冻结 seed、训练/测试协议、恢复命令、验收条件和禁止事项见 [EACR_EVOLVING_HANDOFF_CURSOR.md](EACR_EVOLVING_HANDOFF_CURSOR.md)。继续实验前请先阅读该文档，并以 `results/phase4_training_full_status.json` 和实际 JSON 结果为准。
