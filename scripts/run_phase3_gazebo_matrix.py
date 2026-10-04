@@ -146,18 +146,16 @@ def main() -> None:
                             returncode = process.returncode
                         except subprocess.TimeoutExpired as exc:
                             returncode = 124
-                            stdout = exc.stdout or ''
-                            stderr = exc.stderr or ''
+                            # TimeoutExpired may expose bytes even with
+                            # text=True.  The subsequent communicate() gives
+                            # the full captured output, so do not concatenate
+                            # the partial exception payload with its tail.
                             try:
                                 os.killpg(process.pid, signal.SIGTERM)
-                                stdout_tail, stderr_tail = process.communicate(timeout=10)
-                                stdout += stdout_tail or ''
-                                stderr += stderr_tail or ''
+                                stdout, stderr = process.communicate(timeout=10)
                             except subprocess.TimeoutExpired:
                                 os.killpg(process.pid, signal.SIGKILL)
-                                stdout_tail, stderr_tail = process.communicate()
-                                stdout += stdout_tail or ''
-                                stderr += stderr_tail or ''
+                                stdout, stderr = process.communicate()
                     except BaseException:
                         # Ctrl-C and unexpected Python errors must not leave a
                         # detached ROS runner operating on the same Gazebo.
@@ -172,7 +170,15 @@ def main() -> None:
                     after = set(args.result_dir.glob(f'phase3_gazebo_{baseline}_{seed}_*.json')) - before
                     for path in after:
                         try:
-                            if json.loads(path.read_text()).get('protocol_compliant') is True:
+                            item = json.loads(path.read_text())
+                            episodes = item.get('episodes', [])
+                            if (
+                                record_matches_resume(item, args)
+                                and item.get('baseline') == baseline
+                                and item.get('seed') == seed
+                                and episodes[0].get('fault_family') == family
+                                and all(row.get('fault_family') == family for row in episodes)
+                            ):
                                 protocol_ok = True
                                 break
                         except (OSError, json.JSONDecodeError):
