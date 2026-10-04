@@ -131,6 +131,7 @@ python3 scripts/run_phase3_gazebo_matrix.py \
   --fault-repetitions 4 --goal-timeout-sec 60 \
   --experience-checkpoint M_0 \
   --experience-prior-mode weak_shared_m0 \
+  --no-online-experience-update \
   --use-belief-action-scope --fault-scale 1.5 \
   --result-dir results/phase4_final_static_m0 \
   --timeout-sec 600 --retries 1 --resume
