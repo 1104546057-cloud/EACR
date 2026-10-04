@@ -1,0 +1,53 @@
+skip existing valid eacr_evolving seed=20310001 family=localization
+skip existing valid eacr_evolving seed=20310001 family=costmap
+skip existing valid eacr_evolving seed=20310001 family=planner
+skip existing valid eacr_evolving seed=20310001 family=control
+skip existing valid eacr_evolving seed=20310002 family=localization
+skip existing valid eacr_evolving seed=20310002 family=costmap
+skip existing valid eacr_evolving seed=20310002 family=planner
+skip existing valid eacr_evolving seed=20310002 family=control
+skip existing valid eacr_evolving seed=20310003 family=localization
+skip existing valid eacr_evolving seed=20310003 family=costmap
+skip existing valid eacr_evolving seed=20310003 family=planner
+skip existing valid eacr_evolving seed=20310003 family=control
+skip existing valid eacr_evolving seed=20310004 family=localization
+skip existing valid eacr_evolving seed=20310004 family=costmap
+skip existing valid eacr_evolving seed=20310004 family=planner
+skip existing valid eacr_evolving seed=20310004 family=control
+skip existing valid eacr_evolving seed=20310005 family=localization
+skip existing valid eacr_evolving seed=20310005 family=costmap
+skip existing valid eacr_evolving seed=20310005 family=planner
+skip existing valid eacr_evolving seed=20310005 family=control
+skip existing valid eacr_evolving seed=20310006 family=localization
+skip existing valid eacr_evolving seed=20310006 family=costmap
+skip existing valid eacr_evolving seed=20310006 family=planner
+skip existing valid eacr_evolving seed=20310006 family=control
+skip existing valid eacr_evolving seed=20310007 family=localization
+skip existing valid eacr_evolving seed=20310007 family=costmap
+skip existing valid eacr_evolving seed=20310007 family=planner
+skip existing valid eacr_evolving seed=20310007 family=control
+skip existing valid eacr_evolving seed=20310008 family=localization
+start eacr_evolving seed=20310008 family=costmap
+skip existing valid eacr_evolving seed=20310008 family=planner
+skip existing valid eacr_evolving seed=20310008 family=control
+start eacr_evolving seed=20310009 family=localization
+skip existing valid eacr_evolving seed=20310009 family=costmap
+skip existing valid eacr_evolving seed=20310009 family=planner
+skip existing valid eacr_evolving seed=20310009 family=control
+skip existing valid eacr_evolving seed=20310010 family=localization
+skip existing valid eacr_evolving seed=20310010 family=costmap
+skip existing valid eacr_evolving seed=20310010 family=planner
+start eacr_evolving seed=20310010 family=control
+skip existing valid eacr_evolving seed=20310011 family=localization
+skip existing valid eacr_evolving seed=20310011 family=costmap
+skip existing valid eacr_evolving seed=20310011 family=planner
+skip existing valid eacr_evolving seed=20310011 family=control
+skip existing valid eacr_evolving seed=20310012 family=localization
+skip existing valid eacr_evolving seed=20310012 family=costmap
+skip existing valid eacr_evolving seed=20310012 family=planner
+skip existing valid eacr_evolving seed=20310012 family=control
+skip existing valid eacr_evolving seed=20310013 family=localization
+skip existing valid eacr_evolving seed=20310013 family=costmap
+skip existing valid eacr_evolving seed=20310013 family=planner
+skip existing valid eacr_evolving seed=20310013 family=control
+results/phase4_evolving_training_full/phase3_gazebo_dispatch.json

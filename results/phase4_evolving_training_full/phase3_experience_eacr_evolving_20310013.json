@@ -136,25 +136,25 @@
   },
   "controller_failure|tb3_sandbox|goal_nav|navigating|tb3_sandbox_gazebo|nav2_jazzy|reconfigure_controller": {
     "recovery": {
-      "alpha": 1.2,
-      "beta": 1.75,
-      "mean": 0.4067796610169491,
-      "variance": 0.061091131240477235
+      "alpha": 1.95,
+      "beta": 1.0,
+      "mean": 0.6610169491525423,
+      "variance": 0.05672747900901457
     },
     "outcomes": {
       "counts": {
         "diagnostic_support": 1.0,
         "diagnostic_conflict": 1.0,
-        "recovery_success": 1.0,
-        "recovery_failure": 1.75,
+        "recovery_success": 1.75,
+        "recovery_failure": 1.0,
         "unsafe_or_blocked": 1.0,
         "inconclusive": 1.0
       },
       "probabilities": {
         "diagnostic_support": 0.14814814814814814,
         "diagnostic_conflict": 0.14814814814814814,
-        "recovery_success": 0.14814814814814814,
-        "recovery_failure": 0.25925925925925924,
+        "recovery_success": 0.25925925925925924,
+        "recovery_failure": 0.14814814814814814,
         "unsafe_or_blocked": 0.14814814814814814,
         "inconclusive": 0.14814814814814814
       },
@@ -379,25 +379,25 @@
   },
   "costmap_blockage|tb3_sandbox|goal_nav|navigating|tb3_sandbox_gazebo|nav2_jazzy|reconfigure_controller": {
     "recovery": {
-      "alpha": 1.0,
-      "beta": 3.0833333333333335,
-      "mean": 0.24489795918367344,
-      "variance": 0.03637828500419906
+      "alpha": 1.0833333333333333,
+      "beta": 3.0,
+      "mean": 0.2653061224489796,
+      "variance": 0.038344678788209845
     },
     "outcomes": {
       "counts": {
         "diagnostic_support": 1.0,
         "diagnostic_conflict": 1.0,
-        "recovery_success": 1.0,
-        "recovery_failure": 1.0833333333333333,
+        "recovery_success": 1.0833333333333333,
+        "recovery_failure": 1.0,
         "unsafe_or_blocked": 1.0,
         "inconclusive": 1.0
       },
       "probabilities": {
         "diagnostic_support": 0.16438356164383564,
         "diagnostic_conflict": 0.16438356164383564,
-        "recovery_success": 0.16438356164383564,
-        "recovery_failure": 0.1780821917808219,
+        "recovery_success": 0.1780821917808219,
+        "recovery_failure": 0.16438356164383564,
         "unsafe_or_blocked": 0.16438356164383564,
         "inconclusive": 0.16438356164383564
       },
@@ -622,25 +622,25 @@
   },
   "localization_drift|tb3_sandbox|goal_nav|navigating|tb3_sandbox_gazebo|nav2_jazzy|reconfigure_controller": {
     "recovery": {
-      "alpha": 1.0,
-      "beta": 3.0833333333333335,
-      "mean": 0.24489795918367344,
-      "variance": 0.03637828500419906
+      "alpha": 1.0833333333333333,
+      "beta": 3.0,
+      "mean": 0.2653061224489796,
+      "variance": 0.038344678788209845
     },
     "outcomes": {
       "counts": {
         "diagnostic_support": 1.0,
         "diagnostic_conflict": 1.0,
-        "recovery_success": 1.0,
-        "recovery_failure": 1.0833333333333333,
+        "recovery_success": 1.0833333333333333,
+        "recovery_failure": 1.0,
         "unsafe_or_blocked": 1.0,
         "inconclusive": 1.0
       },
       "probabilities": {
         "diagnostic_support": 0.16438356164383564,
         "diagnostic_conflict": 0.16438356164383564,
-        "recovery_success": 0.16438356164383564,
-        "recovery_failure": 0.1780821917808219,
+        "recovery_success": 0.1780821917808219,
+        "recovery_failure": 0.16438356164383564,
         "unsafe_or_blocked": 0.16438356164383564,
         "inconclusive": 0.16438356164383564
       },
@@ -865,25 +865,25 @@
   },
   "planner_failure|tb3_sandbox|goal_nav|navigating|tb3_sandbox_gazebo|nav2_jazzy|reconfigure_controller": {
     "recovery": {
-      "alpha": 1.0,
-      "beta": 3.0833333333333335,
-      "mean": 0.24489795918367344,
-      "variance": 0.03637828500419906
+      "alpha": 1.0833333333333333,
+      "beta": 3.0,
+      "mean": 0.2653061224489796,
+      "variance": 0.038344678788209845
     },
     "outcomes": {
       "counts": {
         "diagnostic_support": 1.0,
         "diagnostic_conflict": 1.0,
-        "recovery_success": 1.0,
-        "recovery_failure": 1.0833333333333333,
+        "recovery_success": 1.0833333333333333,
+        "recovery_failure": 1.0,
         "unsafe_or_blocked": 1.0,
         "inconclusive": 1.0
       },
       "probabilities": {
         "diagnostic_support": 0.16438356164383564,
         "diagnostic_conflict": 0.16438356164383564,
-        "recovery_success": 0.16438356164383564,
-        "recovery_failure": 0.1780821917808219,
+        "recovery_success": 0.1780821917808219,
+        "recovery_failure": 0.16438356164383564,
         "unsafe_or_blocked": 0.16438356164383564,
         "inconclusive": 0.16438356164383564
       },

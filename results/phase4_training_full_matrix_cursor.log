@@ -1,0 +1,69 @@
+---
+pid: 40182
+cwd: "/home/hu/文档/ChatGPT/论文/eacr_ws"
+command: "source scripts/source_eacr.sh && python3 scripts/run_phase3_gazebo_matrix.py \\\n  --baseline eacr_evolving \\\n  --seed 20310001 --seed 20310002 --seed 20310003 \\\n  --seed 20310004 --seed 20310005 --seed 20310006 \\\n  --seed 20310007 --seed 20310008 --seed 20310009 \\\n  --seed 20310010 --seed 20310011 --seed 20310012 \\\n  --seed 20310013 \\\n  --fault-family localization \\\n  --fault-family costmap \\\n  --fault-family planner \\\n  --fault-family control \\\n  --fault-repetitions 4 \\\n  --experience-prior-mode weak_shared_m0 \\\n  --use-belief-action-scope \\\n  --fault-scale 1.0 \\\n  --result-dir results/phase4_evolving_training_full \\\n  --timeout-sec 600 \\\n  --retries 1 \\\n  --resume"
+title: "Resume training matrix for missing cells"
+status: running  
+started_at: 2026-10-03T14:25:55.343Z
+running_for_ms: 680025   
+---
+EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws
+skip existing valid eacr_evolving seed=20310001 family=localization
+skip existing valid eacr_evolving seed=20310001 family=costmap
+skip existing valid eacr_evolving seed=20310001 family=planner
+skip existing valid eacr_evolving seed=20310001 family=control
+skip existing valid eacr_evolving seed=20310002 family=localization
+skip existing valid eacr_evolving seed=20310002 family=costmap
+skip existing valid eacr_evolving seed=20310002 family=planner
+skip existing valid eacr_evolving seed=20310002 family=control
+skip existing valid eacr_evolving seed=20310003 family=localization
+skip existing valid eacr_evolving seed=20310003 family=costmap
+skip existing valid eacr_evolving seed=20310003 family=planner
+skip existing valid eacr_evolving seed=20310003 family=control
+skip existing valid eacr_evolving seed=20310004 family=localization
+start eacr_evolving seed=20310004 family=costmap
+skip existing valid eacr_evolving seed=20310004 family=planner
+start eacr_evolving seed=20310004 family=control
+start eacr_evolving seed=20310005 family=localization
+start eacr_evolving seed=20310005 family=costmap
+skip existing valid eacr_evolving seed=20310005 family=planner
+start eacr_evolving seed=20310005 family=control
+start eacr_evolving seed=20310006 family=localization
+start eacr_evolving seed=20310006 family=costmap
+skip existing valid eacr_evolving seed=20310006 family=planner
+start eacr_evolving seed=20310006 family=control
+start eacr_evolving seed=20310007 family=localization
+start eacr_evolving seed=20310007 family=costmap
+skip existing valid eacr_evolving seed=20310007 family=planner
+start eacr_evolving seed=20310007 family=control
+start eacr_evolving seed=20310008 family=localization
+start eacr_evolving seed=20310008 family=costmap
+skip existing valid eacr_evolving seed=20310008 family=planner
+start eacr_evolving seed=20310008 family=control
+start eacr_evolving seed=20310009 family=localization
+start eacr_evolving seed=20310009 family=costmap
+skip existing valid eacr_evolving seed=20310009 family=planner
+start eacr_evolving seed=20310009 family=control
+start eacr_evolving seed=20310010 family=localization
+start eacr_evolving seed=20310010 family=costmap
+skip existing valid eacr_evolving seed=20310010 family=planner
+start eacr_evolving seed=20310010 family=control
+start eacr_evolving seed=20310011 family=localization
+start eacr_evolving seed=20310011 family=costmap
+skip existing valid eacr_evolving seed=20310011 family=planner
+start eacr_evolving seed=20310011 family=control
+start eacr_evolving seed=20310012 family=localization
+start eacr_evolving seed=20310012 family=costmap
+skip existing valid eacr_evolving seed=20310012 family=planner
+start eacr_evolving seed=20310012 family=control
+start eacr_evolving seed=20310013 family=localization
+start eacr_evolving seed=20310013 family=costmap
+skip existing valid eacr_evolving seed=20310013 family=planner
+start eacr_evolving seed=20310013 family=control
+results/phase4_evolving_training_full/phase3_gazebo_dispatch.json
+
+---
+exit_code: 0
+elapsed_ms: 12099706
+ended_at: 2026-10-03T17:47:35.049Z
+---

@@ -1216,3 +1216,349 @@
 {"time_unix": 1791030059.8264396, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
 {"time_unix": 1791030097.136182, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
 {"time_unix": 1791030154.8237243, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791033486.167839, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791033486.167852, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791033506.831695, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791033506.8317647, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791033586.4890423, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791033586.4890916, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791033608.8067744, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791033608.8067746, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791033652.15035, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791033652.1503913, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791033672.8070617, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791033672.8070617, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791033739.8217764, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791033739.821777, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791033763.7980056, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791033763.798073, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791033855.87677, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791033855.87677, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791033878.7952356, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791033878.7952278, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791034059.5814567, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791034059.581509, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791034082.8452303, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791034082.845231, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791034166.464027, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791034166.4641123, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791034191.7891712, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791034191.7892025, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791034250.7255416, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791034250.7255394, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791034271.8483927, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791034271.8484457, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791034338.778421, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791034338.7784574, "family": "planner", "operation": "inject", "success": true, "detail": "planner_plugins=['GridBased'] -> planner_plugins=[EacrInvalidPlanner]"}
+{"time_unix": 1791034361.81543, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791034361.8154821, "family": "planner", "operation": "rollback", "success": true, "detail": "planner_plugins restored ['GridBased']; "}
+{"time_unix": 1791037579.1043036, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791037637.3912857, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791037675.3645473, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791037733.4517636, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791037767.7404652, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791037825.427414, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791037864.7306697, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791037922.416659, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791037964.8858302, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791038028.4190125, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791038113.7055075, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791038177.2647882, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791038271.3456697, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791038313.4630382, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791038365.42866, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791038400.4235425, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791038465.9070725, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791038479.3905363, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791038513.6543007, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791038536.7200413, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791038600.458907, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791038623.7244036, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791038690.0379038, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791038725.7312455, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791038822.576546, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791038880.4632428, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791038926.68264, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791038984.469242, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791039021.6466935, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791039079.4336128, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791039120.1645794, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791039178.4520981, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791039230.8764718, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791039276.3643808, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791039299.3247657, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791039354.9142745, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791039377.4365757, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791039412.9207196, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791039434.6498578, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791039477.480145, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791039585.8607202, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791039604.7604294, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791039645.1061606, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791039659.1851652, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791039700.4699612, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791039716.2396586, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791039753.431139, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791039769.7933047, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791039816.3221335, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791039874.4093637, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791039911.318038, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791039969.4050725, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791040006.3486886, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791040064.4363964, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791040106.5764027, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791040164.463864, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791040204.640116, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791040248.8357487, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791040270.9684095, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791040334.562694, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791040402.339725, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791040441.8315759, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791040462.848974, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791040526.3749382, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791040562.3447518, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791040623.2449832, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791040669.2660155, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791040682.5261838, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791040731.133676, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791040787.7185125, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791040827.613461, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791040842.385135, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791040903.0609586, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791040961.4483633, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791041004.9519708, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791041063.4391117, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791041161.8538072, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791041219.4406083, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791041262.0269866, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791041320.413624, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791041363.5236914, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791041397.4736135, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791041419.8556256, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791041455.4381177, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791041477.456099, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791041523.4365287, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791041576.148293, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791041626.863165, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791041714.8301544, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791041733.625554, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791041771.6609128, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791041794.7227294, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791041841.5743968, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791041857.8089027, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791041957.8569489, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791041980.777483, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791042023.5696218, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791042081.4567323, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791042188.0086422, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791042246.3957312, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791042283.1059804, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791042341.3934445, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791042387.5845351, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791042445.471414, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791042485.176467, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791042543.4638216, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791042648.1006138, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791042706.3880239, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791042758.0358775, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791042795.336675, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791042817.7039592, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791042856.4854748, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791042910.0221343, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791042973.6092045, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791043043.6157095, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791043107.1470413, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791043147.9370337, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791043166.719176, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791043209.056488, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791043228.7776275, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791043269.1657858, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791043290.25219, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791043387.6203995, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791043409.6858668, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791043450.2731917, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791043465.6217768, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791043515.467513, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791043546.2669415, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791043600.3415277, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791043658.4284103, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791043695.2831755, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791043753.470398, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791043795.739799, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791043853.4272745, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791043900.1217883, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791043958.4094362, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791043993.6626387, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791044028.5379338, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791044052.7643783, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791044116.3492825, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791044183.8133183, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791044247.330521, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791044315.3273726, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791044349.4009879, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791044409.4044187, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791044429.7351534, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791044465.229334, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791044487.7418861, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791044538.1991167, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791044562.63828, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791044635.489912, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791044652.9523146, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791044757.2941892, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791044780.5497677, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791044819.5895476, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791044836.1604524, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791044922.7274404, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791044942.2044244, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791044979.6354904, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791045037.4224322, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791045073.5053315, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791045131.3923545, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791045172.2672708, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791045230.4541655, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791045264.4367228, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791045322.423794, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791045368.254619, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791045425.4184778, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791045567.264825, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791045612.5123923, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791045634.3202662, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791045676.7988083, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791045731.6306958, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791045795.1579816, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791045823.63727, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791045887.1858108, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791045955.8153467, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791045992.018801, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791046019.1733086, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791046037.7340248, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791046075.94885, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791046095.012261, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791046131.3555415, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791046148.4225032, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791046190.1082006, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791046206.5316274, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791046248.4594808, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791046306.446438, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791046348.979404, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791046407.4659677, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791046446.0201027, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791046504.4073014, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791046564.9630473, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791046623.4499743, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791046671.2521722, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791046734.780344, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791046763.2517915, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791046812.4340973, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791046878.5607104, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791046942.1384158, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791047014.1454942, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791047053.0894208, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791047132.1822777, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791047148.5180337, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791047182.1503289, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791047197.89866, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791047235.6655614, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791047256.7315648, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791047324.0937552, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791047359.7733715, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791047408.221793, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791047466.408931, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791047507.9336994, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791047566.4205084, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791047626.1018667, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791047684.389808, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791047727.3304946, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791047785.4174612, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791047821.9381137, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791047880.4249432, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791047915.2430167, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791047973.4294329, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791048008.4375143, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791048066.4238906, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791048113.8543365, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791048141.423721, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791048194.9278114, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791048237.406117, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791048296.368153, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791048347.5834224, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791048371.604239, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791048435.1448328, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791048507.9393253, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791048533.7797468, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791048578.255291, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791048600.043421, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791048636.7681923, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791048658.7404704, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791048696.4019985, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791048719.7672873, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791048880.0032473, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791048938.389958, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791048972.7932763, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791049030.4797373, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791049149.880593, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791049207.4670238, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791049250.661004, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791049308.4478428, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791049349.8058152, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791049386.1806517, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791049408.0983875, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791049445.4736924, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791049507.3979783, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791049543.0389023, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791049564.9803429, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791049606.4583952, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791049721.0321655, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791049779.4198627, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791049819.960841, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791049878.4482915, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791049914.4656699, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791049972.452662, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791050044.2911837, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791050102.4786704, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791050139.6124725, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791050197.3993518, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791050237.6469183, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791050295.4339252, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791050355.3375814, "family": "costmap", "operation": "inject", "success": true, "detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=2.0 ()"}
+{"time_unix": 1791050413.4253447, "family": "costmap", "operation": "rollback", "success": true, "detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"}
+{"time_unix": 1791050450.4273233, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791050465.0234764, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791050558.2621415, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791050579.479855, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791050617.3246675, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791050649.6955626, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791050731.5432527, "family": "localization", "operation": "inject", "success": true, "detail": "{\"offset_x\": 0.65, \"offset_y\": -0.45, \"offset_yaw\": 0.35}"}
+{"time_unix": 1791050747.321427, "family": "localization", "operation": "rollback", "success": true, "detail": "initial pose restored"}
+{"time_unix": 1791050797.2485983, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791050860.852722, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791050984.2482622, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791051047.7592454, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791051104.7691517, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791051168.3120153, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791051245.6417682, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791051309.2110674, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791051403.8333964, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791051467.360475, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791051537.5316834, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791051601.0832603, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791051725.8073273, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791051761.3111796, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791051783.514309, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791051820.9086573, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791051843.1723084, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791051884.7956674, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791051990.285608, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791052025.572985, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791052073.253545, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791052121.4529905, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791052174.736179, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791052225.4691591, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791052427.306304, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791052469.8887346, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791052559.7800782, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791052597.3678823, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791052619.445454, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791052660.182507, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
+{"time_unix": 1791052683.3782952, "family": "control", "operation": "inject", "success": true, "detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=10.0"}
+{"time_unix": 1791052746.9595604, "family": "control", "operation": "rollback", "success": true, "detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"}
