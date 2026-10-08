@@ -1,74 +1,131 @@
 {
   "protocol_id": "eacr_evolving_advantage_v1",
-  "git_head": "35db448",
-  "status": "running_static_m0",
-  "fault_scale": 1.5,
-  "fault_repetitions": 4,
-  "experience_prior_mode": "weak_shared_m0",
-  "use_belief_action_scope": true,
-  "goal_timeout_sec": 60,
-  "online_experience_update": false,
-  "resume_experience_state": false,
+  "status": "complete",
+  "completed_at_local": "2026-10-08T08:35:28+08:00",
+  "git_head_at_evaluation": "35db44803f62df923e2c102cafe7983d09d5ba15",
+  "frozen_parameters": {
+    "fault_scale": 1.5,
+    "fault_repetitions": 4,
+    "experience_prior_mode": "weak_shared_m0",
+    "use_belief_action_scope": true,
+    "goal_timeout_sec": 60,
+    "resume_experience_state": false
+  },
+  "families": [
+    "localization",
+    "costmap",
+    "planner",
+    "control"
+  ],
+  "seeds": [
+    1069364068,
+    683001511,
+    450637390,
+    1207356449,
+    1578549000,
+    252445555,
+    729528073,
+    1092085222,
+    200776800,
+    1464253601,
+    365260637,
+    225495283,
+    1725492561,
+    1054169594,
+    1613439514,
+    1691408245,
+    849115063,
+    1146002680,
+    1534671149,
+    1320660730
+  ],
   "methods": {
     "eacr_static_m0": {
       "result_dir": "results/phase4_final_static_m0",
-      "gazebo_log": "results/phase4_final_gazebo_static_m0.log",
       "expected_cells": 80,
-      "valid_cells_at_start": 30,
-      "valid_cells": 78,
-      "status": "short_78_of_80",
-      "missing_cells": [
-        "1320660730:localization",
-        "1534671149:planner"
-      ],
-      "note": "Resume passes ended at 78/80. Invalid JSON is retained. The old Static Gazebo was stopped so Evolving online M0 could start.",
-      "command_flags": [
-        "--no-online-experience-update",
-        "--resume"
-      ],
-      "preserved_invalid_json": [
-        "phase3_gazebo_eacr_static_1069364068_1791105997391791021.json",
-        "phase3_gazebo_eacr_static_1207356449_1791113627864530259.json",
-        "phase3_gazebo_eacr_static_252445555_1791116736921157367.json",
-        "phase3_gazebo_eacr_static_252445555_1791117282242572292.json",
-        "phase3_gazebo_eacr_static_450637390_1791110620558460456.json",
-        "phase3_gazebo_eacr_static_450637390_1791111208396633656.json",
-        "phase3_gazebo_eacr_static_729528073_1791117910237638331.json"
-      ],
-      "note": "Invalid JSON is retained. Resume skips a cell only when a record has protocol_compliant, four evidence-valid episodes, online_experience_update=false, and resume_experience_state=false."
+      "valid_cells": 80,
+      "missing_cells": [],
+      "online_experience_update": false,
+      "raw_json_files": 121,
+      "raw_json_bytes": 36406514,
+      "excluded_protocol_noncompliant": 40,
+      "status": "complete"
     },
     "eacr_evolving_online_m0": {
       "result_dir": "results/phase4_final_evolving_online_m0",
-      "gazebo_log": "results/phase4_final_gazebo_evolving_online_m0.log",
       "expected_cells": 80,
-      "valid_cells": 7,
-      "status": "running",
-      "current_cell": {
-        "seed": 252445555,
-        "fault_family": "planner"
-      },
-      "note": "Seed 252445555 costmap stayed invalid. Planner is running with online updates on. Localization has no compliant record.",
+      "valid_cells": 80,
+      "missing_cells": [],
       "online_experience_update": true,
-      "resume_experience_state": false
+      "resume_experience_state": false,
+      "raw_json_files": 205,
+      "raw_json_bytes": 56527054,
+      "excluded_protocol_noncompliant": 104,
+      "status": "complete"
     },
     "eacr_evolving_m20": {
       "result_dir": "results/phase4_final_evolving_m20",
       "expected_cells": 80,
-      "valid_cells": 0,
-      "status": "not_started"
+      "valid_cells": 80,
+      "missing_cells": [],
+      "online_experience_update": false,
+      "resume_experience_state": false,
+      "snapshot": "results/phase4_experience_evolving_full_M_20.json",
+      "snapshot_sha256": "6fcfd7dac372c181223b86c683a54b21d255c51f07af522cb3e5eae9a10c4473",
+      "raw_json_files": 295,
+      "raw_json_bytes": 86122363,
+      "excluded_protocol_noncompliant": 194,
+      "status": "complete"
     },
     "eacr_evolving_m50": {
       "result_dir": "results/phase4_final_evolving_m50",
       "expected_cells": 80,
-      "valid_cells": 0,
-      "status": "not_started"
+      "valid_cells": 80,
+      "missing_cells": [],
+      "online_experience_update": false,
+      "resume_experience_state": false,
+      "snapshot": "results/phase4_experience_evolving_full_M_50.json",
+      "snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab",
+      "raw_json_files": 198,
+      "raw_json_bytes": 55492115,
+      "excluded_protocol_noncompliant": 97,
+      "status": "complete"
     }
   },
-  "checkpoint_snapshot_template": "results/phase4_experience_evolving_full_{checkpoint}.json",
-  "aggregate_owned_by": "codex",
-  "updated_at_utc": "2026-10-04T13:32:00+00:00",
-  "matrix_log": "results/phase4_final_static_m0_matrix.log",
-  "goal": "four-method frozen final evaluation plus confirmatory report",
-  "orchestrator": "results/phase4_final_orchestrator.sh",
-  "next_action": "Static M0 is running. The orchestrator waits for it, then runs Evolving online M0, M20, and M50 one Gazebo at a time, then the frozen aggregate and paper report."
+  "aggregate": {
+    "path": "results/phase4_final_aggregate.json",
+    "confirmatory_ready": true,
+    "valid_cell_count": 320,
+    "valid_episode_count": 1280,
+    "bootstrap": {
+      "unit": "evaluation_seed",
+      "draws": 20000,
+      "seed": 20261004
+    },
+    "acceptance": {
+      "all_methods_present": true,
+      "each_method_has_80_cells": true,
+      "each_cell_has_4_episodes": true,
+      "common_20x4_keys": true,
+      "no_duplicate_cells": true,
+      "excluded_seed_544047076": true,
+      "config_consistent": true,
+      "m20_m50_snapshot_sha_valid": true
+    },
+    "excluded_counts": {
+      "protocol_noncompliant": 435,
+      "unrecognised_method": 4
+    }
+  },
+  "report": "results/phase4_final_report.md",
+  "tables": "results/phase4_final_tables.json",
+  "statistical_spec": "docs/EACR_FINAL_STATISTICAL_SPEC_v1.md",
+  "runtime_at_completion": {
+    "owned_gazebo_stopped": true,
+    "remaining_gazebo_processes": 0
+  },
+  "raw_results_preserved": true,
+  "raw_data_manifest": "results/phase4_final_raw_data_manifest.json",
+  "raw_result_json_files": 819,
+  "raw_result_json_bytes": 234548046
 }

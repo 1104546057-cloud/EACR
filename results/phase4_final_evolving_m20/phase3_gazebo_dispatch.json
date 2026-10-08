@@ -1,0 +1,768 @@
+{
+  "protocol_id": "eacr_phase3_v1",
+  "baselines": [
+    "eacr_evolving"
+  ],
+  "seeds": [
+    1069364068,
+    683001511,
+    450637390,
+    1207356449,
+    1578549000,
+    252445555,
+    729528073,
+    1092085222,
+    200776800,
+    1464253601,
+    365260637,
+    225495283,
+    1725492561,
+    1054169594,
+    1613439514,
+    1691408245,
+    849115063,
+    1146002680,
+    1534671149,
+    1320660730
+  ],
+  "fault_families": [
+    "localization",
+    "costmap",
+    "planner",
+    "control"
+  ],
+  "experience_checkpoint": "M_20",
+  "experience_prior_mode": "weak_shared_m0",
+  "fault_repetitions": 4,
+  "experience_environment_bin": "tb3_sandbox_gazebo",
+  "use_belief_action_scope": true,
+  "fault_scale": 1.5,
+  "online_experience_update": false,
+  "resume_experience_state": false,
+  "runs": [
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1069364068,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1069364068,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1069364068,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1069364068,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 683001511,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 683001511,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 683001511,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 683001511,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 450637390,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 450637390,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 450637390,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 450637390,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1207356449,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1207356449,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1207356449,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1207356449,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1578549000,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1578549000,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1578549000,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1578549000,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 252445555,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 252445555,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 252445555,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 252445555,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 729528073,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 729528073,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 729528073,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 729528073,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1092085222,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1092085222,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1092085222,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1092085222,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 200776800,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 200776800,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 200776800,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 200776800,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1464253601,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1464253601,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1464253601,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1464253601,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 365260637,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 365260637,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 365260637,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 365260637,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 225495283,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 225495283,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 225495283,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 225495283,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1725492561,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1725492561,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1725492561,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1725492561,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1054169594,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1054169594,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1054169594,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1054169594,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1613439514,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1613439514,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1613439514,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1613439514,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1691408245,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1691408245,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1691408245,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1691408245,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 849115063,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 849115063,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 849115063,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 849115063,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1146002680,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1146002680,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791367944.370450735] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_final_evolving_m20/phase3_gazebo_eacr_evolving_1146002680_1791367944350338650.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1146002680,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1146002680,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1534671149,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1534671149,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1534671149,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791368203.565097741] [phase3_gazebo_runner]: Gazebo phase-three result: results/phase4_final_evolving_m20/phase3_gazebo_eacr_evolving_1534671149_1791368203546598667.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1534671149,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1320660730,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1320660730,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1320660730,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_evolving",
+      "seed": 1320660730,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    }
+  ],
+  "completed_runs": 80,
+  "total_runs": 80
+}
