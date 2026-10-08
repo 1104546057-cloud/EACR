@@ -1,0 +1,46 @@
+2026-10-08T07:49:26+08:00 acquired orchestrator lock; resuming M50
+valid=72
+missing=365260637:costmap,1146002680:localization,1146002680:planner,1320660730:planner,1534671149:control,1534671149:costmap,1534671149:planner,1725492561:costmap
+excluded={"protocol_noncompliant": 96}
+2026-10-08T07:49:26+08:00 started single Gazebo launch pid=317456 pgid=317456 log=/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_final_gazebo_evolving_m50_resume_20261008T074926.log
+2026-10-08T07:49:34+08:00 Gazebo ready
+2026-10-08T07:49:34+08:00 matrix pid=317945 pass=1 log=/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_final_evolving_m50_resume_pass1.log
+valid=80
+missing=
+excluded={"protocol_noncompliant": 97}
+2026-10-08T08:35:12+08:00 M50 valid=80/80 after pass=1
+2026-10-08T08:35:13+08:00 stopped owned Gazebo
+valid=80
+missing=
+excluded={"protocol_noncompliant": 40}
+valid=80
+missing=
+excluded={"protocol_noncompliant": 104}
+valid=80
+missing=
+excluded={"protocol_noncompliant": 194}
+valid=80
+missing=
+excluded={"protocol_noncompliant": 97}
+2026-10-08T08:35:14+08:00 running frozen 20,000-draw aggregate and report
+{
+  "confirmatory_ready": true,
+  "valid_cell_count": 320,
+  "valid_episode_count": 1280,
+  "acceptance": {
+    "all_methods_present": true,
+    "each_method_has_80_cells": true,
+    "each_cell_has_4_episodes": true,
+    "common_20x4_keys": true,
+    "no_duplicate_cells": true,
+    "excluded_seed_544047076": true,
+    "config_consistent": true,
+    "m20_m50_snapshot_sha_valid": true
+  },
+  "excluded_counts": {
+    "unrecognised_method": 4,
+    "protocol_noncompliant": 435
+  }
+}
+{"confirmatory_ready": true, "report": "/home/hu/\u6587\u6863/ChatGPT/\u8bba\u6587/eacr_ws/results/phase4_final_report.md"}
+2026-10-08T08:35:28+08:00 M50 complete; aggregate and report verified

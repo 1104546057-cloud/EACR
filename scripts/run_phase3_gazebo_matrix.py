@@ -15,6 +15,38 @@ from pathlib import Path
 WORKSPACE = Path(__file__).resolve().parents[1]
 
 
+def record_matches_resume(item: dict, args) -> bool:
+    """Return whether an existing JSON already satisfies this matrix cell.
+
+    Training JSON written before resume_experience_state was recorded stores
+    null. The checkpoint builder treats a missing or null value as false, and
+    --resume must do the same. A strict comparison with false would rerun
+    protocol-valid planner cells.
+    """
+    episodes = item.get('episodes', [])
+    if not episodes:
+        return False
+    expected_snapshot = (
+        args.experience_snapshot_template.format(
+            checkpoint=args.experience_checkpoint, seed=item.get('seed'),
+        ) if args.experience_snapshot_template else None
+    )
+    stored_resume = bool(item.get('resume_experience_state'))
+    return (
+        item.get('protocol_compliant') is True
+        and len(episodes) == max(1, args.fault_repetitions)
+        and all(row.get('episode_evidence_valid') for row in episodes)
+        and item.get('experience_checkpoint') == args.experience_checkpoint
+        and item.get('experience_prior_mode') == args.experience_prior_mode
+        and item.get('use_belief_action_scope') == args.use_belief_action_scope
+        and float(item.get('fault_scale', float('nan'))) == args.fault_scale
+        and int(item.get('fault_repetitions', -1)) == max(1, args.fault_repetitions)
+        and item.get('online_experience_update') == (not args.no_online_experience_update)
+        and stored_resume == bool(args.resume_experience_state)
+        and item.get('experience_snapshot_path') == expected_snapshot
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument('--baseline', action='append')
@@ -51,36 +83,21 @@ def main() -> None:
         for path in args.result_dir.glob('phase3_gazebo_*.json'):
             try:
                 item = json.loads(path.read_text())
-                episodes = item.get('episodes', [])
-                expected_snapshot = (
-                    args.experience_snapshot_template.format(
-                        checkpoint=args.experience_checkpoint, seed=item.get('seed'),
-                    ) if args.experience_snapshot_template else None
-                )
-                if (
-                    item.get('protocol_compliant') is True
-                    and len(episodes) == max(1, args.fault_repetitions)
-                    and all(row.get('episode_evidence_valid') for row in episodes)
-                    and item.get('experience_checkpoint') == args.experience_checkpoint
-                    and item.get('experience_prior_mode') == args.experience_prior_mode
-                    and item.get('use_belief_action_scope') == args.use_belief_action_scope
-                    and float(item.get('fault_scale', float('nan'))) == args.fault_scale
-                    and int(item.get('fault_repetitions', -1)) == max(1, args.fault_repetitions)
-                    and item.get('online_experience_update') == (not args.no_online_experience_update)
-                    and item.get('resume_experience_state') == args.resume_experience_state
-                    and item.get('experience_snapshot_path') == expected_snapshot
-                ):
-                    existing_valid.add((item.get('baseline'), item.get('seed'), episodes[0].get('fault_family')))
             except (OSError, json.JSONDecodeError):
                 continue
+            if record_matches_resume(item, args):
+                episodes = item.get('episodes', [])
+                existing_valid.add((item.get('baseline'), item.get('seed'), episodes[0].get('fault_family')))
     for baseline in baselines:
         for seed in seeds:
             for family in families:
                 if (baseline, seed, family) in existing_valid:
+                    print(f'skip existing valid {baseline} seed={seed} family={family}', flush=True)
                     runs.append({'baseline': baseline, 'seed': seed, 'fault_family': family,
                                  'returncode': 0, 'skipped_existing_valid': True,
                                  'attempts': 0, 'protocol_ok': True})
                     continue
+                print(f'start {baseline} seed={seed} family={family}', flush=True)
                 ros_command = ' '.join(shlex.quote(item) for item in [
                     'ros2', 'run', 'eacr_sim', 'phase3_gazebo_runner', '--ros-args',
                     '-p', f'baseline:={baseline}', '-p', f'random_seed:={seed}',
@@ -129,18 +146,16 @@ def main() -> None:
                             returncode = process.returncode
                         except subprocess.TimeoutExpired as exc:
                             returncode = 124
-                            stdout = exc.stdout or ''
-                            stderr = exc.stderr or ''
+                            # TimeoutExpired may expose bytes even with
+                            # text=True.  The subsequent communicate() gives
+                            # the full captured output, so do not concatenate
+                            # the partial exception payload with its tail.
                             try:
                                 os.killpg(process.pid, signal.SIGTERM)
-                                stdout_tail, stderr_tail = process.communicate(timeout=10)
-                                stdout += stdout_tail or ''
-                                stderr += stderr_tail or ''
+                                stdout, stderr = process.communicate(timeout=10)
                             except subprocess.TimeoutExpired:
                                 os.killpg(process.pid, signal.SIGKILL)
-                                stdout_tail, stderr_tail = process.communicate()
-                                stdout += stdout_tail or ''
-                                stderr += stderr_tail or ''
+                                stdout, stderr = process.communicate()
                     except BaseException:
                         # Ctrl-C and unexpected Python errors must not leave a
                         # detached ROS runner operating on the same Gazebo.
@@ -155,7 +170,15 @@ def main() -> None:
                     after = set(args.result_dir.glob(f'phase3_gazebo_{baseline}_{seed}_*.json')) - before
                     for path in after:
                         try:
-                            if json.loads(path.read_text()).get('protocol_compliant') is True:
+                            item = json.loads(path.read_text())
+                            episodes = item.get('episodes', [])
+                            if (
+                                record_matches_resume(item, args)
+                                and item.get('baseline') == baseline
+                                and item.get('seed') == seed
+                                and episodes[0].get('fault_family') == family
+                                and all(row.get('fault_family') == family for row in episodes)
+                            ):
                                 protocol_ok = True
                                 break
                         except (OSError, json.JSONDecodeError):

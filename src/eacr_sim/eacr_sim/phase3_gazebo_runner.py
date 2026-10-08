@@ -410,6 +410,12 @@ class Phase3GazeboRunner(Node):
                 inject_ok = False if recovery_ok else inject_ok
             elif action_id in expected_recovery:
                 recovery_detail = f'{action_id} does not target the active fault; no recovery was applied'
+            # End-to-end time from the start of fault injection to the
+            # completion of a successful recovery intervention.  Failed or
+            # diagnostic actions are right-censored and recorded as null.
+            time_to_recovery_sec = (
+                time.monotonic() - injection_started if recovery_ok else None
+            )
             if inject_ok:
                 rollback_ok, rollback_detail = self._call(self._rollback[family.value], 'rollback')
             else:
@@ -501,6 +507,7 @@ class Phase3GazeboRunner(Node):
                     None,
                 ),
                 'recovery_success': recovery_ok,
+                'time_to_recovery_sec': time_to_recovery_sec,
                 'rollback_success': rollback_ok,
                 'fault_navigation_status': fault_status,
                 'fault_navigation_duration_sec': fault_duration,
