@@ -1,0 +1,42 @@
+EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws
+skip existing valid eacr_evolving seed=1523842677 family=localization
+skip existing valid eacr_evolving seed=1523842677 family=costmap
+skip existing valid eacr_evolving seed=1523842677 family=planner
+skip existing valid eacr_evolving seed=1523842677 family=control
+skip existing valid eacr_evolving seed=1489230398 family=localization
+skip existing valid eacr_evolving seed=1489230398 family=costmap
+skip existing valid eacr_evolving seed=1489230398 family=planner
+skip existing valid eacr_evolving seed=1489230398 family=control
+skip existing valid eacr_evolving seed=811258016 family=localization
+skip existing valid eacr_evolving seed=811258016 family=costmap
+skip existing valid eacr_evolving seed=811258016 family=planner
+start eacr_evolving seed=811258016 family=control
+skip existing valid eacr_evolving seed=457375178 family=localization
+skip existing valid eacr_evolving seed=457375178 family=costmap
+skip existing valid eacr_evolving seed=457375178 family=planner
+skip existing valid eacr_evolving seed=457375178 family=control
+skip existing valid eacr_evolving seed=459825488 family=localization
+skip existing valid eacr_evolving seed=459825488 family=costmap
+skip existing valid eacr_evolving seed=459825488 family=planner
+start eacr_evolving seed=459825488 family=control
+skip existing valid eacr_evolving seed=1514040653 family=localization
+skip existing valid eacr_evolving seed=1514040653 family=costmap
+skip existing valid eacr_evolving seed=1514040653 family=planner
+skip existing valid eacr_evolving seed=1514040653 family=control
+start eacr_evolving seed=1465190814 family=localization
+start eacr_evolving seed=1465190814 family=costmap
+skip existing valid eacr_evolving seed=1465190814 family=planner
+start eacr_evolving seed=1465190814 family=control
+start eacr_evolving seed=1533101624 family=localization
+skip existing valid eacr_evolving seed=1533101624 family=costmap
+skip existing valid eacr_evolving seed=1533101624 family=planner
+skip existing valid eacr_evolving seed=1533101624 family=control
+skip existing valid eacr_evolving seed=520996532 family=localization
+skip existing valid eacr_evolving seed=520996532 family=costmap
+skip existing valid eacr_evolving seed=520996532 family=planner
+skip existing valid eacr_evolving seed=520996532 family=control
+skip existing valid eacr_evolving seed=477646935 family=localization
+skip existing valid eacr_evolving seed=477646935 family=costmap
+skip existing valid eacr_evolving seed=477646935 family=planner
+skip existing valid eacr_evolving seed=477646935 family=control
+results/supplementary_transfer_m50/phase3_gazebo_dispatch.json

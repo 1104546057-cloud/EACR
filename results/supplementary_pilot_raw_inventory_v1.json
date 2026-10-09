@@ -1,0 +1,42 @@
+{
+  "manifest_id": "eacr_supplementary_pilot_raw_inventory_v1",
+  "captured_local": "2026-10-09T03:24:06+08:00",
+  "purpose": "Post-freeze archive amendment inventory. These raw pilot transfer records are not covered by the frozen archive script DIRS list; do not modify that script during the formal B matrix.",
+  "directories": [
+    "results/supplementary_pilot_transfer_v2",
+    "results/supplementary_pilot_transfer_v3",
+    "results/supplementary_pilot_transfer_v4",
+    "results/supplementary_pilot_transfer_v5",
+    "results/supplementary_pilot_transfer_v5_m50"
+  ],
+  "missing_directories": [],
+  "file_count": 5,
+  "total_size_bytes": 615525,
+  "files": [
+    {
+      "path": "results/supplementary_pilot_transfer_v2/phase3_gazebo_eacr_strong_rule_1876543211_1791475030308216095.json",
+      "size_bytes": 77054,
+      "sha256": "b0707d5e1d1af47fd8cb5ea331e84d2a8868c31f63452aacc1c359213904046b"
+    },
+    {
+      "path": "results/supplementary_pilot_transfer_v3/phase3_gazebo_eacr_strong_rule_1876543211_1791475288130308106.json",
+      "size_bytes": 77241,
+      "sha256": "2fb938547d864dc9d924b77dfc9c2e8a39f25770b095712abf0f22e9c5d538a6"
+    },
+    {
+      "path": "results/supplementary_pilot_transfer_v4/phase3_gazebo_eacr_strong_rule_1876543211_1791475703158290113.json",
+      "size_bytes": 77241,
+      "sha256": "3495e63b4e9294d603e951ca05ecbb5a7d7dbd497bdd9803a2904d3bf5312632"
+    },
+    {
+      "path": "results/supplementary_pilot_transfer_v5/phase3_gazebo_eacr_strong_rule_1876543211_1791476134508686139.json",
+      "size_bytes": 304692,
+      "sha256": "12dcfe954b14302bda7b45219cf4a1c7913670fe968191833b0aed2fddcb7b19"
+    },
+    {
+      "path": "results/supplementary_pilot_transfer_v5_m50/phase3_gazebo_eacr_evolving_1876543211_1791476277890707683.json",
+      "size_bytes": 79297,
+      "sha256": "dd0ff955ef5110ec25fee4e74fa2bceb4092025217ca39d159783cbd7b5b23d4"
+    }
+  ]
+}

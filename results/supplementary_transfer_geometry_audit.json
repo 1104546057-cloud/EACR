@@ -1,0 +1,201 @@
+{
+  "audit_id": "eacr_supplementary_transfer_geometry_v1",
+  "inputs_sha256": {
+    "src/eacr_sim/maps/transfer_courtyard.yaml": "efa7129bd9cd3f3443eb100017ad057a8aebd444c128d4ccef22eee9c5284e99",
+    "src/eacr_sim/maps/transfer_courtyard.pgm": "c740d19243d75430386006c331e632c612dbbf6250381e45c6610ba53f36deda",
+    "src/eacr_sim/worlds/transfer_courtyard.sdf.xacro": "fbcd714f893ac82fbc50bd6ff304da1a9d0867f6670733dd2a8d2753a88b7d73",
+    "src/eacr_sim/config/episode_transfer_courtyard.yaml": "00ed74ce58de490cd9372c86aa90045fe09e3261202d5cd55c46f139f91805a1",
+    "scripts/generate_supplementary_transfer_world.py": "fe5193d989f4de286870b973e6927adf79b81c13bb4beef95bc5a412168adad9"
+  },
+  "map": {
+    "size_pixels": [
+      200,
+      200
+    ],
+    "resolution_m": 0.05,
+    "origin_xy_m": [
+      -5.0,
+      -5.0
+    ],
+    "occupied_threshold": 0.65,
+    "free_threshold": 0.196,
+    "pixel_values": [
+      0,
+      205,
+      254
+    ],
+    "unknown_pixel_count": 1156,
+    "unknown_bounds_pixel_inclusive": {
+      "min_x": 133,
+      "max_x": 166,
+      "min_y": 33,
+      "max_y": 66
+    }
+  },
+  "route": {
+    "initial_pose_xy_m": [
+      -2.5,
+      -2.5
+    ],
+    "goal_xy_m": [
+      2.5,
+      2.5
+    ],
+    "start_pixel_xy": [
+      50,
+      149
+    ],
+    "goal_pixel_xy": [
+      150,
+      49
+    ],
+    "start_pixel_value": 254,
+    "goal_pixel_value": 205,
+    "start_is_free_white": true,
+    "goal_is_unknown_gray": true,
+    "grid_path_allow_unknown_true_exists": true,
+    "grid_path_allow_unknown_false_exists": false,
+    "allow_unknown_true_path_length_m": 10.0
+  },
+  "world": {
+    "box_obstacle_count": 7,
+    "box_obstacles": [
+      {
+        "name": "south_wall",
+        "x": 0.0,
+        "y": -4.0,
+        "size_x": 8.4,
+        "size_y": 0.2,
+        "size_z": 0.8,
+        "yaw": 0.0
+      },
+      {
+        "name": "north_wall",
+        "x": 0.0,
+        "y": 4.0,
+        "size_x": 8.4,
+        "size_y": 0.2,
+        "size_z": 0.8,
+        "yaw": 0.0
+      },
+      {
+        "name": "west_wall",
+        "x": -4.0,
+        "y": 0.0,
+        "size_x": 0.2,
+        "size_y": 8.4,
+        "size_z": 0.8,
+        "yaw": 0.0
+      },
+      {
+        "name": "east_wall",
+        "x": 4.0,
+        "y": 0.0,
+        "size_x": 0.2,
+        "size_y": 8.4,
+        "size_z": 0.8,
+        "yaw": 0.0
+      },
+      {
+        "name": "center_barrier",
+        "x": 0.1,
+        "y": 0.1,
+        "size_x": 0.6,
+        "size_y": 1.6,
+        "size_z": 0.8,
+        "yaw": 0.0
+      },
+      {
+        "name": "southeast_column",
+        "x": 1.8,
+        "y": -1.35,
+        "size_x": 0.8,
+        "size_y": 0.8,
+        "size_z": 0.8,
+        "yaw": 0.0
+      },
+      {
+        "name": "northwest_column",
+        "x": -1.55,
+        "y": 1.7,
+        "size_x": 0.75,
+        "size_y": 0.65,
+        "size_z": 0.8,
+        "yaw": 0.0
+      }
+    ],
+    "obstacle_center_raster_checks": [
+      {
+        "model": "south_wall",
+        "center_pixel_xy": [
+          100,
+          179
+        ],
+        "center_pixel_value": 0,
+        "center_is_occupied": true
+      },
+      {
+        "model": "north_wall",
+        "center_pixel_xy": [
+          100,
+          19
+        ],
+        "center_pixel_value": 0,
+        "center_is_occupied": true
+      },
+      {
+        "model": "west_wall",
+        "center_pixel_xy": [
+          20,
+          99
+        ],
+        "center_pixel_value": 0,
+        "center_is_occupied": true
+      },
+      {
+        "model": "east_wall",
+        "center_pixel_xy": [
+          180,
+          99
+        ],
+        "center_pixel_value": 0,
+        "center_is_occupied": true
+      },
+      {
+        "model": "center_barrier",
+        "center_pixel_xy": [
+          101,
+          98
+        ],
+        "center_pixel_value": 0,
+        "center_is_occupied": true
+      },
+      {
+        "model": "southeast_column",
+        "center_pixel_xy": [
+          136,
+          126
+        ],
+        "center_pixel_value": 0,
+        "center_is_occupied": true
+      },
+      {
+        "model": "northwest_column",
+        "center_pixel_xy": [
+          69,
+          65
+        ],
+        "center_pixel_value": 0,
+        "center_is_occupied": true
+      }
+    ],
+    "all_obstacle_centers_match_occupied_raster": true,
+    "occupied_pixel_mismatch_count_vs_box_geometry": 0,
+    "nearest_obstacle_clearance_from_start_m": 1.4,
+    "nearest_start_obstacle": "south_wall",
+    "nearest_obstacle_clearance_from_goal_m": 1.4,
+    "nearest_goal_obstacle": "east_wall"
+  },
+  "static_checks_pass": true,
+  "scope_limit": "This proves raster/world geometry and grid connectivity only. It does not prove Nav2 normal navigation, runtime fault behavior, rollback, or recovery; the separate Gazebo/ROS engineering pilot remains mandatory before freezing B."
+}

@@ -24,7 +24,7 @@ from rclpy.node import Node
 from std_srvs.srv import Trigger
 
 from eacr_core.action_library import default_action_library
-from eacr_core.baselines import BayesianFixedRecoveryPolicy, RuleBasedPolicy
+from eacr_core.baselines import BayesianFixedRecoveryPolicy, RuleBasedPolicy, StrongEvidenceRulePolicy
 from eacr_core.experience import ExperienceModel
 from eacr_core.policy import PolicyWeights, choose_action
 from eacr_core.scenario import DEFAULT_FAULT_SPECS, FaultSequence
@@ -49,6 +49,10 @@ class Phase3GazeboRunner(Node):
         self.declare_parameter('goal_x', 0.7508496046)
         self.declare_parameter('goal_y', 1.8354123831)
         self.declare_parameter('goal_yaw', 1.4751400097)
+        self.declare_parameter('initial_pose_x', -2.0)
+        self.declare_parameter('initial_pose_y', -0.5)
+        self.declare_parameter('initial_pose_yaw', 0.0)
+        self.declare_parameter('actual_map_id', 'tb3_sandbox')
         self.declare_parameter('goal_timeout_sec', 60.0)
         self.declare_parameter('max_episodes', 4)
         self.declare_parameter('fault_family_filter', '')
@@ -79,6 +83,8 @@ class Phase3GazeboRunner(Node):
             self.create_client(GetState, '/controller_server/get_state', callback_group=group),
             self.create_client(GetState, '/bt_navigator/get_state', callback_group=group),
         )
+        self._planner_lifecycle = self.create_client(
+            GetState, '/planner_server/get_state', callback_group=group)
         self._clear_costmaps = (
             self.create_client(ClearEntireCostmap, '/global_costmap/clear_entirely_global_costmap', callback_group=group),
             self.create_client(ClearEntireCostmap, '/local_costmap/clear_entirely_local_costmap', callback_group=group),
@@ -91,6 +97,10 @@ class Phase3GazeboRunner(Node):
             'planner_plugins': (
                 self.create_client(GetParameters, '/planner_server/get_parameters', callback_group=group),
                 'planner_plugins',
+            ),
+            'planner_allow_unknown': (
+                self.create_client(GetParameters, '/planner_server/get_parameters', callback_group=group),
+                'GridBased.allow_unknown',
             ),
             'min_x_velocity_threshold': (
                 self.create_client(GetParameters, '/controller_server/get_parameters', callback_group=group),
@@ -153,21 +163,34 @@ class Phase3GazeboRunner(Node):
             'amcl_fresh_after_injection': fresh,
             'amcl_distance_to_start_m': None,
             'nav2_parameters': {},
+            'planner_lifecycle_state_id': None,
         }
         if fresh and self._amcl_pose is not None:
             pose = self._amcl_pose.pose.pose.position
-            distance = math.hypot(pose.x + 2.0, pose.y + 0.5)
+            start_x = float(self.get_parameter('initial_pose_x').value)
+            start_y = float(self.get_parameter('initial_pose_y').value)
+            distance = math.hypot(pose.x - start_x, pose.y - start_y)
             evidence['amcl_distance_to_start_m'] = distance
             if distance > 0.35:
                 scores['localization_drift'] *= 7.0
         for label, (client, name) in self._diagnostic_parameters.items():
             evidence['nav2_parameters'][label] = self._read_parameter(client, name)
+        if self._planner_lifecycle.wait_for_service(timeout_sec=2.0):
+            future = self._planner_lifecycle.call_async(GetState.Request())
+            deadline = time.monotonic() + 3.0
+            while not future.done() and time.monotonic() < deadline:
+                time.sleep(0.05)
+            if future.done() and future.result() is not None:
+                evidence['planner_lifecycle_state_id'] = int(future.result().current_state.id)
         padding = evidence['nav2_parameters'].get('footprint_padding')
         plugins = evidence['nav2_parameters'].get('planner_plugins')
+        allow_unknown = evidence['nav2_parameters'].get('planner_allow_unknown')
         threshold = evidence['nav2_parameters'].get('min_x_velocity_threshold')
         if isinstance(padding, float) and padding > 0.5:
             scores['costmap_blockage'] *= 9.0
-        if isinstance(plugins, list) and 'GridBased' not in plugins:
+        if ((isinstance(plugins, list) and 'GridBased' not in plugins)
+                or allow_unknown is False
+                or evidence['planner_lifecycle_state_id'] not in (None, 3)):
             scores['planner_failure'] *= 9.0
         if isinstance(threshold, float) and threshold > 1.0:
             scores['controller_failure'] *= 9.0
@@ -176,7 +199,7 @@ class Phase3GazeboRunner(Node):
         return belief, evidence
 
     @staticmethod
-    def _read_parameter(client, name: str) -> float | list[str] | None:
+    def _read_parameter(client, name: str) -> float | bool | list[str] | None:
         if not client.wait_for_service(timeout_sec=2.0):
             return None
         request = GetParameters.Request()
@@ -188,6 +211,8 @@ class Phase3GazeboRunner(Node):
         if not future.done() or future.result() is None or not future.result().values:
             return None
         value = future.result().values[0]
+        if value.type == ParameterType.PARAMETER_BOOL:
+            return bool(value.bool_value)
         if value.type == ParameterType.PARAMETER_DOUBLE:
             return float(value.double_value)
         if value.type == ParameterType.PARAMETER_STRING_ARRAY:
@@ -254,11 +279,7 @@ class Phase3GazeboRunner(Node):
         return int(result_future.result().status), time.monotonic() - started, 'completed'
 
     def _planner_probe(self) -> tuple[bool, int | None, str]:
-        """Ask planner for a path with an invalid planner id.
-
-        This is an explicit planner-channel probe.  It is used only while the
-        planner fault is injected and is recorded separately from navigation.
-        """
+        """Probe the active configured planner and preserve its real error."""
         if not self._nav2_active() or not self._planner_probe_client.wait_for_server(timeout_sec=5.0):
             return False, None, 'planner_action_unavailable'
         goal = ComputePathToPose.Goal()
@@ -267,7 +288,7 @@ class Phase3GazeboRunner(Node):
         goal.goal.pose.position.x = float(self.get_parameter('goal_x').value)
         goal.goal.pose.position.y = float(self.get_parameter('goal_y').value)
         goal.goal.pose.orientation = quaternion_from_yaw(float(self.get_parameter('goal_yaw').value))
-        goal.planner_id = 'EacrInvalidPlanner'
+        goal.planner_id = 'GridBased'
         future = self._planner_probe_client.send_goal_async(goal)
         deadline = time.monotonic() + 8.0
         while not future.done() and time.monotonic() < deadline:
@@ -281,7 +302,8 @@ class Phase3GazeboRunner(Node):
         if not result_future.done():
             return False, None, 'planner_probe_timeout'
         result = result_future.result().result
-        return result.error_code == ComputePathToPose.Result.INVALID_PLANNER, int(result.error_code), result.error_msg
+        observed_failure = int(result.error_code) != int(ComputePathToPose.Result.NONE)
+        return observed_failure, int(result.error_code), result.error_msg
 
     def _nav2_active(self) -> bool:
         for client in self._lifecycle:
@@ -295,16 +317,20 @@ class Phase3GazeboRunner(Node):
                 return False
         return True
 
-    def _clear_costmaps_after_recovery(self) -> None:
-        for client in self._clear_costmaps:
+    def _clear_costmaps_after_recovery(self) -> dict[str, bool]:
+        outcomes = {}
+        for label, client in zip(('global', 'local'), self._clear_costmaps, strict=True):
             if not client.wait_for_service(timeout_sec=3.0):
+                outcomes[label] = False
                 continue
             future = client.call_async(ClearEntireCostmap.Request())
             deadline = time.monotonic() + 5.0
             while not future.done() and time.monotonic() < deadline:
                 time.sleep(0.05)
+            outcomes[label] = bool(future.done() and future.result() is not None)
+        return outcomes
 
-    def _choose(self, baseline: str, belief: dict[str, float]):
+    def _choose(self, baseline: str, belief: dict[str, float], online_evidence: dict):
         context = self._experience_context
         if baseline == 'rule_based_recovery':
             return RuleBasedPolicy().choose(self._actions)
@@ -334,6 +360,8 @@ class Phase3GazeboRunner(Node):
                 )
                 if scoped:
                     actions = scoped
+        if baseline == 'eacr_strong_rule':
+            return StrongEvidenceRulePolicy().choose(actions, belief, online_evidence)
         return choose_action(actions, belief, context, self._experience, weights)
 
     def _run(self) -> None:
@@ -367,11 +395,21 @@ class Phase3GazeboRunner(Node):
                     nominal_reason = f'retry_after_{nominal_reason}:{retry_reason}'
                     nominal_reset_detail = f'{nominal_reset_detail}; retry: {retry_reset_detail}'
                     nominal_valid = nominal_status == GoalStatus.STATUS_SUCCEEDED
+            # The nominal navigation may have observed and cleared unknown
+            # cells along the route. Reset both costmaps before the fault trial
+            # so every baseline sees the same cold map state.
+            pre_fault_costmap_clear = (
+                self._clear_costmaps_after_recovery() if nominal_valid
+                else {'global': False, 'local': False}
+            )
+            if nominal_valid and all(pre_fault_costmap_clear.values()):
+                time.sleep(1.0)
             reset_ok, reset_detail = self._call(self._reset, 'fault_reset')
             injection_started = time.monotonic()
             inject_ok, inject_detail = (
                 self._call(self._injectors[family.value], 'inject')
-                if reset_ok and nominal_valid else (False, 'nominal navigation or reset failed')
+                if reset_ok and nominal_valid and all(pre_fault_costmap_clear.values())
+                else (False, 'nominal navigation, costmap clear, or reset failed')
             )
             injection_confirmed = inject_ok
             belief, online_evidence = self._online_belief(injection_started)
@@ -388,7 +426,7 @@ class Phase3GazeboRunner(Node):
                 planner_probe_observed, planner_probe_error_code, planner_probe_detail = self._planner_probe()
             else:
                 planner_probe_detail = 'not_applicable'
-            decision = self._choose(baseline, belief) if inject_ok else None
+            decision = self._choose(baseline, belief, online_evidence) if inject_ok else None
             action_id = decision.selected_action if decision else None
             context = self._experience_context
             predicted_recovery_probability = (
@@ -453,14 +491,22 @@ class Phase3GazeboRunner(Node):
                     fault_effect_reason = 'costmap_footprint_padding_readback'
             if family.value == 'planner':
                 plugins = online_evidence.get('nav2_parameters', {}).get('planner_plugins')
+                allow_unknown = online_evidence.get('nav2_parameters', {}).get('planner_allow_unknown')
+                planner_inactive = online_evidence.get('planner_lifecycle_state_id') not in (None, 3)
                 planner_configuration_changed = (
-                    isinstance(plugins, list) and 'GridBased' not in plugins
+                    (isinstance(plugins, list) and 'GridBased' not in plugins)
+                    or allow_unknown is False or planner_inactive
                 )
                 fault_effect_observed = bool(
                     fault_behavior_observed or planner_configuration_changed
                 )
                 if planner_configuration_changed:
-                    fault_effect_reason = 'planner_plugins_readback'
+                    if planner_inactive:
+                        fault_effect_reason = 'planner_lifecycle_inactive'
+                    elif allow_unknown is False:
+                        fault_effect_reason = 'planner_allow_unknown_readback'
+                    else:
+                        fault_effect_reason = 'planner_plugins_readback'
             if family.value == 'control':
                 threshold = online_evidence.get('nav2_parameters', {}).get('min_x_velocity_threshold')
                 parameter_changed = isinstance(threshold, (int, float)) and float(threshold) > 1.0
@@ -470,7 +516,8 @@ class Phase3GazeboRunner(Node):
             success = fault_effect_observed and recovery_status == GoalStatus.STATUS_SUCCEEDED and recovery_ok and rollback_ok
             experience_before = self._experience.snapshot()
             episode_evidence_valid = bool(
-                nav2_ready and nominal_valid and reset_ok and injection_confirmed
+                nav2_ready and nominal_valid and all(pre_fault_costmap_clear.values())
+                and reset_ok and injection_confirmed
                 and fault_effect_observed and rollback_ok
                 and recovery_status is not None
             )
@@ -496,6 +543,7 @@ class Phase3GazeboRunner(Node):
                 'nominal_navigation_reason': nominal_reason,
                 'nominal_navigation_attempts': nominal_attempts,
                 'nominal_navigation_valid': nominal_valid,
+                'pre_fault_costmap_clear': pre_fault_costmap_clear,
                 'inject_success': injection_confirmed,
                 'selected_action': action_id,
                 'online_evidence': online_evidence,
@@ -528,6 +576,7 @@ class Phase3GazeboRunner(Node):
                 'episode_evidence_valid': episode_evidence_valid,
                 'details': {
                     'nominal_reset': nominal_reset_detail,
+                    'pre_fault_costmap_clear': pre_fault_costmap_clear,
                     'reset': reset_detail,
                     'inject': inject_detail,
                     'recovery': recovery_detail,
@@ -554,6 +603,10 @@ class Phase3GazeboRunner(Node):
             'resume_experience_state': bool(self.get_parameter('resume_experience_state').value),
             'fault_repetitions': repetitions,
             'experience_environment_bin': str(self.get_parameter('experience_environment_bin').value),
+            'actual_map_id': str(self.get_parameter('actual_map_id').value),
+            'initial_pose': {'x': self.get_parameter('initial_pose_x').value,
+                             'y': self.get_parameter('initial_pose_y').value,
+                             'yaw': self.get_parameter('initial_pose_yaw').value},
             'use_belief_action_scope': bool(self.get_parameter('use_belief_action_scope').value),
             'fault_scale': float(self.get_parameter('fault_scale').value),
             'goal': {'x': self.get_parameter('goal_x').value, 'y': self.get_parameter('goal_y').value, 'yaw': self.get_parameter('goal_yaw').value},

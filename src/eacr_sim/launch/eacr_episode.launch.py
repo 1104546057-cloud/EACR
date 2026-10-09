@@ -21,6 +21,8 @@ def generate_launch_description():
     autostart = LaunchConfiguration('autostart')
     map_file = LaunchConfiguration('map')
     world_file = LaunchConfiguration('world')
+    params_file = LaunchConfiguration('params_file')
+    episode_config = LaunchConfiguration('episode_config')
     fault_scale = LaunchConfiguration('fault_scale')
     return LaunchDescription([
         DeclareLaunchArgument('headless', default_value='False'),
@@ -46,6 +48,14 @@ def generate_launch_description():
         DeclareLaunchArgument(
             'world',
             default_value='/opt/ros/jazzy/share/nav2_minimal_tb3_sim/worlds/tb3_sandbox.sdf.xacro'),
+        DeclareLaunchArgument(
+            'params_file',
+            default_value='/opt/ros/jazzy/share/nav2_bringup/params/nav2_params.yaml'),
+        DeclareLaunchArgument(
+            'episode_config',
+            default_value=PathJoinSubstitution([
+                FindPackageShare('eacr_sim'), 'config', 'episode.yaml'
+            ])),
         GroupAction(
             scoped=True,
             actions=[
@@ -65,6 +75,7 @@ def generate_launch_description():
                         'autostart': autostart,
                         'map': map_file,
                         'world': world_file,
+                        'params_file': params_file,
                     }.items(),
                 ),
             ],
@@ -89,44 +100,34 @@ def generate_launch_description():
             executable='episode_manager',
             name='episode_manager',
             output='screen',
-            parameters=[PathJoinSubstitution([
-                FindPackageShare('eacr_sim'), 'config', 'episode.yaml'
-            ])],
+            parameters=[episode_config],
         ),
         Node(
             package='eacr_sim',
             executable='episode_reset',
             name='episode_reset',
             output='screen',
-            parameters=[PathJoinSubstitution([
-                FindPackageShare('eacr_sim'), 'config', 'episode.yaml'
-            ])],
+            parameters=[episode_config],
         ),
         Node(
             package='eacr_sim',
             executable='eacr_localization_loop',
             name='eacr_localization_loop',
             output='screen',
-            parameters=[PathJoinSubstitution([
-                FindPackageShare('eacr_sim'), 'config', 'episode.yaml'
-            ])],
+            parameters=[episode_config],
         ),
         Node(
             package='eacr_sim',
             executable='fault_injector',
             name='fault_injector',
             output='screen',
-            parameters=[PathJoinSubstitution([
-                FindPackageShare('eacr_sim'), 'config', 'episode.yaml'
-            ]), {'fault_scale': fault_scale}],
+            parameters=[episode_config, {'fault_scale': fault_scale}],
         ),
         Node(
             package='eacr_sim',
             executable='phase2_episode_runner',
             name='phase2_episode_runner',
             output='screen',
-            parameters=[PathJoinSubstitution([
-                FindPackageShare('eacr_sim'), 'config', 'episode.yaml'
-            ])],
+            parameters=[episode_config],
         ),
     ])

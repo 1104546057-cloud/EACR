@@ -1,0 +1,3236 @@
+{
+  "audit_id": "supplementary_A_reused_pairing_metadata_v1",
+  "protocol_sha256": "ec5b3cefe07d9872ce0c953de005f7fd7f20793e7a87e68f8e9ba1470eb139cb",
+  "original_aggregate_sha256": "03118a2448681ea20bd4bb2a6fb209afb98d1272a96e88e72df8d6093a6e4f23",
+  "seed_count": 10,
+  "family_count": 4,
+  "reuse_cell_count_per_method": 40,
+  "methods": {
+    "eacr_static_m0": [
+      {
+        "seed": 1069364068,
+        "fault_family": "localization",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1069364068_1791106784036017401.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1069364068_001",
+          "phase3_gazebo_1069364068_012",
+          "phase3_gazebo_1069364068_013",
+          "phase3_gazebo_1069364068_015"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1069364068,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1069364068_1791107172990217191.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1069364068_006",
+          "phase3_gazebo_1069364068_007",
+          "phase3_gazebo_1069364068_011",
+          "phase3_gazebo_1069364068_016"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1069364068,
+        "fault_family": "planner",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1069364068_1791107339235163806.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1069364068_004",
+          "phase3_gazebo_1069364068_008",
+          "phase3_gazebo_1069364068_009",
+          "phase3_gazebo_1069364068_010"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1069364068,
+        "fault_family": "control",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1069364068_1791107790944289898.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1069364068_002",
+          "phase3_gazebo_1069364068_003",
+          "phase3_gazebo_1069364068_005",
+          "phase3_gazebo_1069364068_014"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 683001511,
+        "fault_family": "localization",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_683001511_1791108084893617589.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_683001511_003",
+          "phase3_gazebo_683001511_005",
+          "phase3_gazebo_683001511_008",
+          "phase3_gazebo_683001511_016"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 683001511,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_683001511_1791108578162246317.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_683001511_006",
+          "phase3_gazebo_683001511_009",
+          "phase3_gazebo_683001511_011",
+          "phase3_gazebo_683001511_014"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 683001511,
+        "fault_family": "planner",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_683001511_1791108761193251790.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_683001511_001",
+          "phase3_gazebo_683001511_002",
+          "phase3_gazebo_683001511_007",
+          "phase3_gazebo_683001511_013"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 683001511,
+        "fault_family": "control",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_683001511_1791109128608660290.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_683001511_004",
+          "phase3_gazebo_683001511_010",
+          "phase3_gazebo_683001511_012",
+          "phase3_gazebo_683001511_015"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 450637390,
+        "fault_family": "localization",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_450637390_1791109385790605087.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_450637390_002",
+          "phase3_gazebo_450637390_004",
+          "phase3_gazebo_450637390_008",
+          "phase3_gazebo_450637390_015"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 450637390,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_450637390_1791109779446935064.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_450637390_001",
+          "phase3_gazebo_450637390_003",
+          "phase3_gazebo_450637390_005",
+          "phase3_gazebo_450637390_007"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 450637390,
+        "fault_family": "planner",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_450637390_1791110068131432975.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_450637390_006",
+          "phase3_gazebo_450637390_011",
+          "phase3_gazebo_450637390_012",
+          "phase3_gazebo_450637390_013"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 450637390,
+        "fault_family": "control",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_450637390_1791112760009774192.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_450637390_009",
+          "phase3_gazebo_450637390_010",
+          "phase3_gazebo_450637390_014",
+          "phase3_gazebo_450637390_016"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1207356449,
+        "fault_family": "localization",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1207356449_1791113100869032810.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1207356449_006",
+          "phase3_gazebo_1207356449_007",
+          "phase3_gazebo_1207356449_012",
+          "phase3_gazebo_1207356449_015"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1207356449,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1207356449_1791114037500593580.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1207356449_004",
+          "phase3_gazebo_1207356449_010",
+          "phase3_gazebo_1207356449_013",
+          "phase3_gazebo_1207356449_016"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1207356449,
+        "fault_family": "planner",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1207356449_1791114246815757781.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1207356449_002",
+          "phase3_gazebo_1207356449_005",
+          "phase3_gazebo_1207356449_009",
+          "phase3_gazebo_1207356449_011"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1207356449,
+        "fault_family": "control",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1207356449_1791114654367576280.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1207356449_001",
+          "phase3_gazebo_1207356449_003",
+          "phase3_gazebo_1207356449_008",
+          "phase3_gazebo_1207356449_014"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1578549000,
+        "fault_family": "localization",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1578549000_1791114907212977999.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1578549000_004",
+          "phase3_gazebo_1578549000_009",
+          "phase3_gazebo_1578549000_011",
+          "phase3_gazebo_1578549000_013"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1578549000,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1578549000_1791115310641304872.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1578549000_001",
+          "phase3_gazebo_1578549000_005",
+          "phase3_gazebo_1578549000_010",
+          "phase3_gazebo_1578549000_015"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1578549000,
+        "fault_family": "planner",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1578549000_1791115489000915154.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1578549000_002",
+          "phase3_gazebo_1578549000_003",
+          "phase3_gazebo_1578549000_006",
+          "phase3_gazebo_1578549000_014"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1578549000,
+        "fault_family": "control",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1578549000_1791115814741369654.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1578549000_007",
+          "phase3_gazebo_1578549000_008",
+          "phase3_gazebo_1578549000_012",
+          "phase3_gazebo_1578549000_016"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 252445555,
+        "fault_family": "localization",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_252445555_1791116088320766718.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_252445555_010",
+          "phase3_gazebo_252445555_013",
+          "phase3_gazebo_252445555_014",
+          "phase3_gazebo_252445555_015"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 252445555,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_252445555_1791116494643255212.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_252445555_003",
+          "phase3_gazebo_252445555_004",
+          "phase3_gazebo_252445555_006",
+          "phase3_gazebo_252445555_012"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 252445555,
+        "fault_family": "planner",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_252445555_1791116905940187227.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_252445555_001",
+          "phase3_gazebo_252445555_008",
+          "phase3_gazebo_252445555_011",
+          "phase3_gazebo_252445555_016"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 252445555,
+        "fault_family": "control",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_252445555_1791117663588570821.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_252445555_002",
+          "phase3_gazebo_252445555_005",
+          "phase3_gazebo_252445555_007",
+          "phase3_gazebo_252445555_009"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 729528073,
+        "fault_family": "localization",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_729528073_1791118172996939763.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_729528073_002",
+          "phase3_gazebo_729528073_004",
+          "phase3_gazebo_729528073_006",
+          "phase3_gazebo_729528073_010"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 729528073,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_729528073_1791118620284995975.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_729528073_007",
+          "phase3_gazebo_729528073_008",
+          "phase3_gazebo_729528073_012",
+          "phase3_gazebo_729528073_016"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 729528073,
+        "fault_family": "planner",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_729528073_1791118821364776729.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_729528073_001",
+          "phase3_gazebo_729528073_009",
+          "phase3_gazebo_729528073_011",
+          "phase3_gazebo_729528073_013"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 729528073,
+        "fault_family": "control",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_729528073_1791119236088448099.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_729528073_003",
+          "phase3_gazebo_729528073_005",
+          "phase3_gazebo_729528073_014",
+          "phase3_gazebo_729528073_015"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1092085222,
+        "fault_family": "localization",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1092085222_1791119520102364966.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1092085222_007",
+          "phase3_gazebo_1092085222_009",
+          "phase3_gazebo_1092085222_011",
+          "phase3_gazebo_1092085222_014"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1092085222,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1092085222_1791119904356377782.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1092085222_002",
+          "phase3_gazebo_1092085222_006",
+          "phase3_gazebo_1092085222_008",
+          "phase3_gazebo_1092085222_015"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1092085222,
+        "fault_family": "planner",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1092085222_1791121011514101749.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1092085222_003",
+          "phase3_gazebo_1092085222_004",
+          "phase3_gazebo_1092085222_005",
+          "phase3_gazebo_1092085222_013"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1092085222,
+        "fault_family": "control",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1092085222_1791121362512218321.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1092085222_001",
+          "phase3_gazebo_1092085222_010",
+          "phase3_gazebo_1092085222_012",
+          "phase3_gazebo_1092085222_016"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 200776800,
+        "fault_family": "localization",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_200776800_1791121651908329204.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_200776800_001",
+          "phase3_gazebo_200776800_010",
+          "phase3_gazebo_200776800_013",
+          "phase3_gazebo_200776800_016"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 200776800,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_200776800_1791122097824008142.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_200776800_003",
+          "phase3_gazebo_200776800_005",
+          "phase3_gazebo_200776800_007",
+          "phase3_gazebo_200776800_009"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 200776800,
+        "fault_family": "planner",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_200776800_1791122292537472332.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_200776800_004",
+          "phase3_gazebo_200776800_008",
+          "phase3_gazebo_200776800_011",
+          "phase3_gazebo_200776800_014"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 200776800,
+        "fault_family": "control",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_200776800_1791122647941094240.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_200776800_002",
+          "phase3_gazebo_200776800_006",
+          "phase3_gazebo_200776800_012",
+          "phase3_gazebo_200776800_015"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1464253601,
+        "fault_family": "localization",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1464253601_1791122930420849788.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1464253601_003",
+          "phase3_gazebo_1464253601_008",
+          "phase3_gazebo_1464253601_010",
+          "phase3_gazebo_1464253601_014"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1464253601,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1464253601_1791123327282740661.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1464253601_001",
+          "phase3_gazebo_1464253601_004",
+          "phase3_gazebo_1464253601_011",
+          "phase3_gazebo_1464253601_012"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1464253601,
+        "fault_family": "planner",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1464253601_1791123509715495086.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1464253601_002",
+          "phase3_gazebo_1464253601_005",
+          "phase3_gazebo_1464253601_013",
+          "phase3_gazebo_1464253601_015"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      },
+      {
+        "seed": 1464253601,
+        "fault_family": "control",
+        "path": "results/phase4_final_static_m0/phase3_gazebo_eacr_static_1464253601_1791123917934316210.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1464253601_006",
+          "phase3_gazebo_1464253601_007",
+          "phase3_gazebo_1464253601_009",
+          "phase3_gazebo_1464253601_016"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": null
+      }
+    ],
+    "eacr_evolving_m50": [
+      {
+        "seed": 1069364068,
+        "fault_family": "localization",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1069364068_1791368499150704934.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1069364068_001",
+          "phase3_gazebo_1069364068_012",
+          "phase3_gazebo_1069364068_013",
+          "phase3_gazebo_1069364068_015"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1069364068,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1069364068_1791368890727770980.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1069364068_006",
+          "phase3_gazebo_1069364068_007",
+          "phase3_gazebo_1069364068_011",
+          "phase3_gazebo_1069364068_016"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1069364068,
+        "fault_family": "planner",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1069364068_1791369102730610851.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1069364068_004",
+          "phase3_gazebo_1069364068_008",
+          "phase3_gazebo_1069364068_009",
+          "phase3_gazebo_1069364068_010"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1069364068,
+        "fault_family": "control",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1069364068_1791369547710980920.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1069364068_002",
+          "phase3_gazebo_1069364068_003",
+          "phase3_gazebo_1069364068_005",
+          "phase3_gazebo_1069364068_014"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 683001511,
+        "fault_family": "localization",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_683001511_1791369774981216176.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_683001511_003",
+          "phase3_gazebo_683001511_005",
+          "phase3_gazebo_683001511_008",
+          "phase3_gazebo_683001511_016"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 683001511,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_683001511_1791370166345519048.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_683001511_006",
+          "phase3_gazebo_683001511_009",
+          "phase3_gazebo_683001511_011",
+          "phase3_gazebo_683001511_014"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 683001511,
+        "fault_family": "planner",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_683001511_1791370407815746237.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_683001511_001",
+          "phase3_gazebo_683001511_002",
+          "phase3_gazebo_683001511_007",
+          "phase3_gazebo_683001511_013"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 683001511,
+        "fault_family": "control",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_683001511_1791370688797811822.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_683001511_004",
+          "phase3_gazebo_683001511_010",
+          "phase3_gazebo_683001511_012",
+          "phase3_gazebo_683001511_015"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 450637390,
+        "fault_family": "localization",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_450637390_1791370957637378219.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_450637390_002",
+          "phase3_gazebo_450637390_004",
+          "phase3_gazebo_450637390_008",
+          "phase3_gazebo_450637390_015"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 450637390,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_450637390_1791371357531609684.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_450637390_001",
+          "phase3_gazebo_450637390_003",
+          "phase3_gazebo_450637390_005",
+          "phase3_gazebo_450637390_007"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 450637390,
+        "fault_family": "planner",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_450637390_1791371632199764401.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_450637390_006",
+          "phase3_gazebo_450637390_011",
+          "phase3_gazebo_450637390_012",
+          "phase3_gazebo_450637390_013"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 450637390,
+        "fault_family": "control",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_450637390_1791372392609014827.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_450637390_009",
+          "phase3_gazebo_450637390_010",
+          "phase3_gazebo_450637390_014",
+          "phase3_gazebo_450637390_016"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1207356449,
+        "fault_family": "localization",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1207356449_1791372647554489501.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1207356449_006",
+          "phase3_gazebo_1207356449_007",
+          "phase3_gazebo_1207356449_012",
+          "phase3_gazebo_1207356449_015"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1207356449,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1207356449_1791373075030538986.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1207356449_004",
+          "phase3_gazebo_1207356449_010",
+          "phase3_gazebo_1207356449_013",
+          "phase3_gazebo_1207356449_016"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1207356449,
+        "fault_family": "planner",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1207356449_1791373255381622508.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1207356449_002",
+          "phase3_gazebo_1207356449_005",
+          "phase3_gazebo_1207356449_009",
+          "phase3_gazebo_1207356449_011"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1207356449,
+        "fault_family": "control",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1207356449_1791373916816273349.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1207356449_001",
+          "phase3_gazebo_1207356449_003",
+          "phase3_gazebo_1207356449_008",
+          "phase3_gazebo_1207356449_014"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1578549000,
+        "fault_family": "localization",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1578549000_1791403319461378194.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1578549000_004",
+          "phase3_gazebo_1578549000_009",
+          "phase3_gazebo_1578549000_011",
+          "phase3_gazebo_1578549000_013"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1578549000,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1578549000_1791374753979994959.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1578549000_001",
+          "phase3_gazebo_1578549000_005",
+          "phase3_gazebo_1578549000_010",
+          "phase3_gazebo_1578549000_015"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1578549000,
+        "fault_family": "planner",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1578549000_1791374986160145471.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1578549000_002",
+          "phase3_gazebo_1578549000_003",
+          "phase3_gazebo_1578549000_006",
+          "phase3_gazebo_1578549000_014"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1578549000,
+        "fault_family": "control",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1578549000_1791375708044945003.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1578549000_007",
+          "phase3_gazebo_1578549000_008",
+          "phase3_gazebo_1578549000_012",
+          "phase3_gazebo_1578549000_016"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 252445555,
+        "fault_family": "localization",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_252445555_1791375985252183691.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_252445555_010",
+          "phase3_gazebo_252445555_013",
+          "phase3_gazebo_252445555_014",
+          "phase3_gazebo_252445555_015"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 252445555,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_252445555_1791376376785556724.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_252445555_003",
+          "phase3_gazebo_252445555_004",
+          "phase3_gazebo_252445555_006",
+          "phase3_gazebo_252445555_012"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 252445555,
+        "fault_family": "planner",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_252445555_1791376564091520581.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_252445555_001",
+          "phase3_gazebo_252445555_008",
+          "phase3_gazebo_252445555_011",
+          "phase3_gazebo_252445555_016"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 252445555,
+        "fault_family": "control",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_252445555_1791376955073571178.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_252445555_002",
+          "phase3_gazebo_252445555_005",
+          "phase3_gazebo_252445555_007",
+          "phase3_gazebo_252445555_009"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 729528073,
+        "fault_family": "localization",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_729528073_1791377207418683678.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_729528073_002",
+          "phase3_gazebo_729528073_004",
+          "phase3_gazebo_729528073_006",
+          "phase3_gazebo_729528073_010"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 729528073,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_729528073_1791403723811196456.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_729528073_007",
+          "phase3_gazebo_729528073_008",
+          "phase3_gazebo_729528073_012",
+          "phase3_gazebo_729528073_016"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 729528073,
+        "fault_family": "planner",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_729528073_1791378211142933677.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_729528073_001",
+          "phase3_gazebo_729528073_009",
+          "phase3_gazebo_729528073_011",
+          "phase3_gazebo_729528073_013"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 729528073,
+        "fault_family": "control",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_729528073_1791378808775986106.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_729528073_003",
+          "phase3_gazebo_729528073_005",
+          "phase3_gazebo_729528073_014",
+          "phase3_gazebo_729528073_015"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1092085222,
+        "fault_family": "localization",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1092085222_1791379052623397535.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1092085222_007",
+          "phase3_gazebo_1092085222_009",
+          "phase3_gazebo_1092085222_011",
+          "phase3_gazebo_1092085222_014"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1092085222,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1092085222_1791379900755194707.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1092085222_002",
+          "phase3_gazebo_1092085222_006",
+          "phase3_gazebo_1092085222_008",
+          "phase3_gazebo_1092085222_015"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1092085222,
+        "fault_family": "planner",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1092085222_1791380084579197743.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1092085222_003",
+          "phase3_gazebo_1092085222_004",
+          "phase3_gazebo_1092085222_005",
+          "phase3_gazebo_1092085222_013"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1092085222,
+        "fault_family": "control",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1092085222_1791404022121235327.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1092085222_001",
+          "phase3_gazebo_1092085222_010",
+          "phase3_gazebo_1092085222_012",
+          "phase3_gazebo_1092085222_016"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 200776800,
+        "fault_family": "localization",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_200776800_1791412172681416954.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_200776800_001",
+          "phase3_gazebo_200776800_010",
+          "phase3_gazebo_200776800_013",
+          "phase3_gazebo_200776800_016"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 200776800,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_200776800_1791381436910059416.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_200776800_003",
+          "phase3_gazebo_200776800_005",
+          "phase3_gazebo_200776800_007",
+          "phase3_gazebo_200776800_009"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 200776800,
+        "fault_family": "planner",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_200776800_1791381833781673776.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_200776800_004",
+          "phase3_gazebo_200776800_008",
+          "phase3_gazebo_200776800_011",
+          "phase3_gazebo_200776800_014"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 200776800,
+        "fault_family": "control",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_200776800_1791382722233585375.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_200776800_002",
+          "phase3_gazebo_200776800_006",
+          "phase3_gazebo_200776800_012",
+          "phase3_gazebo_200776800_015"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1464253601,
+        "fault_family": "localization",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1464253601_1791382955936346156.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1464253601_003",
+          "phase3_gazebo_1464253601_008",
+          "phase3_gazebo_1464253601_010",
+          "phase3_gazebo_1464253601_014"
+        ],
+        "fault_ids": [
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset",
+          "localization_initial_pose_offset"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1464253601,
+        "fault_family": "costmap",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1464253601_1791383413525157888.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1464253601_001",
+          "phase3_gazebo_1464253601_004",
+          "phase3_gazebo_1464253601_011",
+          "phase3_gazebo_1464253601_012"
+        ],
+        "fault_ids": [
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle",
+          "costmap_static_obstacle"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1464253601,
+        "fault_family": "planner",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1464253601_1791383793843013667.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1464253601_002",
+          "phase3_gazebo_1464253601_005",
+          "phase3_gazebo_1464253601_013",
+          "phase3_gazebo_1464253601_015"
+        ],
+        "fault_ids": [
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated",
+          "planner_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      },
+      {
+        "seed": 1464253601,
+        "fault_family": "control",
+        "path": "results/phase4_final_evolving_m50/phase3_gazebo_eacr_evolving_1464253601_1791384205417006914.json",
+        "checks": {
+          "protocol_compliant": true,
+          "episode_count_4": true,
+          "episodes_evidence_valid": true,
+          "use_belief_action_scope": true,
+          "fault_scale_1_5": true,
+          "fault_repetitions_4": true,
+          "online_update_off": true,
+          "resume_off": true,
+          "correct_checkpoint": true,
+          "same_family": true
+        },
+        "episode_ids": [
+          "phase3_gazebo_1464253601_006",
+          "phase3_gazebo_1464253601_007",
+          "phase3_gazebo_1464253601_009",
+          "phase3_gazebo_1464253601_016"
+        ],
+        "fault_ids": [
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated",
+          "controller_server_deactivated"
+        ],
+        "actual_map_id": "tb3_sandbox",
+        "goal": {
+          "x": 0.7508496046,
+          "y": 1.8354123831,
+          "yaw": 1.4751400097
+        },
+        "experience_environment_bin": "tb3_sandbox_gazebo",
+        "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab"
+      }
+    ]
+  },
+  "pairing": {
+    "1069364068:localization": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1069364068:costmap": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1069364068:planner": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1069364068:control": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "683001511:localization": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "683001511:costmap": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "683001511:planner": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "683001511:control": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "450637390:localization": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "450637390:costmap": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "450637390:planner": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "450637390:control": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1207356449:localization": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1207356449:costmap": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1207356449:planner": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1207356449:control": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1578549000:localization": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1578549000:costmap": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1578549000:planner": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1578549000:control": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "252445555:localization": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "252445555:costmap": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "252445555:planner": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "252445555:control": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "729528073:localization": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "729528073:costmap": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "729528073:planner": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "729528073:control": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1092085222:localization": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1092085222:costmap": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1092085222:planner": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1092085222:control": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "200776800:localization": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "200776800:costmap": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "200776800:planner": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "200776800:control": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1464253601:localization": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1464253601:costmap": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1464253601:planner": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    },
+    "1464253601:control": {
+      "same_episode_ids": true,
+      "same_fault_ids": true,
+      "same_goal": true,
+      "paired": true
+    }
+  },
+  "all_checks_pass": true,
+  "episode_input_pairing": {
+    "episode_pair_count": 160,
+    "same_online_evidence": 120,
+    "same_belief": 160,
+    "same_candidate_set": 160,
+    "same_candidate_order": 80,
+    "ranking_length_counts": {
+      "Static_M0=3,M50=3": 80,
+      "Static_M0=5,M50=5": 40,
+      "Static_M0=4,M50=4": 40
+    },
+    "note": "Ranking lists are the per-episode executable candidate subset after the common belief-action scope; the underlying action library remains nine actions.",
+    "online_evidence_difference_fields": {
+      "amcl_distance_to_start_m": 40
+    },
+    "same_belief_rate": 1.0,
+    "same_candidate_set_rate": 1.0,
+    "same_candidate_order_rate": 0.5
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "correction_id": "eacr_supplementary_A_source_provenance_correction_01",
+  "registered_utc": "2026-10-08T15:35:00+00:00",
+  "supersedes_claim_in": "results/supplementary_A_execution_amendment_01.json",
+  "issue": "The prior amendment asserted that reversing the retry-guard edit reconstructed the exact matrix dispatcher bytes registered by protocol. Rechecking the available execution copy disproved that assertion.",
+  "frozen_protocol_sha256": "36b014651328664cfb5fa2dc868499b05d1813115f6a4f92487bce8544302a96",
+  "available_A_execution_snapshot_sha256": "68389b07358fecd0485fc04961fd2082e92837995a08c1cc31706b56f0776d9a",
+  "amendment_reported_execution_sha256": "68389b07358fecd0485fc04961fd2082e92837995a08c1cc31706b56f0776d9a",
+  "tracked_git_versions_checked": [
+    {
+      "commit": "35db44803f62df923e2c102cafe7983d09d5ba15",
+      "sha256": "dc0e4d09c68e075c929bfd70fb00526fbb4ae941d69cc3357956ae006540157a"
+    },
+    {
+      "commit": "83a47d60845bc388c23711fe3364e618e7176f5c",
+      "sha256": "0551e355151714386b7f8eaf1e9d4c9cf109ef34f2b152019a54aa195e446415"
+    },
+    {
+      "commit": "aadc9deca50d5c0b5063a02e5f6957cc4706ca70",
+      "sha256": "1142d9e0eb4697de610ef880a9ae9d3478d606db26ad4f030f09c671d552cb40"
+    }
+  ],
+  "exact_frozen_matrix_source_recovered": false,
+  "method_code_runner_injector_and_action_library_match_protocol": true,
+  "impact": "The experiment data remain intact. The dispatcher provenance claim is downgraded: 11 method/runtime/configuration source files match the frozen hashes; the exact matrix script registered before its retry amendment was not recoverable from available files or tracked Git history. The available dispatcher snapshot and its SHA-256 are preserved. This limits exact orchestration-source reproducibility, but does not indicate a change to method, action, seed, or cell parameters.",
+  "snapshot_manifest": "results/supplementary_A_source_snapshot/manifest.json",
+  "other_sources_exactly_match": true,
+  "other_source_count": 11
+}

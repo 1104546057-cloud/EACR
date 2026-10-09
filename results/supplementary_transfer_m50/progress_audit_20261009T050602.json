@@ -1,0 +1,77 @@
+{
+  "snapshot_id": "eacr_transfer_frozen_m50_progress_audit_v5",
+  "captured_local": "2026-10-09T05:06:02+08:00",
+  "supplementary_protocol_id": "eacr_supplementary_B_v1",
+  "supplementary_protocol_sha256": "f4733a592d392320e67394faf21b251a56c701573f5a85745f3b13d41f48e964",
+  "runner_protocol_id": "eacr_phase3_v1",
+  "scope_note": "Interim integrity snapshot only; not final inference. Final analysis requires all paired methods across the 10 frozen seeds.",
+  "method": "eacr_evolving",
+  "checkpoint": "M_50",
+  "actual_map_id": "transfer_courtyard",
+  "valid_cell_count": 2,
+  "expected_cell_count": 40,
+  "invalid_attempt_count": 0,
+  "duplicate_valid_seed_family_keys": [],
+  "family_episode_summary": {
+    "localization": {
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 0,
+      "strict_success": 0,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "inspect_tf": 4
+      }
+    },
+    "costmap": {
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 4
+      }
+    }
+  },
+  "selected_valid_records": [
+    {
+      "path": "results/supplementary_transfer_m50/phase3_gazebo_eacr_evolving_1523842677_1791492911467767748.json",
+      "sha256": "9e94711694bc70592edbd8930f80b528a20c8684686bf08a9ae9b69a516554c8",
+      "seed": 1523842677,
+      "fault_family": "localization",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 0,
+      "strict_success": 0,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "inspect_tf": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_m50/phase3_gazebo_eacr_evolving_1523842677_1791493370355846362.json",
+      "sha256": "30dc524c5e2625412da40af00e01dde4ce9a773757427952afd39c4c999ed2c7",
+      "seed": 1523842677,
+      "fault_family": "costmap",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 4
+      }
+    }
+  ],
+  "excluded_attempts": [],
+  "manual_invalid_attempt_entries": [],
+  "malformed_files": [],
+  "raw_file_count": 2,
+  "integrity_checks": {
+    "protocol_source_hash_count": 25,
+    "protocol_source_hash_mismatches": [],
+    "prior_selected_hash_mismatches": [],
+    "selected_file_hash_mismatches": []
+  }
+}

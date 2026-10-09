@@ -1,0 +1,428 @@
+{
+  "protocol_id": "eacr_phase3_v1",
+  "baselines": [
+    "eacr_strong_rule"
+  ],
+  "seeds": [
+    1069364068,
+    683001511,
+    450637390,
+    1207356449,
+    1578549000,
+    252445555,
+    729528073,
+    1092085222,
+    200776800,
+    1464253601
+  ],
+  "fault_families": [
+    "localization",
+    "costmap",
+    "planner",
+    "control"
+  ],
+  "experience_checkpoint": "M_0",
+  "experience_prior_mode": "weak_shared_m0",
+  "fault_repetitions": 4,
+  "experience_environment_bin": "tb3_sandbox_gazebo",
+  "actual_map_id": "tb3_sandbox",
+  "goal": {
+    "x": 0.7508496046,
+    "y": 1.8354123831,
+    "yaw": 1.4751400097
+  },
+  "initial_pose": {
+    "x": -2.0,
+    "y": -0.5,
+    "yaw": 0.0
+  },
+  "use_belief_action_scope": true,
+  "fault_scale": 1.5,
+  "online_experience_update": false,
+  "resume_experience_state": false,
+  "runs": [
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1069364068,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1069364068,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1069364068,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1069364068,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 683001511,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 683001511,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 683001511,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 683001511,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 450637390,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 450637390,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 450637390,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 450637390,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1207356449,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1207356449,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1207356449,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1207356449,
+      "fault_family": "control",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1578549000,
+      "fault_family": "localization",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1578549000,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1578549000,
+      "fault_family": "planner",
+      "returncode": 0,
+      "skipped_existing_valid": true,
+      "attempts": 0,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1578549000,
+      "fault_family": "control",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791467188.456443263] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1578549000_1791467188437720931.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 252445555,
+      "fault_family": "localization",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791467452.376776126] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_252445555_1791467452359043040.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 252445555,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791467917.390802439] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_252445555_1791467917372301592.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 252445555,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791468147.093369911] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_252445555_1791468147074926698.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 252445555,
+      "fault_family": "control",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791468505.920443644] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_252445555_1791468505902542235.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 729528073,
+      "fault_family": "localization",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791468789.873643799] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_729528073_1791468789855388021.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 729528073,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791469206.851803478] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_729528073_1791469206834048623.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 729528073,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791469443.013167028] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_729528073_1791469442995330746.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 729528073,
+      "fault_family": "control",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791469860.018855047] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_729528073_1791469860000670349.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1092085222,
+      "fault_family": "localization",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791470168.925283239] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1092085222_1791470168906897785.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1092085222,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791470563.989050979] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1092085222_1791470563970382099.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1092085222,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791471086.081264091] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1092085222_1791471086061484927.json\n",
+      "attempts": 2,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1092085222,
+      "fault_family": "control",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791471437.085791453] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1092085222_1791471437067742913.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 200776800,
+      "fault_family": "localization",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791471647.547306689] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_200776800_1791471647528840919.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 200776800,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791472100.680702902] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_200776800_1791472100662983406.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 200776800,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791472355.865201466] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_200776800_1791472355847281554.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 200776800,
+      "fault_family": "control",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791472811.998958320] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_200776800_1791472811979978563.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1464253601,
+      "fault_family": "localization",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791473137.718567223] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1464253601_1791473137700179072.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1464253601,
+      "fault_family": "costmap",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791473528.948583127] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1464253601_1791473528929409107.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1464253601,
+      "fault_family": "planner",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791473747.017893315] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1464253601_1791473747000101430.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    },
+    {
+      "baseline": "eacr_strong_rule",
+      "seed": 1464253601,
+      "fault_family": "control",
+      "returncode": 0,
+      "stdout_tail": "EACR environment ready: /home/hu/文档/ChatGPT/论文/eacr_ws\n",
+      "stderr_tail": "[INFO] [1791474147.591635322] [phase3_gazebo_runner]: Gazebo phase-three result: results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1464253601_1791474147573859476.json\n",
+      "attempts": 1,
+      "protocol_ok": true
+    }
+  ],
+  "completed_runs": 40,
+  "total_runs": 40
+}

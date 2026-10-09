@@ -1,0 +1,205 @@
+{
+  "protocol_id": "eacr_supplementary_B_v1",
+  "status": "frozen_before_B_formal_evaluation",
+  "registered_utc": "2026-10-08T16:20:55Z",
+  "objective": "Zero-shot transfer evaluation of frozen M50 versus same-information strong rule and Static M0 on one new map/route with four predeclared fault variants.",
+  "scenario": {
+    "actual_map_id": "transfer_courtyard",
+    "map_yaml": "src/eacr_sim/maps/transfer_courtyard.yaml",
+    "map_image": "src/eacr_sim/maps/transfer_courtyard.pgm",
+    "world": "src/eacr_sim/worlds/transfer_courtyard.sdf.xacro",
+    "episode_config": "src/eacr_sim/config/episode_transfer_courtyard.yaml",
+    "nav2_params_file": "src/eacr_sim/config/nav2_transfer_courtyard.yaml",
+    "nav2_params_sha256": "8cb7c53be80b548ebfa19d463869d2cc9aab9afd71f1f94974e14d066f6f4213",
+    "global_costmap_plugins": [
+      "static_layer",
+      "inflation_layer"
+    ],
+    "local_costmap_plugins": [
+      "voxel_layer",
+      "inflation_layer"
+    ],
+    "reason_for_global_static_map": "The fixed world obstacles are represented in the matched occupancy map. Removing the global obstacle clearing layer prevents a successful nominal trial from turning the deliberately unknown goal patch into known-free cells before the fault trial; local voxel sensing remains enabled for collision safety.",
+    "start": {
+      "x": -2.5,
+      "y": -2.5,
+      "yaw": 0.0
+    },
+    "goal": {
+      "x": 2.5,
+      "y": 2.5,
+      "yaw": 0.0
+    }
+  },
+  "fault_variants": {
+    "localization": {
+      "fault_scale": 1.5,
+      "offset_x_m": 1.275,
+      "offset_y_m": -0.825,
+      "offset_yaw_rad": 0.675,
+      "evidence": "AMCL distance to the reset pose > 0.35 m"
+    },
+    "costmap": {
+      "fault_scale": 1.5,
+      "global_footprint_padding_m": 3.0,
+      "local_footprint_padding_m": 3.0,
+      "evidence": "footprint_padding > 0.5"
+    },
+    "planner": {
+      "parameter": "GridBased.allow_unknown",
+      "fault_value": false,
+      "rollback_value": true,
+      "evidence": "parameter readback and independent NavigateToPose ABORTED; valid GridBased ComputePathToPose reports NO_VALID_PATH (208)"
+    },
+    "control": {
+      "fault_scale": 1.5,
+      "min_x_velocity_threshold": 12.0,
+      "rollback_readback": 0.001,
+      "evidence": "min_x_velocity_threshold > 1.0"
+    }
+  },
+  "methods": {
+    "static_m0": {
+      "baseline": "eacr_static",
+      "experience_checkpoint": "M_0",
+      "experience_snapshot_path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_experience_evolving_full_M_0.json",
+      "experience_snapshot_sha256": "6312a0e9aa5c87ad259bc93dd44d43a9b7cd2745757fa98c575cb645772f1964",
+      "result_dir": "results/supplementary_transfer_static_m0"
+    },
+    "frozen_m50": {
+      "baseline": "eacr_evolving",
+      "experience_checkpoint": "M_50",
+      "experience_snapshot_path": "/home/hu/文档/ChatGPT/论文/eacr_ws/results/phase4_experience_evolving_full_M_50.json",
+      "experience_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab",
+      "result_dir": "results/supplementary_transfer_m50"
+    },
+    "strong_rule": {
+      "baseline": "eacr_strong_rule",
+      "experience_checkpoint": "M_0",
+      "experience_snapshot_path": null,
+      "experience_snapshot_sha256": null,
+      "result_dir": "results/supplementary_transfer_strong_rule"
+    }
+  },
+  "seeds": [
+    1523842677,
+    1489230398,
+    811258016,
+    457375178,
+    459825488,
+    1514040653,
+    1465190814,
+    1533101624,
+    520996532,
+    477646935
+  ],
+  "expected_run": {
+    "fault_repetitions": 4,
+    "actual_map_id": "transfer_courtyard",
+    "experience_environment_bin": "tb3_sandbox_gazebo",
+    "experience_prior_mode": "weak_shared_m0",
+    "use_belief_action_scope": true,
+    "online_experience_update": false,
+    "resume_experience_state": false,
+    "fault_scale": 1.5,
+    "goal": {
+      "x": 2.5,
+      "y": 2.5,
+      "yaw": 0.0
+    },
+    "initial_pose": {
+      "x": -2.5,
+      "y": -2.5,
+      "yaw": 0.0
+    },
+    "goal_timeout_sec": 60.0,
+    "params_file": "src/eacr_sim/config/nav2_transfer_courtyard.yaml",
+    "global_costmap_plugins": [
+      "static_layer",
+      "inflation_layer"
+    ],
+    "local_costmap_plugins": [
+      "voxel_layer",
+      "inflation_layer"
+    ]
+  },
+  "action_budget": 1,
+  "action_library_size": 9,
+  "matrix_execution": {
+    "one_gazebo_instance": true,
+    "fault_repetitions": 4,
+    "outer_cell_timeout_sec": 1200,
+    "retries": 2,
+    "run_methods_separately": true,
+    "no_online_experience_update": true,
+    "no_resume_experience_state": true
+  },
+  "primary_comparison": "frozen_m50_minus_strong_rule",
+  "secondary_comparisons": [
+    "frozen_m50_minus_static_m0",
+    "strong_rule_minus_static_m0"
+  ],
+  "analysis": {
+    "pairing_keys": [
+      "method",
+      "seed",
+      "fault_family",
+      "repetition_id"
+    ],
+    "seed_is_cluster": true,
+    "cluster_bootstrap_draws": 10000,
+    "report_all_episode_strict_success": true,
+    "report_behavior_failure_stratum": true,
+    "report_nav2_pre_action_status_separately": true,
+    "report_parameter_repair_separately_from_behavior_recovery": true
+  },
+  "engineering_pilot": {
+    "status": "passed",
+    "report_path": "results/supplementary_B_engineering_pilot.json",
+    "checks": {
+      "normal_navigation": true,
+      "episode_reset": true,
+      "fault_injection": true,
+      "online_evidence": true,
+      "behavioral_effect": true,
+      "rollback": true,
+      "post_action_recovery": true,
+      "m50_experience_key_hit": true,
+      "nav2_bt_audit": true
+    },
+    "pilot_seed": 1876543211
+  },
+  "nav2_bt_reference": {
+    "audit_path": "results/supplementary_nav2_bt_audit.json",
+    "path": "/opt/ros/jazzy/share/nav2_bt_navigator/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml",
+    "sha256": "5895b63840d54c6d7eee3d3b3f3ee177680af9e58a14cbf61c4df39fe5db2a90",
+    "role": "engineering reference, not an equal-action algorithm baseline"
+  },
+  "source_sha256": {
+    "scripts/run_phase3_gazebo_matrix.py": "68389b07358fecd0485fc04961fd2082e92837995a08c1cc31706b56f0776d9a",
+    "scripts/analyze_supplementary_B.py": "69b9629ae8f5fc57a765888e4043ab5ba6e7ae99b87ec2e2607146f31a8879a9",
+    "scripts/audit_supplementary_B_pilot.py": "e7afba342a71002e25961bb255d5ca58e2d72a8206ff01dbcd40e2ee7b7fcf91",
+    "scripts/audit_supplementary_transfer_geometry.py": "7da25cb07842dace3ab61a06a2110c7229f5a250ca360be75ce25c278fb61e95",
+    "scripts/render_supplementary_report.py": "3e8a866957a186913ac5d286fe4a8dd03b5b362a5c795d6d7f45df3268098095",
+    "scripts/archive_supplementary_experiment.py": "85c27d73491f6b7467f6073889223011e698344b0068be454c2ea5587cd9f458",
+    "src/eacr_core/eacr_core/action_library.py": "b50fdc13567ae9c44baf94af4c7860564582fcec83ab22ffafab0e7468b97726",
+    "src/eacr_core/eacr_core/baselines.py": "e79de8f9507a760104c4ec00979bd713211544d236ebf4a3035923877a32a1c3",
+    "src/eacr_core/eacr_core/policy.py": "ffb78b9373aee712e00b15137f7e1778fa74fa361c0ae396a41a28aae4648a4f",
+    "src/eacr_core/eacr_core/experience.py": "0aec5ed7f9a1344cfa619e5e33916fff14ab54a5b8d0cac458327c8f07e4892f",
+    "src/eacr_core/eacr_core/types.py": "b134dcb594b50c3e32a3c9f24b71205b3685e4a97ea99750ed681af06907eecf",
+    "src/eacr_sim/eacr_sim/phase3_gazebo_runner.py": "4831a88dae5b76ab99be55a3a435c7c8c7b782108b0294cff9569d276562a710",
+    "src/eacr_sim/eacr_sim/fault_injector.py": "20f5e9a0af837fadfc9fd5da61fb67939b2999942d26a3cef60f97219d18e3c0",
+    "src/eacr_sim/launch/eacr_episode.launch.py": "2b72a4fa9bd5f5863c51e795d64000dabbcde468a3ef546c315150a906ad0192",
+    "src/eacr_sim/config/episode_transfer_courtyard.yaml": "00ed74ce58de490cd9372c86aa90045fe09e3261202d5cd55c46f139f91805a1",
+    "src/eacr_sim/config/nav2_transfer_courtyard.yaml": "8cb7c53be80b548ebfa19d463869d2cc9aab9afd71f1f94974e14d066f6f4213",
+    "src/eacr_sim/maps/transfer_courtyard.yaml": "efa7129bd9cd3f3443eb100017ad057a8aebd444c128d4ccef22eee9c5284e99",
+    "src/eacr_sim/maps/transfer_courtyard.pgm": "c740d19243d75430386006c331e632c612dbbf6250381e45c6610ba53f36deda",
+    "src/eacr_sim/worlds/transfer_courtyard.sdf.xacro": "fbcd714f893ac82fbc50bd6ff304da1a9d0867f6670733dd2a8d2753a88b7d73",
+    "results/phase4_experience_evolving_full_M_0.json": "6312a0e9aa5c87ad259bc93dd44d43a9b7cd2745757fa98c575cb645772f1964",
+    "results/phase4_experience_evolving_full_M_50.json": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab",
+    "results/supplementary_nav2_bt_audit.json": "01de52baf02ddd7ddf1df23c1dd6063d1da822a1318534ce786b0f3a8cd92be8",
+    "results/supplementary_transfer_geometry_audit.json": "b31980b234c7793ed1bed16bae2116101cf2f55ac7700e748fe45ce94bac23df",
+    "results/supplementary_B_engineering_pilot.json": "150fbac72c68cb654e287e5e03f48f1b4f194a021e4c0e3e7844c41d9433782e",
+    "/opt/ros/jazzy/share/nav2_bt_navigator/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml": "5895b63840d54c6d7eee3d3b3f3ee177680af9e58a14cbf61c4df39fe5db2a90"
+  }
+}

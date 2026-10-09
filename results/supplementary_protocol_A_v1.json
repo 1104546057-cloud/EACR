@@ -1,0 +1,58 @@
+{
+  "protocol_id": "eacr_supplementary_A_v1",
+  "registered_utc": "2026-10-08T10:56:46.971673+00:00",
+  "design": "post_hoc_supplementary_paired_strong_rule",
+  "baseline": "eacr_strong_rule",
+  "scene": "tb3_sandbox",
+  "seeds": [
+    1069364068,
+    683001511,
+    450637390,
+    1207356449,
+    1578549000,
+    252445555,
+    729528073,
+    1092085222,
+    200776800,
+    1464253601
+  ],
+  "fault_families": [
+    "localization",
+    "costmap",
+    "planner",
+    "control"
+  ],
+  "fault_repetitions": 4,
+  "required_valid_cells": 40,
+  "goal_timeout_sec": 60,
+  "fault_scale": 1.5,
+  "experience_prior_mode": "weak_shared_m0",
+  "use_belief_action_scope": true,
+  "online_experience_update": false,
+  "resume_experience_state": false,
+  "action_budget": 1,
+  "action_library_size": 9,
+  "original_aggregate_sha256": "03118a2448681ea20bd4bb2a6fb209afb98d1272a96e88e72df8d6093a6e4f23",
+  "source_sha256": {
+    "src/eacr_core/eacr_core/baselines.py": "ad6b3c73ef830ae7653af2ae39ee69b73715ee7c31ff9ce49b475c52cdc38939",
+    "src/eacr_core/eacr_core/action_library.py": "b50fdc13567ae9c44baf94af4c7860564582fcec83ab22ffafab0e7468b97726",
+    "src/eacr_core/eacr_core/policy.py": "ffb78b9373aee712e00b15137f7e1778fa74fa361c0ae396a41a28aae4648a4f",
+    "src/eacr_sim/eacr_sim/phase3_gazebo_runner.py": "d2d0871a20562dc9ca40eb43d25d2cb7652b726bc606dcb5a8dbd42a1db418dc",
+    "src/eacr_sim/eacr_sim/fault_injector.py": "3d42aefdf7c50152121d75d69655d5e68976d71079cc69de8e62f5c4c0f91af7",
+    "src/eacr_sim/launch/eacr_episode.launch.py": "3e3f7b2b047cc5fd9ea96e4cba036a18891a15fdd8ffa9f109fb06fa8af6347e",
+    "src/eacr_sim/config/episode.yaml": "4efe9396da3b716a0eee51699273816df668986df3130b22fa0fe32e7645df08",
+    "scripts/run_phase3_gazebo_matrix.py": "36b014651328664cfb5fa2dc868499b05d1813115f6a4f92487bce8544302a96",
+    "/opt/ros/jazzy/share/nav2_bringup/maps/tb3_sandbox.yaml": "2a284eba0a3aa4a904bce71734c56a543e979899f1cf34daad6e8215e608b438",
+    "/opt/ros/jazzy/share/nav2_bringup/maps/tb3_sandbox.pgm": "0103b9dfaa3b79592af71cc35d64f69cfbd3565d173160820ad8ef56cd27b3fc",
+    "/opt/ros/jazzy/share/nav2_minimal_tb3_sim/worlds/tb3_sandbox.sdf.xacro": "466ebfb9f3dc39c46829a01c405543091d428839c15697d80ddb8fab6dff7771",
+    "/opt/ros/jazzy/share/nav2_bt_navigator/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml": "5895b63840d54c6d7eee3d3b3f3ee177680af9e58a14cbf61c4df39fe5db2a90"
+  },
+  "pilot_seed": 1876543210,
+  "pilot_result": "supplementary_pilot_original/phase3_gazebo_eacr_strong_rule_1876543210_1791456747251331885.json",
+  "analysis_notes": [
+    "Original Static and M50 selected using cell_metrics path in frozen aggregate",
+    "Planner parameter-only effects and pre-action Nav2 successes reported separately from behavioral rescues",
+    "No evaluation seed used to tune rule"
+  ],
+  "git_head": "35db44803f62df923e2c102cafe7983d09d5ba15"
+}

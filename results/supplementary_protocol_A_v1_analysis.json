@@ -1,0 +1,15 @@
+{
+  "analysis_plan_id": "eacr_supplementary_A_v1_analysis",
+  "registered_utc": "2026-10-08T10:58:16.205920+00:00",
+  "base_protocol_sha256": "ec5b3cefe07d9872ce0c953de005f7fd7f20793e7a87e68f8e9ba1470eb139cb",
+  "analysis_script_sha256": "63de8f9570146180c00b61d67330716cc1b5d5047733abc4462f2decd9d5606f",
+  "main_contrast": "M50 minus strong rule, seed-cluster bootstrap, 10000 draws",
+  "secondary_contrasts": [
+    "M50 minus Static M0",
+    "strong rule minus Static M0"
+  ],
+  "seeds_are_clusters": true,
+  "behavior_failure_paired_subset": "both methods fault_behavior_observed true for same seed/family/repeat",
+  "selection": "earliest valid new attempt per seed/family; original selected paths from frozen aggregate",
+  "note": "Registered after dispatcher launch but before first valid A cell outcome was examined."
+}

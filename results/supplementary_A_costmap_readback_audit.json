@@ -1,0 +1,378 @@
+{
+  "audit_id": "supplementary_A_costmap_parameter_readback_v1",
+  "protocol_sha256": "ec5b3cefe07d9872ce0c953de005f7fd7f20793e7a87e68f8e9ba1470eb139cb",
+  "last_verified_utc": "2026-10-08T15:33:09.158175+00:00",
+  "valid_costmap_cells_audited": 10,
+  "valid_costmap_episode_count": 40,
+  "fault_scale_values": [
+    1.5
+  ],
+  "observed_parameter_values": [
+    3.0
+  ],
+  "all_readbacks_match_scale_formula": true,
+  "injector_detail_text_hardcodes_2_0": false,
+  "interpretation": "The injector sets max(0.6, 2.0*fault_scale); actual online Nav2 parameter readback is authoritative. The service detail string hardcodes 2.0, so report the readback and do not treat the label mismatch as an invalid cell.",
+  "episodes": [
+    {
+      "seed": 200776800,
+      "episode_id": "phase3_gazebo_200776800_003",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_200776800_1791472100662983406.json"
+    },
+    {
+      "seed": 200776800,
+      "episode_id": "phase3_gazebo_200776800_005",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_200776800_1791472100662983406.json"
+    },
+    {
+      "seed": 200776800,
+      "episode_id": "phase3_gazebo_200776800_007",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_200776800_1791472100662983406.json"
+    },
+    {
+      "seed": 200776800,
+      "episode_id": "phase3_gazebo_200776800_009",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_200776800_1791472100662983406.json"
+    },
+    {
+      "seed": 252445555,
+      "episode_id": "phase3_gazebo_252445555_003",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_252445555_1791467917372301592.json"
+    },
+    {
+      "seed": 252445555,
+      "episode_id": "phase3_gazebo_252445555_004",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_252445555_1791467917372301592.json"
+    },
+    {
+      "seed": 252445555,
+      "episode_id": "phase3_gazebo_252445555_006",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_252445555_1791467917372301592.json"
+    },
+    {
+      "seed": 252445555,
+      "episode_id": "phase3_gazebo_252445555_012",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_252445555_1791467917372301592.json"
+    },
+    {
+      "seed": 450637390,
+      "episode_id": "phase3_gazebo_450637390_001",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_450637390_1791460157370705812.json"
+    },
+    {
+      "seed": 450637390,
+      "episode_id": "phase3_gazebo_450637390_003",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_450637390_1791460157370705812.json"
+    },
+    {
+      "seed": 450637390,
+      "episode_id": "phase3_gazebo_450637390_005",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_450637390_1791460157370705812.json"
+    },
+    {
+      "seed": 450637390,
+      "episode_id": "phase3_gazebo_450637390_007",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_450637390_1791460157370705812.json"
+    },
+    {
+      "seed": 683001511,
+      "episode_id": "phase3_gazebo_683001511_006",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_683001511_1791458869274015239.json"
+    },
+    {
+      "seed": 683001511,
+      "episode_id": "phase3_gazebo_683001511_009",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_683001511_1791458869274015239.json"
+    },
+    {
+      "seed": 683001511,
+      "episode_id": "phase3_gazebo_683001511_011",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_683001511_1791458869274015239.json"
+    },
+    {
+      "seed": 683001511,
+      "episode_id": "phase3_gazebo_683001511_014",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_683001511_1791458869274015239.json"
+    },
+    {
+      "seed": 729528073,
+      "episode_id": "phase3_gazebo_729528073_007",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_729528073_1791469206834048623.json"
+    },
+    {
+      "seed": 729528073,
+      "episode_id": "phase3_gazebo_729528073_008",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_729528073_1791469206834048623.json"
+    },
+    {
+      "seed": 729528073,
+      "episode_id": "phase3_gazebo_729528073_012",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_729528073_1791469206834048623.json"
+    },
+    {
+      "seed": 729528073,
+      "episode_id": "phase3_gazebo_729528073_016",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_729528073_1791469206834048623.json"
+    },
+    {
+      "seed": 1069364068,
+      "episode_id": "phase3_gazebo_1069364068_006",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1069364068_1791457735327538593.json"
+    },
+    {
+      "seed": 1069364068,
+      "episode_id": "phase3_gazebo_1069364068_007",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1069364068_1791457735327538593.json"
+    },
+    {
+      "seed": 1069364068,
+      "episode_id": "phase3_gazebo_1069364068_011",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1069364068_1791457735327538593.json"
+    },
+    {
+      "seed": 1069364068,
+      "episode_id": "phase3_gazebo_1069364068_016",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1069364068_1791457735327538593.json"
+    },
+    {
+      "seed": 1092085222,
+      "episode_id": "phase3_gazebo_1092085222_002",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1092085222_1791470563970382099.json"
+    },
+    {
+      "seed": 1092085222,
+      "episode_id": "phase3_gazebo_1092085222_006",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1092085222_1791470563970382099.json"
+    },
+    {
+      "seed": 1092085222,
+      "episode_id": "phase3_gazebo_1092085222_008",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1092085222_1791470563970382099.json"
+    },
+    {
+      "seed": 1092085222,
+      "episode_id": "phase3_gazebo_1092085222_015",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1092085222_1791470563970382099.json"
+    },
+    {
+      "seed": 1207356449,
+      "episode_id": "phase3_gazebo_1207356449_004",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1207356449_1791461776004666841.json"
+    },
+    {
+      "seed": 1207356449,
+      "episode_id": "phase3_gazebo_1207356449_010",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1207356449_1791461776004666841.json"
+    },
+    {
+      "seed": 1207356449,
+      "episode_id": "phase3_gazebo_1207356449_013",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1207356449_1791461776004666841.json"
+    },
+    {
+      "seed": 1207356449,
+      "episode_id": "phase3_gazebo_1207356449_016",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1207356449_1791461776004666841.json"
+    },
+    {
+      "seed": 1464253601,
+      "episode_id": "phase3_gazebo_1464253601_001",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1464253601_1791473528929409107.json"
+    },
+    {
+      "seed": 1464253601,
+      "episode_id": "phase3_gazebo_1464253601_004",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1464253601_1791473528929409107.json"
+    },
+    {
+      "seed": 1464253601,
+      "episode_id": "phase3_gazebo_1464253601_011",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1464253601_1791473528929409107.json"
+    },
+    {
+      "seed": 1464253601,
+      "episode_id": "phase3_gazebo_1464253601_012",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1464253601_1791473528929409107.json"
+    },
+    {
+      "seed": 1578549000,
+      "episode_id": "phase3_gazebo_1578549000_001",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1578549000_1791464138441037232.json"
+    },
+    {
+      "seed": 1578549000,
+      "episode_id": "phase3_gazebo_1578549000_005",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1578549000_1791464138441037232.json"
+    },
+    {
+      "seed": 1578549000,
+      "episode_id": "phase3_gazebo_1578549000_010",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1578549000_1791464138441037232.json"
+    },
+    {
+      "seed": 1578549000,
+      "episode_id": "phase3_gazebo_1578549000_015",
+      "readback_footprint_padding": 3.0,
+      "inject_detail": null,
+      "fault_effect_observed": true,
+      "rollback_success": true,
+      "record_path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1578549000_1791464138441037232.json"
+    }
+  ]
+}

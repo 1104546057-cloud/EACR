@@ -1,0 +1,272 @@
+{
+  "audit_id": "eacr_supplementary_A_completion_v1",
+  "protocol_id": "eacr_supplementary_A_v1",
+  "protocol_sha256": "ec5b3cefe07d9872ce0c953de005f7fd7f20793e7a87e68f8e9ba1470eb139cb",
+  "matrix_script_sha256": "68389b07358fecd0485fc04961fd2082e92837995a08c1cc31706b56f0776d9a",
+  "analysis_script_sha256": "477f82056b74c3e89ca96f76edf297c2c916dedfedf938b19a493cdb446a70a8",
+  "registered_source_hash_checks": {
+    "src/eacr_core/eacr_core/baselines.py": {
+      "registered_sha256": "ad6b3c73ef830ae7653af2ae39ee69b73715ee7c31ff9ce49b475c52cdc38939",
+      "observed_sha256": "ad6b3c73ef830ae7653af2ae39ee69b73715ee7c31ff9ce49b475c52cdc38939",
+      "current_workspace_sha256": "e79de8f9507a760104c4ec00979bd713211544d236ebf4a3035923877a32a1c3",
+      "observed_hash_source": "A source snapshot",
+      "matches_registered": true,
+      "amendment_execution_copy_matches": false,
+      "documented_unresolved_execution_source_mismatch": false,
+      "accepted_as_exact_source": true
+    },
+    "src/eacr_core/eacr_core/action_library.py": {
+      "registered_sha256": "b50fdc13567ae9c44baf94af4c7860564582fcec83ab22ffafab0e7468b97726",
+      "observed_sha256": "b50fdc13567ae9c44baf94af4c7860564582fcec83ab22ffafab0e7468b97726",
+      "current_workspace_sha256": "b50fdc13567ae9c44baf94af4c7860564582fcec83ab22ffafab0e7468b97726",
+      "observed_hash_source": "A source snapshot",
+      "matches_registered": true,
+      "amendment_execution_copy_matches": false,
+      "documented_unresolved_execution_source_mismatch": false,
+      "accepted_as_exact_source": true
+    },
+    "src/eacr_core/eacr_core/policy.py": {
+      "registered_sha256": "ffb78b9373aee712e00b15137f7e1778fa74fa361c0ae396a41a28aae4648a4f",
+      "observed_sha256": "ffb78b9373aee712e00b15137f7e1778fa74fa361c0ae396a41a28aae4648a4f",
+      "current_workspace_sha256": "ffb78b9373aee712e00b15137f7e1778fa74fa361c0ae396a41a28aae4648a4f",
+      "observed_hash_source": "A source snapshot",
+      "matches_registered": true,
+      "amendment_execution_copy_matches": false,
+      "documented_unresolved_execution_source_mismatch": false,
+      "accepted_as_exact_source": true
+    },
+    "src/eacr_sim/eacr_sim/phase3_gazebo_runner.py": {
+      "registered_sha256": "d2d0871a20562dc9ca40eb43d25d2cb7652b726bc606dcb5a8dbd42a1db418dc",
+      "observed_sha256": "d2d0871a20562dc9ca40eb43d25d2cb7652b726bc606dcb5a8dbd42a1db418dc",
+      "current_workspace_sha256": "4831a88dae5b76ab99be55a3a435c7c8c7b782108b0294cff9569d276562a710",
+      "observed_hash_source": "A source snapshot",
+      "matches_registered": true,
+      "amendment_execution_copy_matches": false,
+      "documented_unresolved_execution_source_mismatch": false,
+      "accepted_as_exact_source": true
+    },
+    "src/eacr_sim/eacr_sim/fault_injector.py": {
+      "registered_sha256": "3d42aefdf7c50152121d75d69655d5e68976d71079cc69de8e62f5c4c0f91af7",
+      "observed_sha256": "3d42aefdf7c50152121d75d69655d5e68976d71079cc69de8e62f5c4c0f91af7",
+      "current_workspace_sha256": "20f5e9a0af837fadfc9fd5da61fb67939b2999942d26a3cef60f97219d18e3c0",
+      "observed_hash_source": "A source snapshot",
+      "matches_registered": true,
+      "amendment_execution_copy_matches": false,
+      "documented_unresolved_execution_source_mismatch": false,
+      "accepted_as_exact_source": true
+    },
+    "src/eacr_sim/launch/eacr_episode.launch.py": {
+      "registered_sha256": "3e3f7b2b047cc5fd9ea96e4cba036a18891a15fdd8ffa9f109fb06fa8af6347e",
+      "observed_sha256": "3e3f7b2b047cc5fd9ea96e4cba036a18891a15fdd8ffa9f109fb06fa8af6347e",
+      "current_workspace_sha256": "2b72a4fa9bd5f5863c51e795d64000dabbcde468a3ef546c315150a906ad0192",
+      "observed_hash_source": "A source snapshot",
+      "matches_registered": true,
+      "amendment_execution_copy_matches": false,
+      "documented_unresolved_execution_source_mismatch": false,
+      "accepted_as_exact_source": true
+    },
+    "src/eacr_sim/config/episode.yaml": {
+      "registered_sha256": "4efe9396da3b716a0eee51699273816df668986df3130b22fa0fe32e7645df08",
+      "observed_sha256": "4efe9396da3b716a0eee51699273816df668986df3130b22fa0fe32e7645df08",
+      "current_workspace_sha256": "4efe9396da3b716a0eee51699273816df668986df3130b22fa0fe32e7645df08",
+      "observed_hash_source": "A source snapshot",
+      "matches_registered": true,
+      "amendment_execution_copy_matches": false,
+      "documented_unresolved_execution_source_mismatch": false,
+      "accepted_as_exact_source": true
+    },
+    "scripts/run_phase3_gazebo_matrix.py": {
+      "registered_sha256": "36b014651328664cfb5fa2dc868499b05d1813115f6a4f92487bce8544302a96",
+      "observed_sha256": "68389b07358fecd0485fc04961fd2082e92837995a08c1cc31706b56f0776d9a",
+      "current_workspace_sha256": "68389b07358fecd0485fc04961fd2082e92837995a08c1cc31706b56f0776d9a",
+      "observed_hash_source": "A source snapshot",
+      "matches_registered": false,
+      "amendment_execution_copy_matches": true,
+      "documented_unresolved_execution_source_mismatch": true,
+      "accepted_as_exact_source": false
+    },
+    "/opt/ros/jazzy/share/nav2_bringup/maps/tb3_sandbox.yaml": {
+      "registered_sha256": "2a284eba0a3aa4a904bce71734c56a543e979899f1cf34daad6e8215e608b438",
+      "observed_sha256": "2a284eba0a3aa4a904bce71734c56a543e979899f1cf34daad6e8215e608b438",
+      "current_workspace_sha256": "2a284eba0a3aa4a904bce71734c56a543e979899f1cf34daad6e8215e608b438",
+      "observed_hash_source": "A source snapshot",
+      "matches_registered": true,
+      "amendment_execution_copy_matches": false,
+      "documented_unresolved_execution_source_mismatch": false,
+      "accepted_as_exact_source": true
+    },
+    "/opt/ros/jazzy/share/nav2_bringup/maps/tb3_sandbox.pgm": {
+      "registered_sha256": "0103b9dfaa3b79592af71cc35d64f69cfbd3565d173160820ad8ef56cd27b3fc",
+      "observed_sha256": "0103b9dfaa3b79592af71cc35d64f69cfbd3565d173160820ad8ef56cd27b3fc",
+      "current_workspace_sha256": "0103b9dfaa3b79592af71cc35d64f69cfbd3565d173160820ad8ef56cd27b3fc",
+      "observed_hash_source": "A source snapshot",
+      "matches_registered": true,
+      "amendment_execution_copy_matches": false,
+      "documented_unresolved_execution_source_mismatch": false,
+      "accepted_as_exact_source": true
+    },
+    "/opt/ros/jazzy/share/nav2_minimal_tb3_sim/worlds/tb3_sandbox.sdf.xacro": {
+      "registered_sha256": "466ebfb9f3dc39c46829a01c405543091d428839c15697d80ddb8fab6dff7771",
+      "observed_sha256": "466ebfb9f3dc39c46829a01c405543091d428839c15697d80ddb8fab6dff7771",
+      "current_workspace_sha256": "466ebfb9f3dc39c46829a01c405543091d428839c15697d80ddb8fab6dff7771",
+      "observed_hash_source": "A source snapshot",
+      "matches_registered": true,
+      "amendment_execution_copy_matches": false,
+      "documented_unresolved_execution_source_mismatch": false,
+      "accepted_as_exact_source": true
+    },
+    "/opt/ros/jazzy/share/nav2_bt_navigator/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml": {
+      "registered_sha256": "5895b63840d54c6d7eee3d3b3f3ee177680af9e58a14cbf61c4df39fe5db2a90",
+      "observed_sha256": "5895b63840d54c6d7eee3d3b3f3ee177680af9e58a14cbf61c4df39fe5db2a90",
+      "current_workspace_sha256": "5895b63840d54c6d7eee3d3b3f3ee177680af9e58a14cbf61c4df39fe5db2a90",
+      "observed_hash_source": "A source snapshot",
+      "matches_registered": true,
+      "amendment_execution_copy_matches": false,
+      "documented_unresolved_execution_source_mismatch": false,
+      "accepted_as_exact_source": true
+    }
+  },
+  "source_hash_errors": [
+    "scripts/run_phase3_gazebo_matrix.py"
+  ],
+  "unresolved_source_hash_errors": [],
+  "source_provenance_warnings": [
+    "scripts/run_phase3_gazebo_matrix.py"
+  ],
+  "all_registered_sources_match_exactly": false,
+  "data_complete_independent_of_source_provenance": true,
+  "source_provenance_reconciled": true,
+  "execution_amendment_id": "eacr_supplementary_A_v1_execution_amendment_01",
+  "expected_valid_cells": 40,
+  "observed_valid_cells": 40,
+  "distinct_valid_cells": 40,
+  "expected_episodes": 160,
+  "observed_valid_episodes": 160,
+  "valid_cells_by_family": {
+    "control": 10,
+    "costmap": 10,
+    "localization": 10,
+    "planner": 10
+  },
+  "protocol_invalid_cell_attempts": [
+    {
+      "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1092085222_1791470778961274719.json",
+      "seed": 1092085222,
+      "fault_family": "planner",
+      "protocol_compliant": false,
+      "infrastructure_failure": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ]
+    },
+    {
+      "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1207356449_1791461383697921152.json",
+      "seed": 1207356449,
+      "fault_family": "costmap",
+      "protocol_compliant": false,
+      "infrastructure_failure": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ]
+    },
+    {
+      "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1207356449_1791461944353497654.json",
+      "seed": 1207356449,
+      "fault_family": "planner",
+      "protocol_compliant": false,
+      "infrastructure_failure": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ]
+    },
+    {
+      "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1207356449_1791462172845375005.json",
+      "seed": 1207356449,
+      "fault_family": "planner",
+      "protocol_compliant": false,
+      "infrastructure_failure": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ]
+    },
+    {
+      "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1207356449_1791462460063818897.json",
+      "seed": 1207356449,
+      "fault_family": "planner",
+      "protocol_compliant": false,
+      "infrastructure_failure": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ]
+    },
+    {
+      "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1578549000_1791463370808503222.json",
+      "seed": 1578549000,
+      "fault_family": "localization",
+      "protocol_compliant": false,
+      "infrastructure_failure": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ]
+    },
+    {
+      "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1578549000_1791464309709834215.json",
+      "seed": 1578549000,
+      "fault_family": "planner",
+      "protocol_compliant": false,
+      "infrastructure_failure": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ]
+    },
+    {
+      "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1578549000_1791465049087831051.json",
+      "seed": 1578549000,
+      "fault_family": "control",
+      "protocol_compliant": false,
+      "infrastructure_failure": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ]
+    },
+    {
+      "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1578549000_1791466120552737559.json",
+      "seed": 1578549000,
+      "fault_family": "control",
+      "protocol_compliant": false,
+      "infrastructure_failure": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ]
+    }
+  ],
+  "protocol_invalid_cell_attempt_count": 9,
+  "manual_incomplete_attempts": [
+    {
+      "line": 1,
+      "attempt": {
+        "recorded_unix": 1791466564.2171812,
+        "baseline": "eacr_strong_rule",
+        "seed": 252445555,
+        "fault_family": "localization",
+        "attempt_status": "interrupted_incomplete",
+        "runner_pid": 241799,
+        "ros2_wrapper_pid": 241780,
+        "valid_for_analysis": false,
+        "reason": "Previous seed 1578549000 control injection was not rolled back after runner timeout; subsequent control reinjection attempts reported fault already active. This localization cell started under residual controller threshold=15.0. It injected localization, logged a navigation goal success, then stopped producing logs for about three minutes while its runner remained alive; it was terminated before a complete JSON record was written.",
+        "evidence": [
+          "results/phase2_fault_injector.events.jsonl",
+          "results/supplementary_A_launch.log",
+          "results/supplementary_A_matrix.log"
+        ]
+      }
+    }
+  ],
+  "manual_incomplete_attempt_count": 1,
+  "malformed_cell_json": [],
+  "missing_seed_family_keys": [],
+  "unexpected_seed_family_keys": [],
+  "duplicate_valid_keys": {},
+  "metadata_or_episode_errors": [],
+  "complete": true
+}

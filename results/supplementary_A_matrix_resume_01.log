@@ -1,0 +1,41 @@
+skip existing valid eacr_strong_rule seed=1069364068 family=localization
+skip existing valid eacr_strong_rule seed=1069364068 family=costmap
+skip existing valid eacr_strong_rule seed=1069364068 family=planner
+skip existing valid eacr_strong_rule seed=1069364068 family=control
+skip existing valid eacr_strong_rule seed=683001511 family=localization
+skip existing valid eacr_strong_rule seed=683001511 family=costmap
+skip existing valid eacr_strong_rule seed=683001511 family=planner
+skip existing valid eacr_strong_rule seed=683001511 family=control
+skip existing valid eacr_strong_rule seed=450637390 family=localization
+skip existing valid eacr_strong_rule seed=450637390 family=costmap
+skip existing valid eacr_strong_rule seed=450637390 family=planner
+skip existing valid eacr_strong_rule seed=450637390 family=control
+skip existing valid eacr_strong_rule seed=1207356449 family=localization
+skip existing valid eacr_strong_rule seed=1207356449 family=costmap
+skip existing valid eacr_strong_rule seed=1207356449 family=planner
+skip existing valid eacr_strong_rule seed=1207356449 family=control
+skip existing valid eacr_strong_rule seed=1578549000 family=localization
+skip existing valid eacr_strong_rule seed=1578549000 family=costmap
+skip existing valid eacr_strong_rule seed=1578549000 family=planner
+start eacr_strong_rule seed=1578549000 family=control
+start eacr_strong_rule seed=252445555 family=localization
+start eacr_strong_rule seed=252445555 family=costmap
+start eacr_strong_rule seed=252445555 family=planner
+start eacr_strong_rule seed=252445555 family=control
+start eacr_strong_rule seed=729528073 family=localization
+start eacr_strong_rule seed=729528073 family=costmap
+start eacr_strong_rule seed=729528073 family=planner
+start eacr_strong_rule seed=729528073 family=control
+start eacr_strong_rule seed=1092085222 family=localization
+start eacr_strong_rule seed=1092085222 family=costmap
+start eacr_strong_rule seed=1092085222 family=planner
+start eacr_strong_rule seed=1092085222 family=control
+start eacr_strong_rule seed=200776800 family=localization
+start eacr_strong_rule seed=200776800 family=costmap
+start eacr_strong_rule seed=200776800 family=planner
+start eacr_strong_rule seed=200776800 family=control
+start eacr_strong_rule seed=1464253601 family=localization
+start eacr_strong_rule seed=1464253601 family=costmap
+start eacr_strong_rule seed=1464253601 family=planner
+start eacr_strong_rule seed=1464253601 family=control
+results/supplementary_original_strong_rule/phase3_gazebo_dispatch.json

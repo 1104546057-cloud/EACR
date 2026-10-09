@@ -1,0 +1,107 @@
+{
+  "snapshot_id": "eacr_supplementary_A_sources_v1",
+  "protocol_id": "eacr_supplementary_A_v1",
+  "protocol_sha256": "ec5b3cefe07d9872ce0c953de005f7fd7f20793e7a87e68f8e9ba1470eb139cb",
+  "execution_amendment_id": "eacr_supplementary_A_v1_execution_amendment_01",
+  "entries": [
+    {
+      "registered_path": "src/eacr_core/eacr_core/baselines.py",
+      "snapshot_path": "results/supplementary_A_source_snapshot/workspace/src/eacr_core/eacr_core/baselines.py",
+      "registered_sha256": "ad6b3c73ef830ae7653af2ae39ee69b73715ee7c31ff9ce49b475c52cdc38939",
+      "observed_at_snapshot_sha256": "ad6b3c73ef830ae7653af2ae39ee69b73715ee7c31ff9ce49b475c52cdc38939",
+      "matches_protocol_hash": true,
+      "matches_current_source": true
+    },
+    {
+      "registered_path": "src/eacr_core/eacr_core/action_library.py",
+      "snapshot_path": "results/supplementary_A_source_snapshot/workspace/src/eacr_core/eacr_core/action_library.py",
+      "registered_sha256": "b50fdc13567ae9c44baf94af4c7860564582fcec83ab22ffafab0e7468b97726",
+      "observed_at_snapshot_sha256": "b50fdc13567ae9c44baf94af4c7860564582fcec83ab22ffafab0e7468b97726",
+      "matches_protocol_hash": true,
+      "matches_current_source": true
+    },
+    {
+      "registered_path": "src/eacr_core/eacr_core/policy.py",
+      "snapshot_path": "results/supplementary_A_source_snapshot/workspace/src/eacr_core/eacr_core/policy.py",
+      "registered_sha256": "ffb78b9373aee712e00b15137f7e1778fa74fa361c0ae396a41a28aae4648a4f",
+      "observed_at_snapshot_sha256": "ffb78b9373aee712e00b15137f7e1778fa74fa361c0ae396a41a28aae4648a4f",
+      "matches_protocol_hash": true,
+      "matches_current_source": true
+    },
+    {
+      "registered_path": "src/eacr_sim/eacr_sim/phase3_gazebo_runner.py",
+      "snapshot_path": "results/supplementary_A_source_snapshot/workspace/src/eacr_sim/eacr_sim/phase3_gazebo_runner.py",
+      "registered_sha256": "d2d0871a20562dc9ca40eb43d25d2cb7652b726bc606dcb5a8dbd42a1db418dc",
+      "observed_at_snapshot_sha256": "d2d0871a20562dc9ca40eb43d25d2cb7652b726bc606dcb5a8dbd42a1db418dc",
+      "matches_protocol_hash": true,
+      "matches_current_source": true
+    },
+    {
+      "registered_path": "src/eacr_sim/eacr_sim/fault_injector.py",
+      "snapshot_path": "results/supplementary_A_source_snapshot/workspace/src/eacr_sim/eacr_sim/fault_injector.py",
+      "registered_sha256": "3d42aefdf7c50152121d75d69655d5e68976d71079cc69de8e62f5c4c0f91af7",
+      "observed_at_snapshot_sha256": "3d42aefdf7c50152121d75d69655d5e68976d71079cc69de8e62f5c4c0f91af7",
+      "matches_protocol_hash": true,
+      "matches_current_source": true
+    },
+    {
+      "registered_path": "src/eacr_sim/launch/eacr_episode.launch.py",
+      "snapshot_path": "results/supplementary_A_source_snapshot/workspace/src/eacr_sim/launch/eacr_episode.launch.py",
+      "registered_sha256": "3e3f7b2b047cc5fd9ea96e4cba036a18891a15fdd8ffa9f109fb06fa8af6347e",
+      "observed_at_snapshot_sha256": "3e3f7b2b047cc5fd9ea96e4cba036a18891a15fdd8ffa9f109fb06fa8af6347e",
+      "matches_protocol_hash": true,
+      "matches_current_source": true
+    },
+    {
+      "registered_path": "src/eacr_sim/config/episode.yaml",
+      "snapshot_path": "results/supplementary_A_source_snapshot/workspace/src/eacr_sim/config/episode.yaml",
+      "registered_sha256": "4efe9396da3b716a0eee51699273816df668986df3130b22fa0fe32e7645df08",
+      "observed_at_snapshot_sha256": "4efe9396da3b716a0eee51699273816df668986df3130b22fa0fe32e7645df08",
+      "matches_protocol_hash": true,
+      "matches_current_source": true
+    },
+    {
+      "registered_path": "scripts/run_phase3_gazebo_matrix.py",
+      "snapshot_path": "results/supplementary_A_source_snapshot/workspace/scripts/run_phase3_gazebo_matrix.py",
+      "registered_sha256": "36b014651328664cfb5fa2dc868499b05d1813115f6a4f92487bce8544302a96",
+      "observed_at_snapshot_sha256": "68389b07358fecd0485fc04961fd2082e92837995a08c1cc31706b56f0776d9a",
+      "matches_protocol_hash": false,
+      "matches_current_source": true
+    },
+    {
+      "registered_path": "/opt/ros/jazzy/share/nav2_bringup/maps/tb3_sandbox.yaml",
+      "snapshot_path": "results/supplementary_A_source_snapshot/system/opt/ros/jazzy/share/nav2_bringup/maps/tb3_sandbox.yaml",
+      "registered_sha256": "2a284eba0a3aa4a904bce71734c56a543e979899f1cf34daad6e8215e608b438",
+      "observed_at_snapshot_sha256": "2a284eba0a3aa4a904bce71734c56a543e979899f1cf34daad6e8215e608b438",
+      "matches_protocol_hash": true,
+      "matches_current_source": true
+    },
+    {
+      "registered_path": "/opt/ros/jazzy/share/nav2_bringup/maps/tb3_sandbox.pgm",
+      "snapshot_path": "results/supplementary_A_source_snapshot/system/opt/ros/jazzy/share/nav2_bringup/maps/tb3_sandbox.pgm",
+      "registered_sha256": "0103b9dfaa3b79592af71cc35d64f69cfbd3565d173160820ad8ef56cd27b3fc",
+      "observed_at_snapshot_sha256": "0103b9dfaa3b79592af71cc35d64f69cfbd3565d173160820ad8ef56cd27b3fc",
+      "matches_protocol_hash": true,
+      "matches_current_source": true
+    },
+    {
+      "registered_path": "/opt/ros/jazzy/share/nav2_minimal_tb3_sim/worlds/tb3_sandbox.sdf.xacro",
+      "snapshot_path": "results/supplementary_A_source_snapshot/system/opt/ros/jazzy/share/nav2_minimal_tb3_sim/worlds/tb3_sandbox.sdf.xacro",
+      "registered_sha256": "466ebfb9f3dc39c46829a01c405543091d428839c15697d80ddb8fab6dff7771",
+      "observed_at_snapshot_sha256": "466ebfb9f3dc39c46829a01c405543091d428839c15697d80ddb8fab6dff7771",
+      "matches_protocol_hash": true,
+      "matches_current_source": true
+    },
+    {
+      "registered_path": "/opt/ros/jazzy/share/nav2_bt_navigator/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml",
+      "snapshot_path": "results/supplementary_A_source_snapshot/system/opt/ros/jazzy/share/nav2_bt_navigator/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml",
+      "registered_sha256": "5895b63840d54c6d7eee3d3b3f3ee177680af9e58a14cbf61c4df39fe5db2a90",
+      "observed_at_snapshot_sha256": "5895b63840d54c6d7eee3d3b3f3ee177680af9e58a14cbf61c4df39fe5db2a90",
+      "matches_protocol_hash": true,
+      "matches_current_source": true
+    }
+  ],
+  "provenance_correction": "results/supplementary_A_source_provenance_correction_01.json",
+  "matrix_script_exact_frozen_source_recovered": false,
+  "matrix_script_execution_copy_sha256": "68389b07358fecd0485fc04961fd2082e92837995a08c1cc31706b56f0776d9a"
+}

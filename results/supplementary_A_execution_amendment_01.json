@@ -1,0 +1,215 @@
+{
+  "amendment_id": "eacr_supplementary_A_v1_execution_amendment_01",
+  "registered_utc": "2026-10-08T14:16:30.019969+00:00",
+  "base_protocol_id": "eacr_supplementary_A_v1",
+  "base_protocol_sha256": "ec5b3cefe07d9872ce0c953de005f7fd7f20793e7a87e68f8e9ba1470eb139cb",
+  "matrix_script": {
+    "path": "scripts/run_phase3_gazebo_matrix.py",
+    "frozen_protocol_sha256": "36b014651328664cfb5fa2dc868499b05d1813115f6a4f92487bce8544302a96",
+    "reconstructed_pre_patch_sha256": "36b014651328664cfb5fa2dc868499b05d1813115f6a4f92487bce8544302a96",
+    "reconstructed_pre_patch_matches_protocol": true,
+    "current_sha256": "68389b07358fecd0485fc04961fd2082e92837995a08c1cc31706b56f0776d9a",
+    "change": "Bound retries even when the ROS runner exits with status 0 but writes a protocol-invalid record.",
+    "old_condition": "if protocol_ok or returncode != 0 and attempts > args.retries:",
+    "new_condition": "if protocol_ok or attempts > args.retries",
+    "method_policy_parameters_or_action_logic_changed": false
+  },
+  "a_result_compatibility_audit": {
+    "expected_valid_cells": 40,
+    "currently_valid_cells": 33,
+    "protocol_invalid_or_incomplete_json_records": 9,
+    "malformed_json_records": 0,
+    "all_valid_records_match_frozen_a_parameters": true,
+    "valid_cell_keys": [
+      {
+        "seed": 200776800,
+        "fault_family": "localization",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_200776800_1791471647528840919.json"
+      },
+      {
+        "seed": 252445555,
+        "fault_family": "control",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_252445555_1791468505902542235.json"
+      },
+      {
+        "seed": 252445555,
+        "fault_family": "costmap",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_252445555_1791467917372301592.json"
+      },
+      {
+        "seed": 252445555,
+        "fault_family": "localization",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_252445555_1791467452359043040.json"
+      },
+      {
+        "seed": 252445555,
+        "fault_family": "planner",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_252445555_1791468147074926698.json"
+      },
+      {
+        "seed": 450637390,
+        "fault_family": "control",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_450637390_1791460813727207823.json"
+      },
+      {
+        "seed": 450637390,
+        "fault_family": "costmap",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_450637390_1791460157370705812.json"
+      },
+      {
+        "seed": 450637390,
+        "fault_family": "localization",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_450637390_1791459753660385501.json"
+      },
+      {
+        "seed": 450637390,
+        "fault_family": "planner",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_450637390_1791460403811032671.json"
+      },
+      {
+        "seed": 683001511,
+        "fault_family": "control",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_683001511_1791459483406896389.json"
+      },
+      {
+        "seed": 683001511,
+        "fault_family": "costmap",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_683001511_1791458869274015239.json"
+      },
+      {
+        "seed": 683001511,
+        "fault_family": "localization",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_683001511_1791458480497763987.json"
+      },
+      {
+        "seed": 683001511,
+        "fault_family": "planner",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_683001511_1791459133698606976.json"
+      },
+      {
+        "seed": 729528073,
+        "fault_family": "control",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_729528073_1791469860000670349.json"
+      },
+      {
+        "seed": 729528073,
+        "fault_family": "costmap",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_729528073_1791469206834048623.json"
+      },
+      {
+        "seed": 729528073,
+        "fault_family": "localization",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_729528073_1791468789855388021.json"
+      },
+      {
+        "seed": 729528073,
+        "fault_family": "planner",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_729528073_1791469442995330746.json"
+      },
+      {
+        "seed": 1069364068,
+        "fault_family": "control",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1069364068_1791458220820419800.json"
+      },
+      {
+        "seed": 1069364068,
+        "fault_family": "costmap",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1069364068_1791457735327538593.json"
+      },
+      {
+        "seed": 1069364068,
+        "fault_family": "localization",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1069364068_1791457335938826461.json"
+      },
+      {
+        "seed": 1069364068,
+        "fault_family": "planner",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1069364068_1791457900822313002.json"
+      },
+      {
+        "seed": 1092085222,
+        "fault_family": "control",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1092085222_1791471437067742913.json"
+      },
+      {
+        "seed": 1092085222,
+        "fault_family": "costmap",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1092085222_1791470563970382099.json"
+      },
+      {
+        "seed": 1092085222,
+        "fault_family": "localization",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1092085222_1791470168906897785.json"
+      },
+      {
+        "seed": 1092085222,
+        "fault_family": "planner",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1092085222_1791471086061484927.json"
+      },
+      {
+        "seed": 1207356449,
+        "fault_family": "control",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1207356449_1791463164730969708.json"
+      },
+      {
+        "seed": 1207356449,
+        "fault_family": "costmap",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1207356449_1791461776004666841.json"
+      },
+      {
+        "seed": 1207356449,
+        "fault_family": "localization",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1207356449_1791461060639084446.json"
+      },
+      {
+        "seed": 1207356449,
+        "fault_family": "planner",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1207356449_1791462721352900638.json"
+      },
+      {
+        "seed": 1578549000,
+        "fault_family": "control",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1578549000_1791467188437720931.json"
+      },
+      {
+        "seed": 1578549000,
+        "fault_family": "costmap",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1578549000_1791464138441037232.json"
+      },
+      {
+        "seed": 1578549000,
+        "fault_family": "localization",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1578549000_1791463646186561788.json"
+      },
+      {
+        "seed": 1578549000,
+        "fault_family": "planner",
+        "path": "results/supplementary_original_strong_rule/phase3_gazebo_eacr_strong_rule_1578549000_1791464558951913508.json"
+      }
+    ],
+    "manual_incomplete_attempt_lines": 1,
+    "manual_incomplete_attempts": [
+      {
+        "line": 1,
+        "attempt": {
+          "recorded_unix": 1791466564.2171812,
+          "baseline": "eacr_strong_rule",
+          "seed": 252445555,
+          "fault_family": "localization",
+          "attempt_status": "interrupted_incomplete",
+          "runner_pid": 241799,
+          "ros2_wrapper_pid": 241780,
+          "valid_for_analysis": false,
+          "reason": "Previous seed 1578549000 control injection was not rolled back after runner timeout; subsequent control reinjection attempts reported fault already active. This localization cell started under residual controller threshold=15.0. It injected localization, logged a navigation goal success, then stopped producing logs for about three minutes while its runner remained alive; it was terminated before a complete JSON record was written.",
+          "evidence": [
+            "results/phase2_fault_injector.events.jsonl",
+            "results/supplementary_A_launch.log",
+            "results/supplementary_A_matrix.log"
+          ]
+        }
+      }
+    ]
+  },
+  "interpretation": "Execution-only safety amendment. Original A protocol remains unchanged; invalid attempts are preserved and excluded from the valid-cell count.",
+  "last_verified_utc": "2026-10-08T15:02:21.212831+00:00"
+}

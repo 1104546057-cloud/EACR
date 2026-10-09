@@ -1,0 +1,18 @@
+{
+  "amendment_id": "eacr_supplementary_report_rendering_postfreeze_01",
+  "registered_utc": "2026-10-08T20:47:16.017676+00:00",
+  "protocol_id": "eacr_supplementary_B_v1",
+  "protocol_sha256": "f4733a592d392320e67394faf21b251a56c701573f5a85745f3b13d41f48e964",
+  "purpose": "Post-freeze report-only extension; add the original-data planner interpretation and disclose the A matrix-dispatcher provenance limitation.",
+  "frozen_renderer_path": "scripts/render_supplementary_report.py",
+  "frozen_renderer_expected_sha256": "3e8a866957a186913ac5d286fe4a8dd03b5b362a5c795d6d7f45df3268098095",
+  "frozen_renderer_restored_sha256": "3e8a866957a186913ac5d286fe4a8dd03b5b362a5c795d6d7f45df3268098095",
+  "postfreeze_renderer_path": "scripts/render_supplementary_report_postfreeze.py",
+  "postfreeze_renderer_sha256": "9b591ee757161fabf6e75757cc89c94d2e9a15db70c22042d8bb16fb3ecdd502",
+  "temporary_mismatch_snapshot": "results/supplementary_transfer_static_m0/progress_audit_20261009T044459.json",
+  "restoration_verification_snapshot": "results/supplementary_transfer_static_m0/progress_audit_20261009T044615.json",
+  "protocol_modified": false,
+  "experiment_runtime_code_modified": false,
+  "experiment_data_modified": false,
+  "interpretation": "A transient integrity snapshot recorded the edited frozen renderer. The original renderer was restored byte-for-byte to its B-protocol SHA before later cells completed; the post-freeze report extension is a separate file and will be archived with this amendment. No policy, runner, matrix, protocol, or cell data were changed."
+}

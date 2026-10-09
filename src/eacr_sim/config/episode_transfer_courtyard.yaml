@@ -1,0 +1,66 @@
+episode_manager:
+  ros__parameters:
+    initial_pose_x: -2.5
+    initial_pose_y: -2.5
+    initial_pose_yaw: 0.0
+    goal_pose_x: 2.5
+    goal_pose_y: 2.5
+    goal_pose_yaw: 0.0
+    auto_send_goal: false
+    publish_period_sec: 1.0
+    stable_samples_required: 5
+    stable_position_tolerance_m: 0.15
+    stable_yaw_tolerance_rad: 0.20
+    navigation_startup_delay_sec: 8.0
+    goal_timeout_sec: 120.0
+
+episode_reset:
+  ros__parameters:
+    initial_pose_x: -2.5
+    initial_pose_y: -2.5
+    initial_pose_yaw: 0.0
+    robot_model_name: turtlebot3_waffle
+    robot_z: 0.01
+    settle_sec: 2.0
+    use_world_model_reset: false
+
+eacr_localization_loop:
+  ros__parameters:
+    initial_pose_x: -2.5
+    initial_pose_y: -2.5
+    initial_pose_yaw: 0.0
+    fault_offset_x: 0.85
+    fault_offset_y: -0.55
+    fault_offset_yaw: 0.45
+    evidence_wait_sec: 1.5
+    recovery_wait_sec: 3.0
+    stable_samples_required: 5
+    stable_position_tolerance_m: 0.20
+    stable_yaw_tolerance_rad: 0.25
+    reset_before_episode: true
+    random_seed: 20260926
+    result_dir: /home/hu/文档/ChatGPT/论文/eacr_ws/results/supplementary_transfer_events
+
+fault_injector:
+  ros__parameters:
+    initial_pose_x: -2.5
+    initial_pose_y: -2.5
+    initial_pose_yaw: 0.0
+    localization_offset_x: 0.85
+    localization_offset_y: -0.55
+    localization_offset_yaw: 0.45
+    costmap_obstacle_model: eacr_fault_obstacle
+    costmap_obstacle_x: 2.5
+    costmap_obstacle_y: 2.5
+    costmap_obstacle_size_m: 0.80
+    planner_fault_tolerance: -1.0
+    planner_fault_variant: allow_unknown_false
+    controller_fault_min_x_velocity_threshold: 8.0
+    world_name: default
+    result_dir: /home/hu/文档/ChatGPT/论文/eacr_ws/results/supplementary_transfer_events
+
+phase2_episode_runner:
+  ros__parameters:
+    random_seed: 20260926
+    evidence_wait_sec: 1.0
+    result_dir: /home/hu/文档/ChatGPT/论文/eacr_ws/results/supplementary_transfer_events

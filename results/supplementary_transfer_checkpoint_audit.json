@@ -1,0 +1,7 @@
+{
+  "checkpoint_path": "results/phase4_experience_evolving_full_M_50.json",
+  "sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab",
+  "training_key_match_count": 36,
+  "new_environment_key_match_count": 0,
+  "zero_shot_test_convention": "Keep experience_environment_bin=tb3_sandbox_gazebo while separately logging actual_map_id=transfer_courtyard"
+}

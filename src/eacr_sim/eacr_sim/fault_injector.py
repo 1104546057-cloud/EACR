@@ -10,6 +10,8 @@ from pathlib import Path
 
 import rclpy
 from geometry_msgs.msg import PoseWithCovarianceStamped, Quaternion
+from lifecycle_msgs.msg import Transition
+from lifecycle_msgs.srv import ChangeState, GetState
 from rcl_interfaces.msg import Parameter, ParameterType, ParameterValue
 from rcl_interfaces.srv import GetParameters, SetParameters
 from rclpy.callback_groups import ReentrantCallbackGroup
@@ -45,6 +47,7 @@ class FaultInjector(Node):
         self.declare_parameter('costmap_obstacle_y', 1.8354123831)
         self.declare_parameter('costmap_obstacle_size_m', 0.80)
         self.declare_parameter('planner_fault_tolerance', -1.0)
+        self.declare_parameter('planner_fault_variant', 'invalid_plugin_list')
         self.declare_parameter('controller_fault_min_x_velocity_threshold', 10.0)
         self.declare_parameter('fault_scale', 1.0)
         self.declare_parameter('result_dir', '/home/hu/文档/ChatGPT/论文/eacr_ws/results')
@@ -69,6 +72,10 @@ class FaultInjector(Node):
             GetParameters, '/planner_server/get_parameters', callback_group=group)
         self._planner_set = self.create_client(
             SetParameters, '/planner_server/set_parameters', callback_group=group)
+        self._planner_change_state = self.create_client(
+            ChangeState, '/planner_server/change_state', callback_group=group)
+        self._planner_get_state = self.create_client(
+            GetState, '/planner_server/get_state', callback_group=group)
         self._controller_get = self.create_client(
             GetParameters, '/controller_server/get_parameters', callback_group=group)
         self._controller_set = self.create_client(
@@ -84,6 +91,7 @@ class FaultInjector(Node):
         self._original_parameters: dict[str, float] = {}
         self._original_costmap_parameters: dict[str, float] = {}
         self._original_planner_plugins: list[str] | None = None
+        self._original_planner_allow_unknown: bool | None = None
         self.get_logger().info(
             'Fault injector ready: localization, costmap, planner, control inject/rollback pairs.')
 
@@ -172,20 +180,36 @@ class FaultInjector(Node):
         # A costmap parameter fault is deterministic and observable by Nav2;
         # relying only on a Gazebo model does not guarantee sensor marking.
         values = []
+        changed_parameters: list[tuple[object, float, str, str]] = []
+        target = max(0.6, 2.0 * float(self.get_parameter('fault_scale').value))
         for key, getter, setter in (
             ('global', self._global_costmap_get, self._global_costmap_set),
             ('local', self._local_costmap_get, self._local_costmap_set),
         ):
             ok, original, detail = self._get_parameter(getter, 'footprint_padding')
             if not ok or original is None:
+                for previous_setter, previous_value, previous_key, _ in reversed(changed_parameters):
+                    self._set_parameter(previous_setter, 'footprint_padding', previous_value)
+                    self._original_costmap_parameters.pop(previous_key, None)
                 return self._respond(response, 'costmap', 'inject', False, f'{key}: {detail}')
-            scale = float(self.get_parameter('fault_scale').value)
             changed, reason = self._set_parameter(
-                setter, 'footprint_padding', max(0.6, 2.0 * scale))
+                setter, 'footprint_padding', target)
             if not changed:
+                for previous_setter, previous_value, previous_key, _ in reversed(changed_parameters):
+                    self._set_parameter(previous_setter, 'footprint_padding', previous_value)
+                    self._original_costmap_parameters.pop(previous_key, None)
                 return self._respond(response, 'costmap', 'inject', False, f'{key}: {reason}')
+            read_ok, observed, readback = self._get_parameter(getter, 'footprint_padding')
+            if not read_ok or observed is None or not math.isclose(observed, target, abs_tol=1e-6):
+                self._set_parameter(setter, 'footprint_padding', original)
+                for previous_setter, previous_value, previous_key, _ in reversed(changed_parameters):
+                    self._set_parameter(previous_setter, 'footprint_padding', previous_value)
+                    self._original_costmap_parameters.pop(previous_key, None)
+                return self._respond(response, 'costmap', 'inject', False,
+                                     f'{key}: readback mismatch: {readback}; expected {target}')
             self._original_costmap_parameters[key] = original
-            values.append(f'{key}: {detail} -> footprint_padding=2.0 ({reason})')
+            changed_parameters.append((setter, original, key, detail))
+            values.append(f'{key}: {detail} -> {readback} ({reason})')
         return self._respond(response, 'costmap', 'inject', True, '; '.join(values))
 
     def _rollback_costmap(self, _request, response):
@@ -289,6 +313,42 @@ class FaultInjector(Node):
             return False, 'set_parameters returned no result'
         return bool(result.results[0].successful), str(result.results[0].reason)
 
+    def _get_bool_parameter(self, client, name: str) -> tuple[bool, bool | None, str]:
+        if not client.wait_for_service(timeout_sec=5.0):
+            return False, None, 'get_parameters service unavailable'
+        request = GetParameters.Request()
+        request.names = [name]
+        future = client.call_async(request)
+        deadline = time.monotonic() + 10.0
+        while not future.done() and time.monotonic() < deadline:
+            time.sleep(0.05)
+        if not future.done() or future.result() is None or not future.result().values:
+            return False, None, f'parameter not found: {name}'
+        value = future.result().values[0]
+        if value.type != ParameterType.PARAMETER_BOOL:
+            return False, None, f'parameter is not bool: {name} (type={value.type})'
+        return True, bool(value.bool_value), f'{name}={bool(value.bool_value)}'
+
+    def _set_bool_parameter(self, client, name: str, value: bool) -> tuple[bool, str]:
+        if not client.wait_for_service(timeout_sec=5.0):
+            return False, 'set_parameters service unavailable'
+        parameter = Parameter()
+        parameter.name = name
+        parameter.value = ParameterValue(
+            type=ParameterType.PARAMETER_BOOL,
+            bool_value=bool(value),
+        )
+        request = SetParameters.Request()
+        request.parameters = [parameter]
+        future = client.call_async(request)
+        deadline = time.monotonic() + 10.0
+        while not future.done() and time.monotonic() < deadline:
+            time.sleep(0.05)
+        if not future.done() or future.result() is None or not future.result().results:
+            return False, 'set_parameters failed or timed out'
+        result = future.result().results[0]
+        return bool(result.successful), str(result.reason)
+
     def _inject_parameter_fault(self, family: str, client_get, client_set, name: str, value: float) -> tuple[bool, str]:
         if family in self._original_parameters:
             return False, f'{family} fault already active; rollback before reinjection'
@@ -319,6 +379,30 @@ class FaultInjector(Node):
         return True, f'{name}: restored {readback}'
 
     def _inject_planner(self, _request, response):
+        variant = str(self.get_parameter('planner_fault_variant').value)
+        if variant == 'allow_unknown_false':
+            if self._original_planner_allow_unknown is not None:
+                return self._respond(response, 'planner', 'inject', False,
+                                     'planner allow_unknown fault already active; rollback before reinjection')
+            ok, original, detail = self._get_bool_parameter(self._planner_get, 'GridBased.allow_unknown')
+            if not ok or original is None:
+                return self._respond(response, 'planner', 'inject', False, detail)
+            changed, reason = self._set_bool_parameter(
+                self._planner_set, 'GridBased.allow_unknown', False)
+            if not changed:
+                return self._respond(response, 'planner', 'inject', False, reason)
+            verified, observed, readback = self._get_bool_parameter(
+                self._planner_get, 'GridBased.allow_unknown')
+            if not verified or observed is not False:
+                self._set_bool_parameter(self._planner_set, 'GridBased.allow_unknown', original)
+                return self._respond(response, 'planner', 'inject', False,
+                                     f'allow_unknown readback mismatch: {readback}; expected false')
+            self._original_planner_allow_unknown = original
+            return self._respond(response, 'planner', 'inject', True,
+                                 f'{detail} -> GridBased.allow_unknown=false ({reason}; {readback})')
+        if variant == 'deactivate_lifecycle':
+            ok, detail = self._change_planner_state(Transition.TRANSITION_DEACTIVATE, 2)
+            return self._respond(response, 'planner', 'inject', ok, detail)
         ok, original, detail = self._get_string_array(self._planner_get, 'planner_plugins')
         if not ok or original is None:
             return self._respond(response, 'planner', 'inject', False, detail)
@@ -329,6 +413,27 @@ class FaultInjector(Node):
         return self._respond(response, 'planner', 'inject', True, f'{detail} -> planner_plugins=[EacrInvalidPlanner]')
 
     def _rollback_planner(self, _request, response):
+        variant = str(self.get_parameter('planner_fault_variant').value)
+        if variant == 'allow_unknown_false':
+            original = self._original_planner_allow_unknown
+            if original is None:
+                return self._respond(response, 'planner', 'rollback', False,
+                                     'no saved GridBased.allow_unknown value')
+            ok, reason = self._set_bool_parameter(
+                self._planner_set, 'GridBased.allow_unknown', original)
+            if not ok:
+                return self._respond(response, 'planner', 'rollback', False, reason)
+            verified, observed, readback = self._get_bool_parameter(
+                self._planner_get, 'GridBased.allow_unknown')
+            if not verified or observed is not original:
+                return self._respond(response, 'planner', 'rollback', False,
+                                     f'allow_unknown rollback readback mismatch: {readback}; expected {original}')
+            self._original_planner_allow_unknown = None
+            return self._respond(response, 'planner', 'rollback', True,
+                                 f'GridBased.allow_unknown restored {readback}; {reason}')
+        if variant == 'deactivate_lifecycle':
+            ok, detail = self._change_planner_state(Transition.TRANSITION_ACTIVATE, 3)
+            return self._respond(response, 'planner', 'rollback', ok, detail)
         if self._original_planner_plugins is None:
             return self._respond(response, 'planner', 'rollback', False, 'no saved planner_plugins')
         original = self._original_planner_plugins
@@ -336,6 +441,28 @@ class FaultInjector(Node):
         if ok:
             self._original_planner_plugins = None
         return self._respond(response, 'planner', 'rollback', ok, f'planner_plugins restored {original}; {reason}')
+
+    def _change_planner_state(self, transition_id: int, expected_state: int) -> tuple[bool, str]:
+        if not self._planner_change_state.wait_for_service(timeout_sec=5.0):
+            return False, 'planner lifecycle change_state service unavailable'
+        request = ChangeState.Request()
+        request.transition.id = transition_id
+        future = self._planner_change_state.call_async(request)
+        deadline = time.monotonic() + 10.0
+        while not future.done() and time.monotonic() < deadline:
+            time.sleep(0.05)
+        if not future.done() or future.result() is None or not future.result().success:
+            return False, 'planner lifecycle transition failed'
+        if not self._planner_get_state.wait_for_service(timeout_sec=3.0):
+            return False, 'planner lifecycle readback unavailable'
+        state_future = self._planner_get_state.call_async(GetState.Request())
+        deadline = time.monotonic() + 5.0
+        while not state_future.done() and time.monotonic() < deadline:
+            time.sleep(0.05)
+        if not state_future.done() or state_future.result() is None:
+            return False, 'planner lifecycle readback timed out'
+        state = int(state_future.result().current_state.id)
+        return state == expected_state, f'planner lifecycle state={state}, expected={expected_state}'
 
     def _inject_control(self, _request, response):
         scale = float(self.get_parameter('fault_scale').value)

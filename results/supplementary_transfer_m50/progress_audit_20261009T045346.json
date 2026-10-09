@@ -1,0 +1,27 @@
+{
+  "snapshot_id": "eacr_transfer_frozen_m50_progress_audit_v1",
+  "captured_local": "2026-10-09T04:53:46+08:00",
+  "supplementary_protocol_id": "eacr_supplementary_B_v1",
+  "supplementary_protocol_sha256": "f4733a592d392320e67394faf21b251a56c701573f5a85745f3b13d41f48e964",
+  "runner_protocol_id": "eacr_phase3_v1",
+  "scope_note": "Interim integrity snapshot only; not final inference. Final analysis requires all paired methods across the 10 frozen seeds.",
+  "method": "eacr_evolving",
+  "checkpoint": "M_50",
+  "actual_map_id": "transfer_courtyard",
+  "valid_cell_count": 0,
+  "expected_cell_count": 40,
+  "invalid_attempt_count": 0,
+  "duplicate_valid_seed_family_keys": [],
+  "family_episode_summary": {},
+  "selected_valid_records": [],
+  "excluded_attempts": [],
+  "manual_invalid_attempt_entries": [],
+  "malformed_files": [],
+  "raw_file_count": 0,
+  "integrity_checks": {
+    "protocol_source_hash_count": 25,
+    "protocol_source_hash_mismatches": [],
+    "prior_selected_hash_mismatches": [],
+    "selected_file_hash_mismatches": []
+  }
+}

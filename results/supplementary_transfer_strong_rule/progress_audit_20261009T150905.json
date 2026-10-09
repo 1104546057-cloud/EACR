@@ -1,0 +1,968 @@
+{
+  "snapshot_id": "eacr_transfer_strong_rule_progress_audit_v64",
+  "captured_local": "2026-10-09T15:09:05+08:00",
+  "supplementary_protocol_id": "eacr_supplementary_B_v1",
+  "supplementary_protocol_sha256": "f4733a592d392320e67394faf21b251a56c701573f5a85745f3b13d41f48e964",
+  "runner_protocol_id": "eacr_phase3_v1",
+  "scope_note": "Interim integrity snapshot only; not final inference. Final analysis requires all paired methods across the 10 frozen seeds.",
+  "method": "eacr_strong_rule",
+  "checkpoint": "M_0",
+  "actual_map_id": "transfer_courtyard",
+  "valid_cell_count": 37,
+  "expected_cell_count": 40,
+  "invalid_attempt_count": 12,
+  "duplicate_valid_seed_family_keys": [],
+  "family_episode_summary": {
+    "localization": {
+      "episodes": 40,
+      "behavior_failed": 40,
+      "repair_action_success": 40,
+      "strict_success": 37,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 40
+      }
+    },
+    "costmap": {
+      "episodes": 36,
+      "behavior_failed": 36,
+      "repair_action_success": 36,
+      "strict_success": 35,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 36
+      }
+    },
+    "planner": {
+      "episodes": 36,
+      "behavior_failed": 36,
+      "repair_action_success": 36,
+      "strict_success": 33,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "reconfigure_planner": 36
+      }
+    },
+    "control": {
+      "episodes": 36,
+      "behavior_failed": 1,
+      "repair_action_success": 36,
+      "strict_success": 36,
+      "pre_action_nav_success": 35,
+      "actions": {
+        "reconfigure_controller": 36
+      }
+    }
+  },
+  "selected_valid_records": [
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1523842677_1791514437174026388.json",
+      "sha256": "11ec2b25ea8314b07d1f26e15a8277d9288d22283b99d469c29151cd73f1448c",
+      "seed": 1523842677,
+      "fault_family": "localization",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 2,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1523842677_1791514905092983068.json",
+      "sha256": "9231e90507ccd9536bc534cb904da22a4e7d1cf77d7012c7f50d66706af3548c",
+      "seed": 1523842677,
+      "fault_family": "costmap",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1523842677_1791515234518302921.json",
+      "sha256": "d3d0fc977b7c3aeb35d147e6069c0cd66926b88495facead337e1f232bd9c495",
+      "seed": 1523842677,
+      "fault_family": "planner",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "reconfigure_planner": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1523842677_1791515591532310284.json",
+      "sha256": "92e5c8c289a0e668c77a01ba7a68436d7c77b2b20673ccf8328baa52b45e8813",
+      "seed": 1523842677,
+      "fault_family": "control",
+      "episodes": 4,
+      "behavior_failed": 0,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 4,
+      "actions": {
+        "reconfigure_controller": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1489230398_1791515797925255735.json",
+      "sha256": "f5a5dbb7eb41c5a2a791d05827ebddb4adcc6700e92facd20be6f494079f6030",
+      "seed": 1489230398,
+      "fault_family": "localization",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1489230398_1791516261089947130.json",
+      "sha256": "48f7db083fb612c0790d9aa1013f075ef17a6333f8862ba61273b02ef7f0810d",
+      "seed": 1489230398,
+      "fault_family": "costmap",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 3,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1489230398_1791516569079862822.json",
+      "sha256": "881e017fb03933f32287f7c3af8dcc46eab8552bf84ac471e22c071f6ebe5717",
+      "seed": 1489230398,
+      "fault_family": "planner",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "reconfigure_planner": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1489230398_1791516918754434277.json",
+      "sha256": "a238de52b31b744316c384ff1949ada76a6022e617229e3176671e4d50f812d8",
+      "seed": 1489230398,
+      "fault_family": "control",
+      "episodes": 4,
+      "behavior_failed": 0,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 4,
+      "actions": {
+        "reconfigure_controller": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_811258016_1791517131010678111.json",
+      "sha256": "4683eea8f25b56076581bda8954ace1fad26ec1c2308fdb87af534e581b188db",
+      "seed": 811258016,
+      "fault_family": "localization",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 3,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_811258016_1791517591908505451.json",
+      "sha256": "58cbed04299de540563ec40d929099f6b844ccb150f461a0387b3f6e367c076c",
+      "seed": 811258016,
+      "fault_family": "costmap",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_811258016_1791517919131986353.json",
+      "sha256": "bd0cf7e67e50e9e5a5dc0f801dd32058692f2806c871de9b873056ea7340d17d",
+      "seed": 811258016,
+      "fault_family": "planner",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "reconfigure_planner": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_811258016_1791518255959904198.json",
+      "sha256": "0c91fe050a6397c809156bdac0dd9527507802d2c535c95986228ee8fb6df8ec",
+      "seed": 811258016,
+      "fault_family": "control",
+      "episodes": 4,
+      "behavior_failed": 0,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 4,
+      "actions": {
+        "reconfigure_controller": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_457375178_1791518649213510213.json",
+      "sha256": "e485bc043444675b26ffff7983d986e84a509cb24829a84097b39a897729bd7c",
+      "seed": 457375178,
+      "fault_family": "localization",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_457375178_1791519105732779325.json",
+      "sha256": "d879ec434f65015fbb8c41a2a34e6a1ee8add048fadbd51359002b26fbaaeed9",
+      "seed": 457375178,
+      "fault_family": "costmap",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_457375178_1791519440216661375.json",
+      "sha256": "12b9419014d2e2d79f7575cfaefe60c30bc586ad1fd141c69ac6e873ee6e828d",
+      "seed": 457375178,
+      "fault_family": "planner",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "reconfigure_planner": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_457375178_1791519775673772018.json",
+      "sha256": "bd9593b0e07cd566b60f1aff81101952d6e9b9d8a4509a34962233191ac1163b",
+      "seed": 457375178,
+      "fault_family": "control",
+      "episodes": 4,
+      "behavior_failed": 0,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 4,
+      "actions": {
+        "reconfigure_controller": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_459825488_1791520184807646496.json",
+      "sha256": "b0ec42bac4bda16a5e65e6b212afe112e939f8d737f29fba8e2b71c981efe360",
+      "seed": 459825488,
+      "fault_family": "localization",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_459825488_1791520640892131200.json",
+      "sha256": "faed11bb0696493024dce6cdf39b2b0beac8ce5701f7666be2587df929369e78",
+      "seed": 459825488,
+      "fault_family": "costmap",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_459825488_1791520962699241562.json",
+      "sha256": "5889432a0d96f1e0e7c2577103884818dd361ec133b69041047ea2bbd64619d1",
+      "seed": 459825488,
+      "fault_family": "planner",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "reconfigure_planner": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_459825488_1791521317601317013.json",
+      "sha256": "a31eb47f00a76bee78e68b010585a082147ed473be267682f55cc4f8e7e4899c",
+      "seed": 459825488,
+      "fault_family": "control",
+      "episodes": 4,
+      "behavior_failed": 1,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 3,
+      "actions": {
+        "reconfigure_controller": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1514040653_1791521524191690652.json",
+      "sha256": "c7266deb6a0b28e9d2cabfa48e4254eb19f7b626082c5f335dde72fc723c94f1",
+      "seed": 1514040653,
+      "fault_family": "localization",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1514040653_1791521985964322129.json",
+      "sha256": "44baeba723828266847b556e43d960bd82f4b4f4bc1e385add387b47d640f502",
+      "seed": 1514040653,
+      "fault_family": "costmap",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1514040653_1791522581474113116.json",
+      "sha256": "7c639c5be93aed5c7dbf8d5b0e3b2d6d6403bc5f32de4b0c2d862a32c42726cd",
+      "seed": 1514040653,
+      "fault_family": "planner",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 2,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "reconfigure_planner": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1514040653_1791522939120602880.json",
+      "sha256": "6a72da2b34597a92cc8f98ecf873cbefd325b8a01da147bf626663d71b1925fd",
+      "seed": 1514040653,
+      "fault_family": "control",
+      "episodes": 4,
+      "behavior_failed": 0,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 4,
+      "actions": {
+        "reconfigure_controller": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1465190814_1791523310496356524.json",
+      "sha256": "6b400c77dbeb4f21db4f123b737d2970e34b4f49bda04fdf1e51f6606147a34a",
+      "seed": 1465190814,
+      "fault_family": "localization",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1465190814_1791524158192687734.json",
+      "sha256": "3c42a566a85f591ae2d8d6ce76f50214fa648ec7f93941f577b23798a1e1b1e5",
+      "seed": 1465190814,
+      "fault_family": "costmap",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1465190814_1791524738689391029.json",
+      "sha256": "11c027cfad4f1fe0bc7c94f0fedc5f638a04a86aa2a1992e30a397b8d8e78c24",
+      "seed": 1465190814,
+      "fault_family": "planner",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "reconfigure_planner": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1465190814_1791525076564594595.json",
+      "sha256": "6757b276e0778cabf7de6107e15a5dd163d2a0f9e7b17f0acb97dc11f098db44",
+      "seed": 1465190814,
+      "fault_family": "control",
+      "episodes": 4,
+      "behavior_failed": 0,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 4,
+      "actions": {
+        "reconfigure_controller": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1533101624_1791525473428108789.json",
+      "sha256": "631efea004e5c9eea6f5fbb857129715f2c9d58c4956f81655451f0c1772c15d",
+      "seed": 1533101624,
+      "fault_family": "localization",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1533101624_1791526141699234615.json",
+      "sha256": "9fea1476602eff41684756d5df86c242a43ca6cbb2472ede6fb285ce85a92562",
+      "seed": 1533101624,
+      "fault_family": "costmap",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1533101624_1791526702543343873.json",
+      "sha256": "08a4c98c51844a6d2d89f4b99ef46a4217783c3cedb2d080a28ca307e8732c0b",
+      "seed": 1533101624,
+      "fault_family": "planner",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "reconfigure_planner": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1533101624_1791527043741308933.json",
+      "sha256": "583d44a2224773879632fadaab18aeb2fffd574b1ebd986a7fba44d88aabc130",
+      "seed": 1533101624,
+      "fault_family": "control",
+      "episodes": 4,
+      "behavior_failed": 0,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 4,
+      "actions": {
+        "reconfigure_controller": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_520996532_1791527272652854027.json",
+      "sha256": "34430f71646e0e598a3863d2f86f0fcc695104e08e58cbc0c8d0cc025119ccde",
+      "seed": 520996532,
+      "fault_family": "localization",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_520996532_1791528175736600779.json",
+      "sha256": "35872e96c5ac6e5428b1a0c6e9c2aeef479bdd6017dc7f9ad477d7d7ec7dd78b",
+      "seed": 520996532,
+      "fault_family": "costmap",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_520996532_1791528732832645701.json",
+      "sha256": "7066a67f0e72dce920abe791b1cf8bd68aae504588086f49252b02028aaca136",
+      "seed": 520996532,
+      "fault_family": "planner",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 3,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "reconfigure_planner": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_520996532_1791529071422700841.json",
+      "sha256": "edf2bf36aa073982d6162c86f950ddbf6ddde6fee35ac70566908488656f27a7",
+      "seed": 520996532,
+      "fault_family": "control",
+      "episodes": 4,
+      "behavior_failed": 0,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 4,
+      "actions": {
+        "reconfigure_controller": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_477646935_1791529717019328389.json",
+      "sha256": "a3afabb6e2a1f37e4090852827d3cc7f6f392b3606f887a9a52a0c05ea1a0fd6",
+      "seed": 477646935,
+      "fault_family": "localization",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 4
+      }
+    }
+  ],
+  "excluded_attempts": [
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_457375178_1791518439786255571.json",
+      "sha256": "76ab14170fdafc6d36621e0850ddbdad35741bd7c7aa2ab69d4a85e53a7370eb",
+      "seed": 457375178,
+      "fault_family": "localization",
+      "reason": "protocol_invalid_or_metadata_mismatch",
+      "protocol_compliant": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ],
+      "invalid_episodes": [
+        {
+          "episode_id": "phase3_gazebo_457375178_005",
+          "fault_family": "localization",
+          "episode_evidence_valid": false,
+          "details": {
+            "nominal_reset": "Gazebo set_pose failed: Service call timed out",
+            "pre_fault_costmap_clear": {
+              "global": false,
+              "local": false
+            },
+            "reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "inject": "nominal navigation, costmap clear, or reset failed",
+            "recovery": "no recovery action",
+            "rollback": "already rolled back by recovery"
+          }
+        }
+      ]
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_459825488_1791519971140828595.json",
+      "sha256": "53dde48e187c0e7c34bf2513411a0c4e53b6d6a92a7d6159c782cd44a617dd75",
+      "seed": 459825488,
+      "fault_family": "localization",
+      "reason": "protocol_invalid_or_metadata_mismatch",
+      "protocol_compliant": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ],
+      "invalid_episodes": [
+        {
+          "episode_id": "phase3_gazebo_459825488_002",
+          "fault_family": "localization",
+          "episode_evidence_valid": false,
+          "details": {
+            "nominal_reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "pre_fault_costmap_clear": {
+              "global": true,
+              "local": true
+            },
+            "reset": "Gazebo set_pose failed: Service call timed out",
+            "inject": "nominal navigation, costmap clear, or reset failed",
+            "recovery": "no recovery action",
+            "rollback": "already rolled back by recovery"
+          }
+        }
+      ]
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1514040653_1791522255991772704.json",
+      "sha256": "55d954b75621a29bda72d8709bf9d6711e30601f5914e28bb84eb569d2070a5f",
+      "seed": 1514040653,
+      "fault_family": "planner",
+      "reason": "protocol_invalid_or_metadata_mismatch",
+      "protocol_compliant": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ],
+      "invalid_episodes": [
+        {
+          "episode_id": "phase3_gazebo_1514040653_011",
+          "fault_family": "planner",
+          "episode_evidence_valid": false,
+          "details": {
+            "nominal_reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "pre_fault_costmap_clear": {
+              "global": true,
+              "local": true
+            },
+            "reset": "Gazebo set_pose failed: Service call timed out",
+            "inject": "nominal navigation, costmap clear, or reset failed",
+            "recovery": "no recovery action",
+            "rollback": "already rolled back by recovery"
+          }
+        }
+      ]
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1465190814_1791523700964453589.json",
+      "sha256": "11187da31571e88727384d0020467e3870aa85547e0e93c3ed5e1d11f44469b7",
+      "seed": 1465190814,
+      "fault_family": "costmap",
+      "reason": "protocol_invalid_or_metadata_mismatch",
+      "protocol_compliant": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ],
+      "invalid_episodes": [
+        {
+          "episode_id": "phase3_gazebo_1465190814_007",
+          "fault_family": "costmap",
+          "episode_evidence_valid": false,
+          "details": {
+            "nominal_reset": "Gazebo set_pose failed: Service call timed out",
+            "pre_fault_costmap_clear": {
+              "global": false,
+              "local": false
+            },
+            "reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "inject": "nominal navigation, costmap clear, or reset failed",
+            "recovery": "no recovery action",
+            "rollback": "already rolled back by recovery"
+          }
+        }
+      ]
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1465190814_1791524424383302785.json",
+      "sha256": "2543575a6887602733301df2c932b4dddcb87e20607ec0042e967f60de01acd4",
+      "seed": 1465190814,
+      "fault_family": "planner",
+      "reason": "protocol_invalid_or_metadata_mismatch",
+      "protocol_compliant": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ],
+      "invalid_episodes": [
+        {
+          "episode_id": "phase3_gazebo_1465190814_006",
+          "fault_family": "planner",
+          "episode_evidence_valid": false,
+          "details": {
+            "nominal_reset": "Gazebo set_pose failed: Service call timed out",
+            "pre_fault_costmap_clear": {
+              "global": false,
+              "local": false
+            },
+            "reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "inject": "nominal navigation, costmap clear, or reset failed",
+            "recovery": "no recovery action",
+            "rollback": "already rolled back by recovery"
+          }
+        }
+      ]
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1533101624_1791525263603201253.json",
+      "sha256": "c39c51f948ddf70835dd0f88f0f09ea4154c2751d5d92f69aff9c8e4327124d9",
+      "seed": 1533101624,
+      "fault_family": "localization",
+      "reason": "protocol_invalid_or_metadata_mismatch",
+      "protocol_compliant": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ],
+      "invalid_episodes": [
+        {
+          "episode_id": "phase3_gazebo_1533101624_003",
+          "fault_family": "localization",
+          "episode_evidence_valid": false,
+          "details": {
+            "nominal_reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "pre_fault_costmap_clear": {
+              "global": true,
+              "local": true
+            },
+            "reset": "Gazebo set_pose failed: Service call timed out",
+            "inject": "nominal navigation, costmap clear, or reset failed",
+            "recovery": "no recovery action",
+            "rollback": "already rolled back by recovery"
+          }
+        }
+      ]
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1533101624_1791525682680750940.json",
+      "sha256": "15a5e4d81d4f3bfa5fe186aea558a33d3842ee3411be48c54dd5891c1c86aa15",
+      "seed": 1533101624,
+      "fault_family": "costmap",
+      "reason": "protocol_invalid_or_metadata_mismatch",
+      "protocol_compliant": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ],
+      "invalid_episodes": [
+        {
+          "episode_id": "phase3_gazebo_1533101624_002",
+          "fault_family": "costmap",
+          "episode_evidence_valid": false,
+          "details": {
+            "nominal_reset": "Gazebo set_pose failed: Service call timed out",
+            "pre_fault_costmap_clear": {
+              "global": false,
+              "local": false
+            },
+            "reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "inject": "nominal navigation, costmap clear, or reset failed",
+            "recovery": "no recovery action",
+            "rollback": "already rolled back by recovery"
+          }
+        },
+        {
+          "episode_id": "phase3_gazebo_1533101624_004",
+          "fault_family": "costmap",
+          "episode_evidence_valid": false,
+          "details": {
+            "nominal_reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "pre_fault_costmap_clear": {
+              "global": true,
+              "local": true
+            },
+            "reset": "Gazebo set_pose failed: Service call timed out",
+            "inject": "nominal navigation, costmap clear, or reset failed",
+            "recovery": "no recovery action",
+            "rollback": "already rolled back by recovery"
+          }
+        },
+        {
+          "episode_id": "phase3_gazebo_1533101624_011",
+          "fault_family": "costmap",
+          "episode_evidence_valid": false,
+          "details": {
+            "nominal_reset": "Gazebo set_pose failed: Service call timed out",
+            "pre_fault_costmap_clear": {
+              "global": false,
+              "local": false
+            },
+            "reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "inject": "nominal navigation, costmap clear, or reset failed",
+            "recovery": "no recovery action",
+            "rollback": "already rolled back by recovery"
+          }
+        }
+      ]
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1533101624_1791526385206267344.json",
+      "sha256": "144c80eed8e82e4314ce86bdcb8c24a16d05857c9d115dcc945b9c669d299b9e",
+      "seed": 1533101624,
+      "fault_family": "planner",
+      "reason": "protocol_invalid_or_metadata_mismatch",
+      "protocol_compliant": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ],
+      "invalid_episodes": [
+        {
+          "episode_id": "phase3_gazebo_1533101624_007",
+          "fault_family": "planner",
+          "episode_evidence_valid": false,
+          "details": {
+            "nominal_reset": "Gazebo set_pose failed: Service call timed out",
+            "pre_fault_costmap_clear": {
+              "global": false,
+              "local": false
+            },
+            "reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "inject": "nominal navigation, costmap clear, or reset failed",
+            "recovery": "no recovery action",
+            "rollback": "already rolled back by recovery"
+          }
+        }
+      ]
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_520996532_1791527717926287321.json",
+      "sha256": "81098429b5ed1e45936116c94c7183c2eb4c26fe15b1b983cbf97c825641d2d8",
+      "seed": 520996532,
+      "fault_family": "costmap",
+      "reason": "protocol_invalid_or_metadata_mismatch",
+      "protocol_compliant": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ],
+      "invalid_episodes": [
+        {
+          "episode_id": "phase3_gazebo_520996532_009",
+          "fault_family": "costmap",
+          "episode_evidence_valid": false,
+          "details": {
+            "nominal_reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "pre_fault_costmap_clear": {
+              "global": true,
+              "local": true
+            },
+            "reset": "Gazebo set_pose failed: Service call timed out",
+            "inject": "nominal navigation, costmap clear, or reset failed",
+            "recovery": "no recovery action",
+            "rollback": "already rolled back by recovery"
+          }
+        }
+      ]
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_520996532_1791528427764550244.json",
+      "sha256": "03025e04b3f84cb39e2e9a707be602933ae466730831edeb511804715dae8d77",
+      "seed": 520996532,
+      "fault_family": "planner",
+      "reason": "protocol_invalid_or_metadata_mismatch",
+      "protocol_compliant": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ],
+      "invalid_episodes": [
+        {
+          "episode_id": "phase3_gazebo_520996532_013",
+          "fault_family": "planner",
+          "episode_evidence_valid": false,
+          "details": {
+            "nominal_reset": "Gazebo set_pose failed: Service call timed out",
+            "pre_fault_costmap_clear": {
+              "global": false,
+              "local": false
+            },
+            "reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "inject": "nominal navigation, costmap clear, or reset failed",
+            "recovery": "no recovery action",
+            "rollback": "already rolled back by recovery"
+          }
+        }
+      ]
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_477646935_1791529319751578814.json",
+      "sha256": "31b8f21ef7cb0a9bacc1a1e7e242bdd2f102354a3ec2a20b46297c0e49ec988a",
+      "seed": 477646935,
+      "fault_family": "localization",
+      "reason": "protocol_invalid_or_metadata_mismatch",
+      "protocol_compliant": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ],
+      "invalid_episodes": [
+        {
+          "episode_id": "phase3_gazebo_477646935_003",
+          "fault_family": "localization",
+          "episode_evidence_valid": false,
+          "details": {
+            "nominal_reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "pre_fault_costmap_clear": {
+              "global": false,
+              "local": false
+            },
+            "reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "inject": "nominal navigation, costmap clear, or reset failed",
+            "recovery": "no recovery action",
+            "rollback": "already rolled back by recovery"
+          }
+        }
+      ]
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_477646935_1791529510370734052.json",
+      "sha256": "7e055a80108ca060188c198c369002593b8efc5b82321c4f3ca1f1150ea8b975",
+      "seed": 477646935,
+      "fault_family": "localization",
+      "reason": "protocol_invalid_or_metadata_mismatch",
+      "protocol_compliant": false,
+      "protocol_gaps": [
+        "paired episode evidence incomplete"
+      ],
+      "invalid_episodes": [
+        {
+          "episode_id": "phase3_gazebo_477646935_002",
+          "fault_family": "localization",
+          "episode_evidence_valid": false,
+          "details": {
+            "nominal_reset": "Gazebo set_pose failed: Service call timed out",
+            "pre_fault_costmap_clear": {
+              "global": false,
+              "local": false
+            },
+            "reset": "Episode reset to (-2.5, -2.5, 0.0).",
+            "inject": "nominal navigation, costmap clear, or reset failed",
+            "recovery": "no recovery action",
+            "rollback": "already rolled back by recovery"
+          }
+        }
+      ]
+    }
+  ],
+  "manual_invalid_attempt_entries": [],
+  "malformed_files": [],
+  "raw_file_count": 49,
+  "integrity_checks": {
+    "protocol_source_hash_count": 25,
+    "protocol_source_hash_mismatches": [],
+    "prior_selected_hash_mismatches": [],
+    "selected_file_hash_mismatches": []
+  }
+}

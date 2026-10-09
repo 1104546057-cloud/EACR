@@ -1,0 +1,237 @@
+{
+  "snapshot_id": "eacr_transfer_strong_rule_progress_audit_v23",
+  "captured_local": "2026-10-09T11:58:24+08:00",
+  "supplementary_protocol_id": "eacr_supplementary_B_v1",
+  "supplementary_protocol_sha256": "f4733a592d392320e67394faf21b251a56c701573f5a85745f3b13d41f48e964",
+  "runner_protocol_id": "eacr_phase3_v1",
+  "scope_note": "Interim integrity snapshot only; not final inference. Final analysis requires all paired methods across the 10 frozen seeds.",
+  "method": "eacr_strong_rule",
+  "checkpoint": "M_0",
+  "actual_map_id": "transfer_courtyard",
+  "valid_cell_count": 12,
+  "expected_cell_count": 40,
+  "invalid_attempt_count": 0,
+  "duplicate_valid_seed_family_keys": [],
+  "family_episode_summary": {
+    "localization": {
+      "episodes": 12,
+      "behavior_failed": 12,
+      "repair_action_success": 12,
+      "strict_success": 9,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 12
+      }
+    },
+    "costmap": {
+      "episodes": 12,
+      "behavior_failed": 12,
+      "repair_action_success": 12,
+      "strict_success": 11,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 12
+      }
+    },
+    "planner": {
+      "episodes": 12,
+      "behavior_failed": 12,
+      "repair_action_success": 12,
+      "strict_success": 12,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "reconfigure_planner": 12
+      }
+    },
+    "control": {
+      "episodes": 12,
+      "behavior_failed": 0,
+      "repair_action_success": 12,
+      "strict_success": 12,
+      "pre_action_nav_success": 12,
+      "actions": {
+        "reconfigure_controller": 12
+      }
+    }
+  },
+  "selected_valid_records": [
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1523842677_1791514437174026388.json",
+      "sha256": "11ec2b25ea8314b07d1f26e15a8277d9288d22283b99d469c29151cd73f1448c",
+      "seed": 1523842677,
+      "fault_family": "localization",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 2,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1523842677_1791514905092983068.json",
+      "sha256": "9231e90507ccd9536bc534cb904da22a4e7d1cf77d7012c7f50d66706af3548c",
+      "seed": 1523842677,
+      "fault_family": "costmap",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1523842677_1791515234518302921.json",
+      "sha256": "d3d0fc977b7c3aeb35d147e6069c0cd66926b88495facead337e1f232bd9c495",
+      "seed": 1523842677,
+      "fault_family": "planner",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "reconfigure_planner": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1523842677_1791515591532310284.json",
+      "sha256": "92e5c8c289a0e668c77a01ba7a68436d7c77b2b20673ccf8328baa52b45e8813",
+      "seed": 1523842677,
+      "fault_family": "control",
+      "episodes": 4,
+      "behavior_failed": 0,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 4,
+      "actions": {
+        "reconfigure_controller": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1489230398_1791515797925255735.json",
+      "sha256": "f5a5dbb7eb41c5a2a791d05827ebddb4adcc6700e92facd20be6f494079f6030",
+      "seed": 1489230398,
+      "fault_family": "localization",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1489230398_1791516261089947130.json",
+      "sha256": "48f7db083fb612c0790d9aa1013f075ef17a6333f8862ba61273b02ef7f0810d",
+      "seed": 1489230398,
+      "fault_family": "costmap",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 3,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1489230398_1791516569079862822.json",
+      "sha256": "881e017fb03933f32287f7c3af8dcc46eab8552bf84ac471e22c071f6ebe5717",
+      "seed": 1489230398,
+      "fault_family": "planner",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "reconfigure_planner": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_1489230398_1791516918754434277.json",
+      "sha256": "a238de52b31b744316c384ff1949ada76a6022e617229e3176671e4d50f812d8",
+      "seed": 1489230398,
+      "fault_family": "control",
+      "episodes": 4,
+      "behavior_failed": 0,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 4,
+      "actions": {
+        "reconfigure_controller": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_811258016_1791517131010678111.json",
+      "sha256": "4683eea8f25b56076581bda8954ace1fad26ec1c2308fdb87af534e581b188db",
+      "seed": 811258016,
+      "fault_family": "localization",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 3,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "relocalize_amcl": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_811258016_1791517591908505451.json",
+      "sha256": "58cbed04299de540563ec40d929099f6b844ccb150f461a0387b3f6e367c076c",
+      "seed": 811258016,
+      "fault_family": "costmap",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "clear_costmaps": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_811258016_1791517919131986353.json",
+      "sha256": "bd0cf7e67e50e9e5a5dc0f801dd32058692f2806c871de9b873056ea7340d17d",
+      "seed": 811258016,
+      "fault_family": "planner",
+      "episodes": 4,
+      "behavior_failed": 4,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 0,
+      "actions": {
+        "reconfigure_planner": 4
+      }
+    },
+    {
+      "path": "results/supplementary_transfer_strong_rule/phase3_gazebo_eacr_strong_rule_811258016_1791518255959904198.json",
+      "sha256": "0c91fe050a6397c809156bdac0dd9527507802d2c535c95986228ee8fb6df8ec",
+      "seed": 811258016,
+      "fault_family": "control",
+      "episodes": 4,
+      "behavior_failed": 0,
+      "repair_action_success": 4,
+      "strict_success": 4,
+      "pre_action_nav_success": 4,
+      "actions": {
+        "reconfigure_controller": 4
+      }
+    }
+  ],
+  "excluded_attempts": [],
+  "manual_invalid_attempt_entries": [],
+  "malformed_files": [],
+  "raw_file_count": 12,
+  "integrity_checks": {
+    "protocol_source_hash_count": 25,
+    "protocol_source_hash_mismatches": [],
+    "prior_selected_hash_mismatches": [],
+    "selected_file_hash_mismatches": []
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "source_aggregate": "results/phase4_final_aggregate.json",
+  "source_aggregate_sha256": "03118a2448681ea20bd4bb2a6fb209afb98d1272a96e88e72df8d6093a6e4f23",
+  "selected_cell_count": 320,
+  "selected_episode_count": 1280,
+  "method_family": {
+    "eacr_static_m0": {
+      "localization": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "6": 47,
+          "4": 33
+        },
+        "fault_navigation_success_count": 33,
+        "behavior_failure_count": 47,
+        "intervention_recovery_count": 0,
+        "strict_joint_success_count": 0,
+        "behavior_failure_intervention_recovery_count": 0,
+        "behavior_failure_strict_joint_success_count": 0,
+        "action_counts": {
+          "inspect_tf": 80
+        }
+      },
+      "costmap": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "6": 80
+        },
+        "fault_navigation_success_count": 0,
+        "behavior_failure_count": 80,
+        "intervention_recovery_count": 80,
+        "strict_joint_success_count": 80,
+        "behavior_failure_intervention_recovery_count": 80,
+        "behavior_failure_strict_joint_success_count": 80,
+        "action_counts": {
+          "clear_costmaps": 80
+        }
+      },
+      "planner": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "4": 74,
+          "6": 5,
+          "5": 1
+        },
+        "fault_navigation_success_count": 74,
+        "behavior_failure_count": 6,
+        "intervention_recovery_count": 0,
+        "strict_joint_success_count": 0,
+        "behavior_failure_intervention_recovery_count": 0,
+        "behavior_failure_strict_joint_success_count": 0,
+        "action_counts": {
+          "inspect_costmap": 80
+        }
+      },
+      "control": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "4": 38,
+          "5": 26,
+          "6": 16
+        },
+        "fault_navigation_success_count": 38,
+        "behavior_failure_count": 42,
+        "intervention_recovery_count": 0,
+        "strict_joint_success_count": 0,
+        "behavior_failure_intervention_recovery_count": 0,
+        "behavior_failure_strict_joint_success_count": 0,
+        "action_counts": {
+          "inspect_tf": 80
+        }
+      }
+    },
+    "eacr_evolving_online_m0": {
+      "localization": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "6": 53,
+          "4": 27
+        },
+        "fault_navigation_success_count": 27,
+        "behavior_failure_count": 53,
+        "intervention_recovery_count": 0,
+        "strict_joint_success_count": 0,
+        "behavior_failure_intervention_recovery_count": 0,
+        "behavior_failure_strict_joint_success_count": 0,
+        "action_counts": {
+          "inspect_tf": 80
+        }
+      },
+      "costmap": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "6": 80
+        },
+        "fault_navigation_success_count": 0,
+        "behavior_failure_count": 80,
+        "intervention_recovery_count": 80,
+        "strict_joint_success_count": 79,
+        "behavior_failure_intervention_recovery_count": 80,
+        "behavior_failure_strict_joint_success_count": 79,
+        "action_counts": {
+          "clear_costmaps": 80
+        }
+      },
+      "planner": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "4": 69,
+          "6": 9,
+          "5": 2
+        },
+        "fault_navigation_success_count": 69,
+        "behavior_failure_count": 11,
+        "intervention_recovery_count": 36,
+        "strict_joint_success_count": 31,
+        "behavior_failure_intervention_recovery_count": 6,
+        "behavior_failure_strict_joint_success_count": 1,
+        "action_counts": {
+          "inspect_costmap": 24,
+          "inspect_planner": 20,
+          "reconfigure_planner": 36
+        }
+      },
+      "control": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "4": 33,
+          "5": 28,
+          "6": 19
+        },
+        "fault_navigation_success_count": 33,
+        "behavior_failure_count": 47,
+        "intervention_recovery_count": 20,
+        "strict_joint_success_count": 15,
+        "behavior_failure_intervention_recovery_count": 12,
+        "behavior_failure_strict_joint_success_count": 7,
+        "action_counts": {
+          "inspect_tf": 40,
+          "inspect_controller": 20,
+          "reconfigure_controller": 20
+        }
+      }
+    },
+    "eacr_evolving_m20": {
+      "localization": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "6": 47,
+          "4": 32,
+          "5": 1
+        },
+        "fault_navigation_success_count": 32,
+        "behavior_failure_count": 48,
+        "intervention_recovery_count": 0,
+        "strict_joint_success_count": 0,
+        "behavior_failure_intervention_recovery_count": 0,
+        "behavior_failure_strict_joint_success_count": 0,
+        "action_counts": {
+          "inspect_tf": 68,
+          "inspect_controller": 4,
+          "inspect_costmap": 8
+        }
+      },
+      "costmap": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "6": 80
+        },
+        "fault_navigation_success_count": 0,
+        "behavior_failure_count": 80,
+        "intervention_recovery_count": 80,
+        "strict_joint_success_count": 80,
+        "behavior_failure_intervention_recovery_count": 80,
+        "behavior_failure_strict_joint_success_count": 80,
+        "action_counts": {
+          "clear_costmaps": 80
+        }
+      },
+      "planner": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "4": 71,
+          "6": 7,
+          "5": 2
+        },
+        "fault_navigation_success_count": 71,
+        "behavior_failure_count": 9,
+        "intervention_recovery_count": 0,
+        "strict_joint_success_count": 0,
+        "behavior_failure_intervention_recovery_count": 0,
+        "behavior_failure_strict_joint_success_count": 0,
+        "action_counts": {
+          "inspect_costmap": 80
+        }
+      },
+      "control": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "5": 30,
+          "4": 36,
+          "6": 14
+        },
+        "fault_navigation_success_count": 36,
+        "behavior_failure_count": 44,
+        "intervention_recovery_count": 0,
+        "strict_joint_success_count": 0,
+        "behavior_failure_intervention_recovery_count": 0,
+        "behavior_failure_strict_joint_success_count": 0,
+        "action_counts": {
+          "inspect_controller": 80
+        }
+      }
+    },
+    "eacr_evolving_m50": {
+      "localization": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "4": 36,
+          "6": 44
+        },
+        "fault_navigation_success_count": 36,
+        "behavior_failure_count": 44,
+        "intervention_recovery_count": 0,
+        "strict_joint_success_count": 0,
+        "behavior_failure_intervention_recovery_count": 0,
+        "behavior_failure_strict_joint_success_count": 0,
+        "action_counts": {
+          "inspect_tf": 80
+        }
+      },
+      "costmap": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "6": 80
+        },
+        "fault_navigation_success_count": 0,
+        "behavior_failure_count": 80,
+        "intervention_recovery_count": 80,
+        "strict_joint_success_count": 79,
+        "behavior_failure_intervention_recovery_count": 80,
+        "behavior_failure_strict_joint_success_count": 79,
+        "action_counts": {
+          "clear_costmaps": 80
+        }
+      },
+      "planner": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "4": 75,
+          "6": 3,
+          "5": 2
+        },
+        "fault_navigation_success_count": 75,
+        "behavior_failure_count": 5,
+        "intervention_recovery_count": 80,
+        "strict_joint_success_count": 75,
+        "behavior_failure_intervention_recovery_count": 5,
+        "behavior_failure_strict_joint_success_count": 1,
+        "action_counts": {
+          "reconfigure_planner": 80
+        }
+      },
+      "control": {
+        "episode_count": 80,
+        "fault_navigation_status_counts": {
+          "6": 20,
+          "5": 28,
+          "4": 32
+        },
+        "fault_navigation_success_count": 32,
+        "behavior_failure_count": 48,
+        "intervention_recovery_count": 78,
+        "strict_joint_success_count": 54,
+        "behavior_failure_intervention_recovery_count": 46,
+        "behavior_failure_strict_joint_success_count": 23,
+        "action_counts": {
+          "reconfigure_controller": 80
+        }
+      }
+    }
+  },
+  "paired_vs_static": {
+    "eacr_evolving_online_m0": {
+      "localization": {
+        "paired_episode_count": 80,
+        "same_belief_count": 80,
+        "same_candidate_set_count": 80,
+        "action_change_count": 0,
+        "both_behavior_failed_count": 28,
+        "static_strict_success_on_both_failed": 0,
+        "other_strict_success_on_both_failed": 0,
+        "static_intervention_recovery_on_both_failed": 0,
+        "other_intervention_recovery_on_both_failed": 0,
+        "action_transitions": {}
+      },
+      "costmap": {
+        "paired_episode_count": 80,
+        "same_belief_count": 80,
+        "same_candidate_set_count": 80,
+        "action_change_count": 0,
+        "both_behavior_failed_count": 80,
+        "static_strict_success_on_both_failed": 80,
+        "other_strict_success_on_both_failed": 79,
+        "static_intervention_recovery_on_both_failed": 80,
+        "other_intervention_recovery_on_both_failed": 80,
+        "action_transitions": {}
+      },
+      "planner": {
+        "paired_episode_count": 80,
+        "same_belief_count": 80,
+        "same_candidate_set_count": 80,
+        "action_change_count": 56,
+        "action_transitions": {
+          "inspect_costmap → reconfigure_planner": 36,
+          "inspect_costmap → inspect_planner": 20
+        }
+      },
+      "control": {
+        "paired_episode_count": 80,
+        "same_belief_count": 80,
+        "same_candidate_set_count": 80,
+        "action_change_count": 40,
+        "both_behavior_failed_count": 27,
+        "static_strict_success_on_both_failed": 0,
+        "other_strict_success_on_both_failed": 3,
+        "static_intervention_recovery_on_both_failed": 0,
+        "other_intervention_recovery_on_both_failed": 4,
+        "action_transitions": {
+          "inspect_tf → inspect_controller": 20,
+          "inspect_tf → reconfigure_controller": 20
+        }
+      }
+    },
+    "eacr_evolving_m20": {
+      "localization": {
+        "paired_episode_count": 80,
+        "same_belief_count": 68,
+        "same_candidate_set_count": 68,
+        "action_change_count": 12,
+        "both_behavior_failed_count": 27,
+        "static_strict_success_on_both_failed": 0,
+        "other_strict_success_on_both_failed": 0,
+        "static_intervention_recovery_on_both_failed": 0,
+        "other_intervention_recovery_on_both_failed": 0,
+        "action_transitions": {
+          "inspect_tf → inspect_costmap": 8,
+          "inspect_tf → inspect_controller": 4
+        }
+      },
+      "costmap": {
+        "paired_episode_count": 80,
+        "same_belief_count": 80,
+        "same_candidate_set_count": 80,
+        "action_change_count": 0,
+        "both_behavior_failed_count": 80,
+        "static_strict_success_on_both_failed": 80,
+        "other_strict_success_on_both_failed": 80,
+        "static_intervention_recovery_on_both_failed": 80,
+        "other_intervention_recovery_on_both_failed": 80,
+        "action_transitions": {}
+      },
+      "planner": {
+        "paired_episode_count": 80,
+        "same_belief_count": 72,
+        "same_candidate_set_count": 80,
+        "action_change_count": 0,
+        "action_transitions": {}
+      },
+      "control": {
+        "paired_episode_count": 80,
+        "same_belief_count": 80,
+        "same_candidate_set_count": 80,
+        "action_change_count": 80,
+        "both_behavior_failed_count": 26,
+        "static_strict_success_on_both_failed": 0,
+        "other_strict_success_on_both_failed": 0,
+        "static_intervention_recovery_on_both_failed": 0,
+        "other_intervention_recovery_on_both_failed": 0,
+        "action_transitions": {
+          "inspect_tf → inspect_controller": 80
+        }
+      }
+    },
+    "eacr_evolving_m50": {
+      "localization": {
+        "paired_episode_count": 80,
+        "same_belief_count": 80,
+        "same_candidate_set_count": 80,
+        "action_change_count": 0,
+        "both_behavior_failed_count": 29,
+        "static_strict_success_on_both_failed": 0,
+        "other_strict_success_on_both_failed": 0,
+        "static_intervention_recovery_on_both_failed": 0,
+        "other_intervention_recovery_on_both_failed": 0,
+        "action_transitions": {}
+      },
+      "costmap": {
+        "paired_episode_count": 80,
+        "same_belief_count": 80,
+        "same_candidate_set_count": 80,
+        "action_change_count": 0,
+        "both_behavior_failed_count": 80,
+        "static_strict_success_on_both_failed": 80,
+        "other_strict_success_on_both_failed": 79,
+        "static_intervention_recovery_on_both_failed": 80,
+        "other_intervention_recovery_on_both_failed": 80,
+        "action_transitions": {}
+      },
+      "planner": {
+        "paired_episode_count": 80,
+        "same_belief_count": 80,
+        "same_candidate_set_count": 80,
+        "action_change_count": 80,
+        "both_behavior_failed_count": 1,
+        "static_strict_success_on_both_failed": 0,
+        "other_strict_success_on_both_failed": 0,
+        "static_intervention_recovery_on_both_failed": 0,
+        "other_intervention_recovery_on_both_failed": 1,
+        "action_transitions": {
+          "inspect_costmap → reconfigure_planner": 80
+        }
+      },
+      "control": {
+        "paired_episode_count": 80,
+        "same_belief_count": 80,
+        "same_candidate_set_count": 80,
+        "action_change_count": 80,
+        "both_behavior_failed_count": 25,
+        "static_strict_success_on_both_failed": 0,
+        "other_strict_success_on_both_failed": 12,
+        "static_intervention_recovery_on_both_failed": 0,
+        "other_intervention_recovery_on_both_failed": 24,
+        "action_transitions": {
+          "inspect_tf → reconfigure_controller": 80
+        }
+      }
+    }
+  },
+  "interpretation": "Read-only descriptive audit; no new method outcomes or inferential claims. Behavior-failed paired counts use only episode pairs where both methods' pre-intervention fault navigation failed."
+}

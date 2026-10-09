@@ -1,0 +1,169 @@
+{
+  "pilot_id": "eacr_supplementary_B_engineering_pilot_v1",
+  "status": "passed",
+  "seed": 1876543211,
+  "registered_utc": "2026-10-08T16:20:02Z",
+  "checks": {
+    "normal_navigation": true,
+    "episode_reset": true,
+    "fault_injection": true,
+    "online_evidence": true,
+    "behavioral_effect": true,
+    "rollback": true,
+    "post_action_recovery": true,
+    "m50_experience_key_hit": true,
+    "nav2_bt_audit": true
+  },
+  "strong_rule_record": "results/supplementary_pilot_transfer_v5/phase3_gazebo_eacr_strong_rule_1876543211_1791476134508686139.json",
+  "m50_key_hit_record": "results/supplementary_pilot_transfer_v5_m50/phase3_gazebo_eacr_evolving_1876543211_1791476277890707683.json",
+  "m50_snapshot_path": "results/phase4_experience_evolving_full_M_50.json",
+  "m50_snapshot_sha256": "79e9e84b58b634f34ff71a6a42f5ccca81792b60aa757155544a555557a739ab",
+  "m50_training_context_key_verified": "planner_failure|tb3_sandbox|goal_nav|navigating|tb3_sandbox_gazebo|nav2_jazzy|reconfigure_planner",
+  "m50_training_context_entry": {
+    "recovery": {
+      "alpha": 4.2,
+      "beta": 1.75,
+      "mean": 0.7058823529411765,
+      "variance": 0.029872295934878394
+    },
+    "outcomes": {
+      "counts": {
+        "diagnostic_support": 1.0,
+        "diagnostic_conflict": 1.0,
+        "recovery_success": 4.0,
+        "recovery_failure": 1.75,
+        "unsafe_or_blocked": 1.0,
+        "inconclusive": 1.0
+      },
+      "probabilities": {
+        "diagnostic_support": 0.10256410256410256,
+        "diagnostic_conflict": 0.10256410256410256,
+        "recovery_success": 0.41025641025641024,
+        "recovery_failure": 0.1794871794871795,
+        "unsafe_or_blocked": 0.10256410256410256,
+        "inconclusive": 0.10256410256410256
+      },
+      "variance": 0.07045548369340857
+    }
+  },
+  "m50_pilot_predicted_recovery_probability": 0.6048834628190899,
+  "nav2_bt_audit_path": "results/supplementary_nav2_bt_audit.json",
+  "nav2_bt_sha256": "5895b63840d54c6d7eee3d3b3f3ee177680af9e58a14cbf61c4df39fe5db2a90",
+  "nav2_bt_hash_matches_installed_file": true,
+  "nav2_transfer_params_path": "src/eacr_sim/config/nav2_transfer_courtyard.yaml",
+  "nav2_transfer_params_sha256": "8cb7c53be80b548ebfa19d463869d2cc9aab9afd71f1f94974e14d066f6f4213",
+  "nav2_transfer_global_costmap_plugins": [
+    "static_layer",
+    "inflation_layer"
+  ],
+  "nav2_transfer_local_costmap_plugins": [
+    "voxel_layer",
+    "inflation_layer"
+  ],
+  "per_family": {
+    "localization": {
+      "nominal_navigation_status": 4,
+      "pre_fault_costmap_clear": {
+        "global": true,
+        "local": true
+      },
+      "fault_navigation_status": 6,
+      "fault_behavior_observed": true,
+      "fault_effect_observed": true,
+      "online_evidence_confirms_injection": true,
+      "selected_action": "relocalize_amcl",
+      "expected_action": "relocalize_amcl",
+      "recovery_success": true,
+      "rollback_success": true,
+      "recovery_navigation_status": 4,
+      "episode_success": true,
+      "episode_evidence_valid": true,
+      "inject_detail": "{\"offset_x\": 1.275, \"offset_y\": -0.8250000000000001, \"offset_yaw\": 0.675}",
+      "recovery_detail": "initial pose restored"
+    },
+    "control": {
+      "nominal_navigation_status": 4,
+      "pre_fault_costmap_clear": {
+        "global": true,
+        "local": true
+      },
+      "fault_navigation_status": 4,
+      "fault_behavior_observed": false,
+      "fault_effect_observed": true,
+      "online_evidence_confirms_injection": true,
+      "selected_action": "reconfigure_controller",
+      "expected_action": "reconfigure_controller",
+      "recovery_success": true,
+      "rollback_success": true,
+      "recovery_navigation_status": 4,
+      "episode_success": true,
+      "episode_evidence_valid": true,
+      "inject_detail": "min_x_velocity_threshold: min_x_velocity_threshold=0.001 -> min_x_velocity_threshold=12.0",
+      "recovery_detail": "min_x_velocity_threshold: restored min_x_velocity_threshold=0.001"
+    },
+    "planner": {
+      "nominal_navigation_status": 4,
+      "pre_fault_costmap_clear": {
+        "global": true,
+        "local": true
+      },
+      "fault_navigation_status": 6,
+      "fault_behavior_observed": true,
+      "fault_effect_observed": true,
+      "online_evidence_confirms_injection": true,
+      "selected_action": "reconfigure_planner",
+      "expected_action": "reconfigure_planner",
+      "recovery_success": true,
+      "rollback_success": true,
+      "recovery_navigation_status": 4,
+      "episode_success": true,
+      "episode_evidence_valid": true,
+      "inject_detail": "GridBased.allow_unknown=True -> GridBased.allow_unknown=false (; GridBased.allow_unknown=False)",
+      "recovery_detail": "GridBased.allow_unknown restored GridBased.allow_unknown=True; "
+    },
+    "costmap": {
+      "nominal_navigation_status": 4,
+      "pre_fault_costmap_clear": {
+        "global": true,
+        "local": true
+      },
+      "fault_navigation_status": 5,
+      "fault_behavior_observed": true,
+      "fault_effect_observed": true,
+      "online_evidence_confirms_injection": true,
+      "selected_action": "clear_costmaps",
+      "expected_action": "clear_costmaps",
+      "recovery_success": true,
+      "rollback_success": true,
+      "recovery_navigation_status": 4,
+      "episode_success": true,
+      "episode_evidence_valid": true,
+      "inject_detail": "global: footprint_padding=0.009999999776482582 -> footprint_padding=3.0 (); local: footprint_padding=0.009999999776482582 -> footprint_padding=3.0 ()",
+      "recovery_detail": "global: restored 0.009999999776482582; local: restored 0.009999999776482582"
+    }
+  },
+  "behavioral_failure_summary": {
+    "families_with_pre_action_navigation_failure": [
+      "localization",
+      "planner",
+      "costmap"
+    ],
+    "families_with_parameter_or_sensor_effect": [
+      "localization",
+      "control",
+      "planner",
+      "costmap"
+    ],
+    "interpretation": "Control was correctly detected and its parameter rollback and post-action navigation succeeded, although its pre-action navigation still succeeded. This is reported as configuration repair, not behavior-failure recovery."
+  },
+  "failed_design_attempts_excluded_from_evaluation": [
+    {
+      "path": "results/supplementary_pilot_transfer_v2",
+      "reason": "global obstacle layer had already observed the unknown goal region before planner fault injection; fault navigation and valid-planner probe still succeeded"
+    },
+    {
+      "path": "results/supplementary_pilot_transfer_v3",
+      "reason": "clearing costmaps did not remove the global obstacle layer knowledge; planner fault remained configuration-only"
+    }
+  ]
+}
