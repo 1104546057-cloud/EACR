@@ -1,0 +1,1667 @@
+{
+  "protocol_id": "eacr_evolving_advantage_v1",
+  "confirmatory_ready": true,
+  "method_seed_means": [
+    {
+      "method": "eacr_static_m0",
+      "seed_count": 20,
+      "intervention_recovery_rate": 0.25,
+      "sustained_recovery_rate": 0.25,
+      "intervention_cost_mean": 0.23249999999999998,
+      "useless_probe_rate": 0.75,
+      "mttr_success_mean_sec": 58.25669081440036
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "seed_count": 20,
+      "intervention_recovery_rate": 0.425,
+      "sustained_recovery_rate": 0.390625,
+      "intervention_cost_mean": 0.3035,
+      "useless_probe_rate": 0.575,
+      "mttr_success_mean_sec": 45.0693530197086
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "seed_count": 20,
+      "intervention_recovery_rate": 0.25,
+      "sustained_recovery_rate": 0.25,
+      "intervention_cost_mean": 0.246375,
+      "useless_probe_rate": 0.75,
+      "mttr_success_mean_sec": 58.20598913442596
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "seed_count": 20,
+      "intervention_recovery_rate": 0.74375,
+      "sustained_recovery_rate": 0.65,
+      "intervention_cost_mean": 0.425,
+      "useless_probe_rate": 0.25,
+      "mttr_success_mean_sec": 44.499241684898514
+    }
+  ],
+  "paired_comparisons": {
+    "eacr_evolving_online_m0": {
+      "intervention_recovery_rate": {
+        "paired_seed_count": 20,
+        "mean_delta": 0.175,
+        "bootstrap_95ci": [
+          0.1625,
+          0.184375
+        ],
+        "sign_counts": {
+          "positive": 20,
+          "negative": 0,
+          "zero": 0
+        },
+        "seed_deltas": {
+          "1069364068": 0.1875,
+          "683001511": 0.1875,
+          "450637390": 0.125,
+          "1207356449": 0.1875,
+          "1578549000": 0.1875,
+          "252445555": 0.1875,
+          "729528073": 0.1875,
+          "1092085222": 0.125,
+          "200776800": 0.1875,
+          "1464253601": 0.1875,
+          "365260637": 0.1875,
+          "225495283": 0.125,
+          "1725492561": 0.1875,
+          "1054169594": 0.125,
+          "1613439514": 0.1875,
+          "1691408245": 0.1875,
+          "849115063": 0.1875,
+          "1146002680": 0.1875,
+          "1534671149": 0.1875,
+          "1320660730": 0.1875
+        }
+      },
+      "sustained_recovery_rate": {
+        "paired_seed_count": 20,
+        "mean_delta": 0.140625,
+        "bootstrap_95ci": [
+          0.1125,
+          0.165625
+        ],
+        "sign_counts": {
+          "positive": 18,
+          "negative": 0,
+          "zero": 2
+        },
+        "seed_deltas": {
+          "1069364068": 0.125,
+          "683001511": 0.125,
+          "450637390": 0.0625,
+          "1207356449": 0.1875,
+          "1578549000": 0.1875,
+          "252445555": 0.1875,
+          "729528073": 0.1875,
+          "1092085222": 0.0,
+          "200776800": 0.1875,
+          "1464253601": 0.1875,
+          "365260637": 0.1875,
+          "225495283": 0.0,
+          "1725492561": 0.125,
+          "1054169594": 0.0625,
+          "1613439514": 0.1875,
+          "1691408245": 0.125,
+          "849115063": 0.1875,
+          "1146002680": 0.125,
+          "1534671149": 0.1875,
+          "1320660730": 0.1875
+        }
+      },
+      "intervention_cost_mean": {
+        "paired_seed_count": 20,
+        "mean_delta": 0.07100000000000001,
+        "bootstrap_95ci": [
+          0.06637500000000002,
+          0.07446875
+        ],
+        "sign_counts": {
+          "positive": 20,
+          "negative": 0,
+          "zero": 0
+        },
+        "seed_deltas": {
+          "1069364068": 0.075625,
+          "683001511": 0.075625,
+          "450637390": 0.05250000000000005,
+          "1207356449": 0.075625,
+          "1578549000": 0.075625,
+          "252445555": 0.075625,
+          "729528073": 0.075625,
+          "1092085222": 0.05250000000000005,
+          "200776800": 0.075625,
+          "1464253601": 0.075625,
+          "365260637": 0.075625,
+          "225495283": 0.05250000000000005,
+          "1725492561": 0.075625,
+          "1054169594": 0.05250000000000005,
+          "1613439514": 0.075625,
+          "1691408245": 0.075625,
+          "849115063": 0.075625,
+          "1146002680": 0.075625,
+          "1534671149": 0.075625,
+          "1320660730": 0.075625
+        }
+      },
+      "useless_probe_rate": {
+        "paired_seed_count": 20,
+        "mean_delta": -0.175,
+        "bootstrap_95ci": [
+          -0.184375,
+          -0.1625
+        ],
+        "sign_counts": {
+          "positive": 0,
+          "negative": 20,
+          "zero": 0
+        },
+        "seed_deltas": {
+          "1069364068": -0.1875,
+          "683001511": -0.1875,
+          "450637390": -0.125,
+          "1207356449": -0.1875,
+          "1578549000": -0.1875,
+          "252445555": -0.1875,
+          "729528073": -0.1875,
+          "1092085222": -0.125,
+          "200776800": -0.1875,
+          "1464253601": -0.1875,
+          "365260637": -0.1875,
+          "225495283": -0.125,
+          "1725492561": -0.1875,
+          "1054169594": -0.125,
+          "1613439514": -0.1875,
+          "1691408245": -0.1875,
+          "849115063": -0.1875,
+          "1146002680": -0.1875,
+          "1534671149": -0.1875,
+          "1320660730": -0.1875
+        }
+      },
+      "mttr_success_mean_sec": {
+        "paired_seed_count": 20,
+        "mean_delta": -13.18733779469176,
+        "bootstrap_95ci": [
+          -14.834152488475114,
+          -11.351030066549615
+        ],
+        "sign_counts": {
+          "positive": 0,
+          "negative": 20,
+          "zero": 0
+        },
+        "seed_deltas": {
+          "1069364068": -16.332984506500907,
+          "683001511": -11.17659286275375,
+          "450637390": -15.243919977418727,
+          "1207356449": -18.22088135983322,
+          "1578549000": -16.534440761999882,
+          "252445555": -10.078738107999662,
+          "729528073": -18.28566418874925,
+          "1092085222": -6.928088199833077,
+          "200776800": -10.770744981082977,
+          "1464253601": -16.866225444415967,
+          "365260637": -17.979098490084198,
+          "225495283": -10.59741099000015,
+          "1725492561": -10.780194490416307,
+          "1054169594": -14.428713518250028,
+          "1613439514": -15.506446133581754,
+          "1691408245": -14.172964997664472,
+          "849115063": -11.030623695082191,
+          "1146002680": -2.172435634250782,
+          "1534671149": -13.710341142749407,
+          "1320660730": -12.930246411168504
+        }
+      }
+    },
+    "eacr_evolving_m20": {
+      "intervention_recovery_rate": {
+        "paired_seed_count": 20,
+        "mean_delta": 0.0,
+        "bootstrap_95ci": [
+          0.0,
+          0.0
+        ],
+        "sign_counts": {
+          "positive": 0,
+          "negative": 0,
+          "zero": 20
+        },
+        "seed_deltas": {
+          "1069364068": 0.0,
+          "683001511": 0.0,
+          "450637390": 0.0,
+          "1207356449": 0.0,
+          "1578549000": 0.0,
+          "252445555": 0.0,
+          "729528073": 0.0,
+          "1092085222": 0.0,
+          "200776800": 0.0,
+          "1464253601": 0.0,
+          "365260637": 0.0,
+          "225495283": 0.0,
+          "1725492561": 0.0,
+          "1054169594": 0.0,
+          "1613439514": 0.0,
+          "1691408245": 0.0,
+          "849115063": 0.0,
+          "1146002680": 0.0,
+          "1534671149": 0.0,
+          "1320660730": 0.0
+        }
+      },
+      "sustained_recovery_rate": {
+        "paired_seed_count": 20,
+        "mean_delta": 0.0,
+        "bootstrap_95ci": [
+          0.0,
+          0.0
+        ],
+        "sign_counts": {
+          "positive": 0,
+          "negative": 0,
+          "zero": 20
+        },
+        "seed_deltas": {
+          "1069364068": 0.0,
+          "683001511": 0.0,
+          "450637390": 0.0,
+          "1207356449": 0.0,
+          "1578549000": 0.0,
+          "252445555": 0.0,
+          "729528073": 0.0,
+          "1092085222": 0.0,
+          "200776800": 0.0,
+          "1464253601": 0.0,
+          "365260637": 0.0,
+          "225495283": 0.0,
+          "1725492561": 0.0,
+          "1054169594": 0.0,
+          "1613439514": 0.0,
+          "1691408245": 0.0,
+          "849115063": 0.0,
+          "1146002680": 0.0,
+          "1534671149": 0.0,
+          "1320660730": 0.0
+        }
+      },
+      "intervention_cost_mean": {
+        "paired_seed_count": 20,
+        "mean_delta": 0.013875000000000012,
+        "bootstrap_95ci": [
+          0.012500000000000011,
+          0.015500000000000014
+        ],
+        "sign_counts": {
+          "positive": 20,
+          "negative": 0,
+          "zero": 0
+        },
+        "seed_deltas": {
+          "1069364068": 0.012500000000000011,
+          "683001511": 0.012500000000000011,
+          "450637390": 0.012500000000000011,
+          "1207356449": 0.012500000000000011,
+          "1578549000": 0.012500000000000011,
+          "252445555": 0.012500000000000011,
+          "729528073": 0.012500000000000011,
+          "1092085222": 0.012500000000000011,
+          "200776800": 0.012500000000000011,
+          "1464253601": 0.012500000000000011,
+          "365260637": 0.025000000000000022,
+          "225495283": 0.012500000000000011,
+          "1725492561": 0.012500000000000011,
+          "1054169594": 0.012500000000000011,
+          "1613439514": 0.012500000000000011,
+          "1691408245": 0.012500000000000011,
+          "849115063": 0.012500000000000011,
+          "1146002680": 0.020000000000000018,
+          "1534671149": 0.012500000000000011,
+          "1320660730": 0.020000000000000018
+        }
+      },
+      "useless_probe_rate": {
+        "paired_seed_count": 20,
+        "mean_delta": 0.0,
+        "bootstrap_95ci": [
+          0.0,
+          0.0
+        ],
+        "sign_counts": {
+          "positive": 0,
+          "negative": 0,
+          "zero": 20
+        },
+        "seed_deltas": {
+          "1069364068": 0.0,
+          "683001511": 0.0,
+          "450637390": 0.0,
+          "1207356449": 0.0,
+          "1578549000": 0.0,
+          "252445555": 0.0,
+          "729528073": 0.0,
+          "1092085222": 0.0,
+          "200776800": 0.0,
+          "1464253601": 0.0,
+          "365260637": 0.0,
+          "225495283": 0.0,
+          "1725492561": 0.0,
+          "1054169594": 0.0,
+          "1613439514": 0.0,
+          "1691408245": 0.0,
+          "849115063": 0.0,
+          "1146002680": 0.0,
+          "1534671149": 0.0,
+          "1320660730": 0.0
+        }
+      },
+      "mttr_success_mean_sec": {
+        "paired_seed_count": 20,
+        "mean_delta": -0.0507016799743905,
+        "bootstrap_95ci": [
+          -0.14438927753560726,
+          0.050593933026900115
+        ],
+        "sign_counts": {
+          "positive": 7,
+          "negative": 13,
+          "zero": 0
+        },
+        "seed_deltas": {
+          "1069364068": -0.12632761175154883,
+          "683001511": 0.023671544493481633,
+          "450637390": -0.1746993035012565,
+          "1207356449": 0.3744136127477873,
+          "1578549000": -0.051217235499962044,
+          "252445555": -0.3506253215015249,
+          "729528073": -0.4255828082505104,
+          "1092085222": 0.07434752649942311,
+          "200776800": -0.0756407825024894,
+          "1464253601": 0.4493711905032569,
+          "365260637": 0.04894433100389506,
+          "225495283": -0.22553885374327365,
+          "1725492561": 0.19913087525810624,
+          "1054169594": -0.0007207542539617862,
+          "1613439514": -0.27633807074653305,
+          "1691408245": -0.2255828909965203,
+          "849115063": 0.19963040199309035,
+          "1146002680": -0.1008455155003034,
+          "1534671149": -0.17574836774656433,
+          "1320660730": -0.17467556599240197
+        }
+      }
+    },
+    "eacr_evolving_m50": {
+      "intervention_recovery_rate": {
+        "paired_seed_count": 20,
+        "mean_delta": 0.49375,
+        "bootstrap_95ci": [
+          0.484375,
+          0.5
+        ],
+        "sign_counts": {
+          "positive": 20,
+          "negative": 0,
+          "zero": 0
+        },
+        "seed_deltas": {
+          "1069364068": 0.5,
+          "683001511": 0.5,
+          "450637390": 0.5,
+          "1207356449": 0.5,
+          "1578549000": 0.5,
+          "252445555": 0.5,
+          "729528073": 0.5,
+          "1092085222": 0.5,
+          "200776800": 0.5,
+          "1464253601": 0.5,
+          "365260637": 0.5,
+          "225495283": 0.4375,
+          "1725492561": 0.4375,
+          "1054169594": 0.5,
+          "1613439514": 0.5,
+          "1691408245": 0.5,
+          "849115063": 0.5,
+          "1146002680": 0.5,
+          "1534671149": 0.5,
+          "1320660730": 0.5
+        }
+      },
+      "sustained_recovery_rate": {
+        "paired_seed_count": 20,
+        "mean_delta": 0.4,
+        "bootstrap_95ci": [
+          0.365625,
+          0.43125
+        ],
+        "sign_counts": {
+          "positive": 20,
+          "negative": 0,
+          "zero": 0
+        },
+        "seed_deltas": {
+          "1069364068": 0.5,
+          "683001511": 0.5,
+          "450637390": 0.3125,
+          "1207356449": 0.4375,
+          "1578549000": 0.5,
+          "252445555": 0.375,
+          "729528073": 0.3125,
+          "1092085222": 0.4375,
+          "200776800": 0.375,
+          "1464253601": 0.375,
+          "365260637": 0.375,
+          "225495283": 0.4375,
+          "1725492561": 0.1875,
+          "1054169594": 0.4375,
+          "1613439514": 0.5,
+          "1691408245": 0.3125,
+          "849115063": 0.375,
+          "1146002680": 0.4375,
+          "1534671149": 0.375,
+          "1320660730": 0.4375
+        }
+      },
+      "intervention_cost_mean": {
+        "paired_seed_count": 20,
+        "mean_delta": 0.19250000000000006,
+        "bootstrap_95ci": [
+          0.19250000000000006,
+          0.19250000000000006
+        ],
+        "sign_counts": {
+          "positive": 20,
+          "negative": 0,
+          "zero": 0
+        },
+        "seed_deltas": {
+          "1069364068": 0.19250000000000006,
+          "683001511": 0.19250000000000006,
+          "450637390": 0.19250000000000006,
+          "1207356449": 0.19250000000000006,
+          "1578549000": 0.19250000000000006,
+          "252445555": 0.19250000000000006,
+          "729528073": 0.19250000000000006,
+          "1092085222": 0.19250000000000006,
+          "200776800": 0.19250000000000006,
+          "1464253601": 0.19250000000000006,
+          "365260637": 0.19250000000000006,
+          "225495283": 0.19250000000000006,
+          "1725492561": 0.19250000000000006,
+          "1054169594": 0.19250000000000006,
+          "1613439514": 0.19250000000000006,
+          "1691408245": 0.19250000000000006,
+          "849115063": 0.19250000000000006,
+          "1146002680": 0.19250000000000006,
+          "1534671149": 0.19250000000000006,
+          "1320660730": 0.19250000000000006
+        }
+      },
+      "useless_probe_rate": {
+        "paired_seed_count": 20,
+        "mean_delta": -0.5,
+        "bootstrap_95ci": [
+          -0.5,
+          -0.5
+        ],
+        "sign_counts": {
+          "positive": 0,
+          "negative": 20,
+          "zero": 0
+        },
+        "seed_deltas": {
+          "1069364068": -0.5,
+          "683001511": -0.5,
+          "450637390": -0.5,
+          "1207356449": -0.5,
+          "1578549000": -0.5,
+          "252445555": -0.5,
+          "729528073": -0.5,
+          "1092085222": -0.5,
+          "200776800": -0.5,
+          "1464253601": -0.5,
+          "365260637": -0.5,
+          "225495283": -0.5,
+          "1725492561": -0.5,
+          "1054169594": -0.5,
+          "1613439514": -0.5,
+          "1691408245": -0.5,
+          "849115063": -0.5,
+          "1146002680": -0.5,
+          "1534671149": -0.5,
+          "1320660730": -0.5
+        }
+      },
+      "mttr_success_mean_sec": {
+        "paired_seed_count": 20,
+        "mean_delta": -13.757449129501847,
+        "bootstrap_95ci": [
+          -14.737324200061376,
+          -12.734537318125652
+        ],
+        "sign_counts": {
+          "positive": 0,
+          "negative": 20,
+          "zero": 0
+        },
+        "seed_deltas": {
+          "1069364068": -11.846169536749734,
+          "683001511": -14.614293611504614,
+          "450637390": -13.850220381002181,
+          "1207356449": -13.26994192716652,
+          "1578549000": -9.275369029833051,
+          "252445555": -13.910160722499732,
+          "729528073": -11.549255870250512,
+          "1092085222": -18.341450380249775,
+          "200776800": -13.732302234583187,
+          "1464253601": -14.050566207416942,
+          "365260637": -14.834402521916822,
+          "225495283": -13.368838428972495,
+          "1725492561": -9.18185267380558,
+          "1054169594": -13.495449141250901,
+          "1613439514": -15.643316157333174,
+          "1691408245": -17.074861725500035,
+          "849115063": -11.950714482083335,
+          "1146002680": -13.181884606417043,
+          "1534671149": -14.883348637084055,
+          "1320660730": -17.09458431441726
+        }
+      }
+    }
+  },
+  "family_paired_comparisons": [
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "localization",
+      "metric": "intervention_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20262004,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "localization",
+      "metric": "sustained_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20262005,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "localization",
+      "metric": "intervention_cost_mean",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20262006,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "localization",
+      "metric": "useless_probe_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20262007,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "localization",
+      "metric": "mttr_success_mean_sec",
+      "paired_seed_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20262008,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "costmap",
+      "metric": "intervention_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20262104,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "costmap",
+      "metric": "sustained_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": -0.0125,
+      "bootstrap_95ci": [
+        -0.0375,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 1,
+        "zero": 19
+      },
+      "bootstrap_seed": 20262105,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "costmap",
+      "metric": "intervention_cost_mean",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20262106,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "costmap",
+      "metric": "useless_probe_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20262107,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "costmap",
+      "metric": "mttr_success_mean_sec",
+      "paired_seed_count": 20,
+      "mean_delta": 0.013403622799762616,
+      "bootstrap_95ci": [
+        -0.08668282864976504,
+        0.10977080197484383
+      ],
+      "sign_counts": {
+        "positive": 10,
+        "negative": 10,
+        "zero": 0
+      },
+      "bootstrap_seed": 20262108,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "planner",
+      "metric": "intervention_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.45,
+      "bootstrap_95ci": [
+        0.4,
+        0.4875
+      ],
+      "sign_counts": {
+        "positive": 20,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20262204,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "planner",
+      "metric": "sustained_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.3875,
+      "bootstrap_95ci": [
+        0.2875,
+        0.475
+      ],
+      "sign_counts": {
+        "positive": 16,
+        "negative": 0,
+        "zero": 4
+      },
+      "bootstrap_seed": 20262205,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "planner",
+      "metric": "intervention_cost_mean",
+      "paired_seed_count": 20,
+      "mean_delta": 0.1715,
+      "bootstrap_95ci": [
+        0.15300000000000002,
+        0.185375
+      ],
+      "sign_counts": {
+        "positive": 20,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20262206,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "planner",
+      "metric": "useless_probe_rate",
+      "paired_seed_count": 20,
+      "mean_delta": -0.45,
+      "bootstrap_95ci": [
+        -0.4875,
+        -0.4
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 20,
+        "zero": 0
+      },
+      "bootstrap_seed": 20262207,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "planner",
+      "metric": "mttr_success_mean_sec",
+      "paired_seed_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20262208,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "control",
+      "metric": "intervention_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.25,
+      "bootstrap_95ci": [
+        0.25,
+        0.25
+      ],
+      "sign_counts": {
+        "positive": 20,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20262304,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "control",
+      "metric": "sustained_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.1875,
+      "bootstrap_95ci": [
+        0.1375,
+        0.225
+      ],
+      "sign_counts": {
+        "positive": 15,
+        "negative": 0,
+        "zero": 5
+      },
+      "bootstrap_seed": 20262305,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "control",
+      "metric": "intervention_cost_mean",
+      "paired_seed_count": 20,
+      "mean_delta": 0.11250000000000002,
+      "bootstrap_95ci": [
+        0.11250000000000002,
+        0.11250000000000002
+      ],
+      "sign_counts": {
+        "positive": 20,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20262306,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "control",
+      "metric": "useless_probe_rate",
+      "paired_seed_count": 20,
+      "mean_delta": -0.25,
+      "bootstrap_95ci": [
+        -0.25,
+        -0.25
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 20,
+        "zero": 0
+      },
+      "bootstrap_seed": 20262307,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_online_m0",
+      "fault_family": "control",
+      "metric": "mttr_success_mean_sec",
+      "paired_seed_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20262308,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "localization",
+      "metric": "intervention_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20263004,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "localization",
+      "metric": "sustained_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20263005,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "localization",
+      "metric": "intervention_cost_mean",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0055000000000000005,
+      "bootstrap_95ci": [
+        0.0,
+        0.012000000000000002
+      ],
+      "sign_counts": {
+        "positive": 3,
+        "negative": 0,
+        "zero": 17
+      },
+      "bootstrap_seed": 20263006,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "localization",
+      "metric": "useless_probe_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20263007,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "localization",
+      "metric": "mttr_success_mean_sec",
+      "paired_seed_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20263008,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "costmap",
+      "metric": "intervention_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20263104,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "costmap",
+      "metric": "sustained_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20263105,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "costmap",
+      "metric": "intervention_cost_mean",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20263106,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "costmap",
+      "metric": "useless_probe_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20263107,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "costmap",
+      "metric": "mttr_success_mean_sec",
+      "paired_seed_count": 20,
+      "mean_delta": -0.0507016799743905,
+      "bootstrap_95ci": [
+        -0.14325764067445554,
+        0.04914922603712455
+      ],
+      "sign_counts": {
+        "positive": 7,
+        "negative": 13,
+        "zero": 0
+      },
+      "bootstrap_seed": 20263108,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "planner",
+      "metric": "intervention_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20263204,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "planner",
+      "metric": "sustained_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20263205,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "planner",
+      "metric": "intervention_cost_mean",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20263206,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "planner",
+      "metric": "useless_probe_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20263207,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "planner",
+      "metric": "mttr_success_mean_sec",
+      "paired_seed_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20263208,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "control",
+      "metric": "intervention_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20263304,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "control",
+      "metric": "sustained_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20263305,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "control",
+      "metric": "intervention_cost_mean",
+      "paired_seed_count": 20,
+      "mean_delta": 0.050000000000000024,
+      "bootstrap_95ci": [
+        0.05000000000000002,
+        0.05000000000000002
+      ],
+      "sign_counts": {
+        "positive": 20,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20263306,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "control",
+      "metric": "useless_probe_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20263307,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m20",
+      "fault_family": "control",
+      "metric": "mttr_success_mean_sec",
+      "paired_seed_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20263308,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "localization",
+      "metric": "intervention_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20264004,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "localization",
+      "metric": "sustained_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20264005,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "localization",
+      "metric": "intervention_cost_mean",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20264006,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "localization",
+      "metric": "useless_probe_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20264007,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "localization",
+      "metric": "mttr_success_mean_sec",
+      "paired_seed_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20264008,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "costmap",
+      "metric": "intervention_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20264104,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "costmap",
+      "metric": "sustained_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": -0.0125,
+      "bootstrap_95ci": [
+        -0.0375,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 1,
+        "zero": 19
+      },
+      "bootstrap_seed": 20264105,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "costmap",
+      "metric": "intervention_cost_mean",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20264106,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "costmap",
+      "metric": "useless_probe_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0,
+      "bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 20
+      },
+      "bootstrap_seed": 20264107,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "costmap",
+      "metric": "mttr_success_mean_sec",
+      "paired_seed_count": 20,
+      "mean_delta": 0.0318191544994562,
+      "bootstrap_95ci": [
+        -0.1008067410878823,
+        0.16707279908748945
+      ],
+      "sign_counts": {
+        "positive": 11,
+        "negative": 9,
+        "zero": 0
+      },
+      "bootstrap_seed": 20264108,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "planner",
+      "metric": "intervention_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 1.0,
+      "bootstrap_95ci": [
+        1.0,
+        1.0
+      ],
+      "sign_counts": {
+        "positive": 20,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20264204,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "planner",
+      "metric": "sustained_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.9375,
+      "bootstrap_95ci": [
+        0.875,
+        0.9875
+      ],
+      "sign_counts": {
+        "positive": 20,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20264205,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "planner",
+      "metric": "intervention_cost_mean",
+      "paired_seed_count": 20,
+      "mean_delta": 0.37000000000000005,
+      "bootstrap_95ci": [
+        0.37000000000000005,
+        0.37000000000000005
+      ],
+      "sign_counts": {
+        "positive": 20,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20264206,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "planner",
+      "metric": "useless_probe_rate",
+      "paired_seed_count": 20,
+      "mean_delta": -1.0,
+      "bootstrap_95ci": [
+        -1.0,
+        -1.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 20,
+        "zero": 0
+      },
+      "bootstrap_seed": 20264207,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "planner",
+      "metric": "mttr_success_mean_sec",
+      "paired_seed_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20264208,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "control",
+      "metric": "intervention_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.975,
+      "bootstrap_95ci": [
+        0.9375,
+        1.0
+      ],
+      "sign_counts": {
+        "positive": 20,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20264304,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "control",
+      "metric": "sustained_recovery_rate",
+      "paired_seed_count": 20,
+      "mean_delta": 0.675,
+      "bootstrap_95ci": [
+        0.5625,
+        0.775
+      ],
+      "sign_counts": {
+        "positive": 19,
+        "negative": 0,
+        "zero": 1
+      },
+      "bootstrap_seed": 20264305,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "control",
+      "metric": "intervention_cost_mean",
+      "paired_seed_count": 20,
+      "mean_delta": 0.4,
+      "bootstrap_95ci": [
+        0.4,
+        0.4
+      ],
+      "sign_counts": {
+        "positive": 20,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20264306,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "control",
+      "metric": "useless_probe_rate",
+      "paired_seed_count": 20,
+      "mean_delta": -1.0,
+      "bootstrap_95ci": [
+        -1.0,
+        -1.0
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 20,
+        "zero": 0
+      },
+      "bootstrap_seed": 20264307,
+      "bootstrap_draws": 20000
+    },
+    {
+      "method": "eacr_evolving_m50",
+      "fault_family": "control",
+      "metric": "mttr_success_mean_sec",
+      "paired_seed_count": 0,
+      "mean_delta": null,
+      "bootstrap_95ci": [
+        null,
+        null
+      ],
+      "sign_counts": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "bootstrap_seed": 20264308,
+      "bootstrap_draws": 20000
+    }
+  ],
+  "bootstrap": {
+    "unit": "evaluation_seed",
+    "draws": 20000,
+    "seed": 20261004
+  },
+  "family_bootstrap": {
+    "unit": "evaluation_seed within one fault family",
+    "draws": 20000,
+    "implementation": "scripts/aggregate_phase4_final.py:_bootstrap"
+  }
+}
